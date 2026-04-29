@@ -120,6 +120,22 @@
             letter-spacing: -0.02em;
         }
 
+        .five-tiles-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px;
+        }
+        @media (max-width: 640px) {
+            .five-tiles-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        @media (max-width: 360px) {
+            .five-tiles-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
         .body-text {
             font-size: 18px;
             font-weight: 400;
@@ -1739,7 +1755,7 @@
                 These aren't just words on a website. They are the standards we hold ourselves to every single day:
             </p>
 
-            <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px;">
+            <div class="five-tiles-grid">
                 <div style="background: white; padding: 14px; border-radius: var(--radius-lg); border-top: 4px solid #213885; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04); text-align: center;">
                     <h3 class="feature-title" style="margin-bottom: 0; color: #081849;">Transparency</h3>
                 </div>

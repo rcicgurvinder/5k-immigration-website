@@ -82,6 +82,7 @@
             line-height: 1.6;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
+            overflow-x: hidden;
         }
 
         /* Typography Styles */
@@ -133,6 +134,17 @@
         @media (max-width: 360px) {
             .five-tiles-grid {
                 grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        .who-i-help-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+        }
+        @media (max-width: 600px) {
+            .who-i-help-grid {
+                grid-template-columns: 1fr;
             }
         }
 
@@ -1788,7 +1800,7 @@
             </p>
 
             <div style="background: linear-gradient(135deg, rgba(37, 99, 235, 0.03), rgba(139, 92, 246, 0.03)); padding: 16px; border-radius: var(--radius-xl); border: 1px solid var(--oat-border);">
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
+            <div class="who-i-help-grid">
                 <div style="display: flex; gap: 16px; align-items: start;">
                     <div style="width: 32px; height: 32px; background: linear-gradient(90deg, #213885, #5F3475); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;">
                         <span style="color: white; font-size: 16px;">✓</span>

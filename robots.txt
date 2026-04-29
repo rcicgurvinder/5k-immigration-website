@@ -1,0 +1,28 @@
+User-agent: *
+Allow: /
+
+# Anthropic (Claude)
+User-agent: ClaudeBot
+Allow: /
+
+# OpenAI (ChatGPT)
+User-agent: GPTBot
+Allow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+
+# Google (Gemini / AI Overviews)
+User-agent: Google-Extended
+Allow: /
+
+# Apple
+User-agent: Applebot
+Allow: /
+
+# Sitemap
+Sitemap: https://www.5kimmigration.ca/sitemap.xml
+
+# Block crawling of raw assets that don't need indexing
+Disallow: /cdn-cgi/

@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="5K_Immigration_Logo_Transparent.png">
+    <link rel="apple-touch-icon" href="5K_Immigration_Logo_Transparent.png">
+    <title>Privacy Policy — 5K Immigration Services</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://api.fontshare.com/v2/css?f[]=roobert@300,400,500,600,700&display=swap');
+
+        :root {
+            --clay-black: #000000;
+            --pure-white: #ffffff;
+            --warm-cream: #faf9f7;
+            --primary-700: #2563eb;
+            --ube-500: #8b5cf6;
+            --warm-silver: #9f9b93;
+            --warm-charcoal: #55534e;
+            --oat-border: #dad4c8;
+            --oat-light: #eee9df;
+            --space-8: 0.5rem;
+            --space-12: 0.75rem;
+            --space-16: 1rem;
+            --space-20: 1.25rem;
+            --space-24: 1.5rem;
+            --space-32: 2rem;
+            --space-40: 2.5rem;
+            --space-48: 3rem;
+            --space-64: 4rem;
+            --radius-md: 8px;
+            --radius-lg: 12px;
+            --font-display: 'Roobert', system-ui, sans-serif;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: var(--font-display);
+            background-color: var(--warm-cream);
+            color: var(--clay-black);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Header Top Bar */
+        .header-top {
+            position: relative;
+            z-index: 101;
+            background-color: #f5f5f7;
+            padding: 6px 1.5rem;
+            border-bottom: 1px solid rgba(37,99,235,0.1);
+        }
+        .header-top-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 14px;
+        }
+        .header-contact-info {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+        .header-contact-link {
+            color: var(--clay-black);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 13px;
+            transition: color 0.2s ease;
+        }
+        .header-contact-link:hover { color: #2563eb; }
+        .social-media-links { display: flex; gap: 10px; align-items: center; }
+
+        /* Header / Nav */
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background-color: rgba(255,255,255,0.96);
+            border-bottom: 1px solid var(--oat-border);
+            backdrop-filter: blur(12px);
+        }
+        header nav {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 1.5rem;
+        }
+        .logo {
+            display: flex;
+            flex: 1;
+            align-items: center;
+            gap: 0.75rem;
+            text-decoration: none;
+            color: var(--clay-black);
+        }
+        .logo-text { font-weight: 700; font-size: 17px; letter-spacing: -0.02em; }
+        header nav > ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+        }
+        header nav > ul > li > a {
+            color: var(--clay-black);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 15px;
+            letter-spacing: -0.01em;
+            transition: color 0.2s ease;
+        }
+        header nav > ul > li > a:hover { color: #213885; }
+        .nav-actions {
+            display: flex;
+            flex: 1;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 20px;
+        }
+
+        /* Page Hero */
+        .page-hero {
+            background: linear-gradient(135deg, #213885 0%, #5F3475 100%);
+            padding: 1.5rem 1.5rem;
+            text-align: center;
+        }
+        .page-hero h1 {
+            margin-bottom: 0.5rem;
+            color: #fff;
+            font-size: clamp(28px, 4vw, 40px);
+            font-weight: 600;
+            line-height: 1.1;
+            letter-spacing: -0.03em;
+        }
+        .page-hero p {
+            font-size: 15px;
+            color: #ECDFD2;
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.4;
+        }
+
+        /* Content */
+        .privacy-wrapper {
+            max-width: 820px;
+            margin: 0 auto;
+            padding: 3rem 1.5rem 5rem;
+        }
+
+        .effective-date {
+            display: inline-block;
+            background: #f0f4ff;
+            border: 1px solid rgba(33,56,133,0.2);
+            border-radius: var(--radius-md);
+            padding: 6px 14px;
+            font-size: 13px;
+            color: #213885;
+            font-weight: 600;
+            letter-spacing: 0.03em;
+            margin-bottom: 2rem;
+        }
+
+        .privacy-intro {
+            font-size: 16px;
+            color: var(--warm-charcoal);
+            line-height: 1.8;
+            margin-bottom: 2.5rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid var(--oat-border);
+        }
+
+        .privacy-section {
+            margin-bottom: 2.5rem;
+        }
+
+        .privacy-section h2 {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--clay-black);
+            letter-spacing: -0.02em;
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .privacy-section h2::before {
+            content: '';
+            display: inline-block;
+            width: 4px;
+            height: 18px;
+            background: linear-gradient(135deg, #213885, #5F3475);
+            border-radius: 2px;
+            flex-shrink: 0;
+        }
+
+        .privacy-section p {
+            font-size: 15px;
+            color: var(--warm-charcoal);
+            line-height: 1.8;
+            margin-bottom: 0.75rem;
+        }
+
+        .privacy-section ul {
+            list-style: none;
+            padding: 0;
+            margin: 0.5rem 0 0.75rem;
+        }
+
+        .privacy-section ul li {
+            font-size: 15px;
+            color: var(--warm-charcoal);
+            line-height: 1.7;
+            padding: 4px 0 4px 20px;
+            position: relative;
+        }
+
+        .privacy-section ul li::before {
+            content: '–';
+            position: absolute;
+            left: 0;
+            color: #8b5cf6;
+            font-weight: 700;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, rgba(33,56,133,0.05), rgba(95,52,117,0.07));
+            border: 1px solid rgba(33,56,133,0.15);
+            border-left: 3px solid #213885;
+            border-radius: var(--radius-md);
+            padding: 1rem 1.25rem;
+            margin: 1rem 0;
+        }
+
+        .highlight-box p {
+            font-size: 14px !important;
+            color: #213885 !important;
+            font-weight: 500;
+            margin: 0 !important;
+        }
+
+        .divider {
+            border: none;
+            border-top: 1px solid var(--oat-border);
+            margin: 2rem 0;
+        }
+
+        .contact-block {
+            background: #f5f5f7;
+            border-radius: var(--radius-lg);
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .contact-block h3 {
+            font-size: 15px;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-block p, .contact-block a {
+            font-size: 14px;
+            color: var(--warm-charcoal);
+            line-height: 1.7;
+        }
+
+        .contact-block a {
+            color: #213885;
+            text-decoration: none;
+        }
+
+        .contact-block a:hover { text-decoration: underline; }
+
+        .copyright-notice {
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--oat-border);
+            font-size: 13px;
+            color: var(--warm-silver);
+            line-height: 1.6;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--pure-white);
+            color: var(--warm-charcoal);
+            padding: var(--space-48) var(--space-24) var(--space-24);
+            border-top: 1px solid var(--oat-border);
+        }
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 1fr 1fr;
+            gap: var(--space-48);
+            margin-bottom: var(--space-32);
+        }
+        .footer-brand h3 {
+            color: var(--clay-black);
+            margin-bottom: var(--space-16);
+        }
+        .footer-brand p {
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: var(--space-24);
+        }
+        .footer-links h4 {
+            color: var(--clay-black);
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: var(--space-16);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        .footer-links ul { list-style: none; }
+        .footer-links li { margin-bottom: var(--space-12); }
+        .footer-links a {
+            color: var(--warm-charcoal);
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.2s ease;
+        }
+        .footer-links a:hover { color: #213885; }
+        .footer-bottom {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding-top: 14px;
+            padding-bottom: 4px;
+            border-top: 1px solid var(--oat-border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 13px;
+        }
+        .footer-bottom a {
+            color: #213885;
+            text-decoration: none;
+        }
+
+        @media (max-width: 1024px) {
+            .footer-content { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media (max-width: 768px) {
+            .footer-content { grid-template-columns: 1fr; gap: var(--space-32); }
+            header nav > ul { display: none; }
+        }
+    </style>
+
+    <!-- ===== SEO & AI Search Optimization ===== -->
+    <meta name="description" content="Privacy Policy for 5K Immigration Services — how we collect, use, and protect your personal information in compliance with Canadian privacy law (PIPEDA).">
+    <meta name="robots" content="index, follow, noarchive">
+    <link rel="canonical" href="https://www.5kimmigration.ca/privacy.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Privacy Policy — 5K Immigration Services">
+    <meta property="og:url" content="https://www.5kimmigration.ca/privacy.html">
+    <meta property="og:site_name" content="5K Immigration Services">
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BDCHQ7MG41"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-BDCHQ7MG41');
+    </script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="index.html" class="logo">
+                <div style="width:52px;height:52px;display:flex;align-items:center;justify-content:center;">
+                    <img src="5K_Immigration_Logo_Transparent.png" alt="5K Immigration Services" style="width:52px;height:52px;object-fit:contain;">
+                </div>
+                <span class="logo-text">5K Immigration Services</span>
+            </a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="book.html" style="position:relative;display:inline-flex;align-items:center;padding:6px 16px 6px 26px;background:linear-gradient(90deg,#213885,#5F3475);border-radius:50px;text-decoration:none;border:1px solid rgba(255,255,255,0.15);box-shadow:0 1px 4px rgba(33,56,133,0.18);transition:all 0.25s cubic-bezier(0.34,1.56,0.64,1);" onmouseover="this.style.boxShadow='0 3px 12px rgba(33,56,133,0.32)';this.style.transform='translateY(-1px)'" onmouseout="this.style.boxShadow='0 1px 4px rgba(33,56,133,0.18)';this.style.transform='none'"><img src="gurvinder-singh.jpg" style="position:absolute;left:-14px;top:50%;transform:translateY(-50%);z-index:2;width:34px;height:34px;border-radius:50%;object-fit:cover;object-position:center top;border:2px solid white;background:#c8dcff;filter:brightness(1.12);flex-shrink:0;"><span style="color:white;font-weight:700;font-size:15px;letter-spacing:0.2px;white-space:nowrap;">Talk to Gurvinder</span></a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Hero -->
+    <div class="page-hero">
+        <h1>Privacy Policy</h1>
+        <p>How 5K Immigration Services collects, uses, and protects your personal information.</p>
+    </div>
+
+    <!-- Privacy Content -->
+    <div class="privacy-wrapper">
+
+        <span class="effective-date">Effective Date: April 28, 2026</span>
+
+        <p class="privacy-intro">
+            5K Immigration Services ("we," "our," or "us") is a regulated immigration consulting practice based in Surrey, British Columbia, Canada. We are committed to protecting the privacy of our clients and website visitors. This Privacy Policy explains how we collect, use, disclose, and safeguard personal information in compliance with the <em>Personal Information Protection and Electronic Documents Act</em> (PIPEDA) and British Columbia's <em>Personal Information Protection Act</em> (PIPA), as well as our obligations under the College of Immigration and Citizenship Consultants (CICC) Code of Professional Conduct.
+        </p>
+
+        <div class="privacy-section">
+            <h2>1. Information We Collect</h2>
+            <p>We collect personal information only to the extent necessary to provide our immigration consulting services. This may include:</p>
+            <ul>
+                <li>Full legal name, date of birth, and nationality</li>
+                <li>Contact details — mailing address, phone number, email address</li>
+                <li>Passport and travel document details</li>
+                <li>Immigration history, visa refusals, and prior status in Canada</li>
+                <li>Employment history, job titles, and reference letters</li>
+                <li>Educational credentials and ECA reports</li>
+                <li>Language test results (IELTS, CELPIP, TEF, TCF, etc.)</li>
+                <li>Family information relevant to sponsorship or dependent applications</li>
+                <li>Financial records provided in support of an application</li>
+                <li>Police certificates and court records (where applicable)</li>
+                <li>Medical examination results provided by an IRCC panel physician</li>
+                <li>Communications, notes, and correspondence related to your file</li>
+            </ul>
+            <p>When you use our website, we may also collect standard technical data such as IP address, browser type, pages visited, and session duration through basic analytics tools.</p>
+        </div>
+
+        <div class="privacy-section">
+            <h2>2. How We Collect Your Information</h2>
+            <p>We collect personal information directly from you through:</p>
+            <ul>
+                <li>Initial consultation bookings and intake forms</li>
+                <li>Email, telephone, and in-person communications</li>
+                <li>Documents you provide or authorize us to obtain on your behalf</li>
+                <li>Online forms on our website (contact, booking)</li>
+            </ul>
+            <p>We do not collect personal information without your knowledge or consent, except where permitted or required by law.</p>
+        </div>
+
+        <div class="privacy-section">
+            <h2>3. Purpose of Collection and Use</h2>
+            <p>We use your personal information solely for the purposes for which it was collected, including:</p>
+            <ul>
+                <li>Providing immigration consulting services and preparing applications</li>
+                <li>Submitting applications to Immigration, Refugees and Citizenship Canada (IRCC), Employment and Social Development Canada (ESDC), Canada Border Services Agency (CBSA), and other relevant government bodies</li>
+                <li>Communicating with you about your file, deadlines, and outcomes</li>
+                <li>Fulfilling our regulatory obligations as a Regulated Canadian Immigration Consultant (RCIC) under the CICC Code of Professional Conduct</li>
+                <li>Maintaining accurate client records as required by our governing body</li>
+                <li>Improving our services and responding to inquiries</li>
+            </ul>
+            <p>We will not use your information for any purpose other than those listed above without your explicit consent.</p>
+        </div>
+
+        <div class="privacy-section">
+            <h2>4. Disclosure of Personal Information</h2>
+            <p>We do not sell, rent, or trade your personal information. We may disclose your information only in the following circumstances:</p>
+            <ul>
+                <li><strong>Government authorities:</strong> IRCC, ESDC, CBSA, and provincial regulatory bodies as required by the nature of your application</li>
+                <li><strong>Authorized third parties:</strong> Professionals engaged on your behalf (e.g., translators, medical clinics, panel physicians) under strict confidentiality obligations</li>
+                <li><strong>Legal requirements:</strong> When required by a court order, subpoena, or applicable law</li>
+                <li><strong>CICC audits:</strong> Our files may be subject to review by the College of Immigration and Citizenship Consultants as part of our regulatory obligations</li>
+            </ul>
+            <div class="highlight-box">
+                <p>We will never share your personal information with unauthorized third parties, marketers, or immigration agents outside of our practice without your written consent.</p>
+            </div>
+        </div>
+
+        <div class="privacy-section">
+            <h2>5. Retention of Records</h2>
+            <p>In accordance with CICC regulations, we retain client files for a minimum of <strong>six (6) years</strong> from the date the retainer agreement is concluded or the file is closed. After this period, personal information is securely destroyed or de-identified.</p>
+            <p>Website analytics data is retained only as long as necessary for the purposes described and is not linked to your identity.</p>
+        </div>
+
+        <div class="privacy-section">
+            <h2>6. Security Safeguards</h2>
+            <p>We take reasonable steps to protect your personal information from loss, theft, unauthorized access, disclosure, copying, use, or modification. Our safeguards include:</p>
+            <ul>
+                <li>Secure, password-protected file management systems</li>
+                <li>Encrypted email communications for sensitive documents</li>
+                <li>Restricted access — only authorized staff handle client files</li>
+                <li>Physical security for any paper-based documents</li>
+            </ul>
+            <p>No transmission over the internet is completely secure. While we take every reasonable precaution, we cannot guarantee the absolute security of information transmitted to us electronically.</p>
+        </div>
+
+        <div class="privacy-section">
+            <h2>7. Cookies and Website Analytics</h2>
+            <p>Our website uses basic cookies and analytics tools to understand how visitors interact with our site. This data is aggregated and anonymous — it does not identify you personally. You may disable cookies through your browser settings; doing so will not affect your ability to use our services.</p>
+            <p>We do not use cookies to track you across other websites or to serve targeted advertising.</p>
+        </div>
+
+        <div class="privacy-section">
+            <h2>8. Your Rights</h2>
+            <p>Subject to applicable law, you have the right to:</p>
+            <ul>
+                <li><strong>Access:</strong> Request access to the personal information we hold about you</li>
+                <li><strong>Correction:</strong> Request that we correct any inaccurate or incomplete information</li>
+                <li><strong>Withdrawal of consent:</strong> Withdraw consent to our use of your information at any time — note that this may limit our ability to provide or continue services</li>
+                <li><strong>File a complaint:</strong> Lodge a complaint with the Office of the Privacy Commissioner of Canada (OPC) at <em>priv.gc.ca</em> or the BC Office of the Information and Privacy Commissioner at <em>oipc.bc.ca</em></li>
+            </ul>
+            <p>To exercise any of these rights, please contact us using the information below. We will respond within 30 days.</p>
+        </div>
+
+        <div class="privacy-section">
+            <h2>9. Links to External Websites</h2>
+            <p>Our website may contain links to external sites, including the official IRCC website and other government resources. We are not responsible for the privacy practices of those sites and encourage you to review their policies independently.</p>
+        </div>
+
+        <div class="privacy-section">
+            <h2>10. Changes to This Policy</h2>
+            <p>We may update this Privacy Policy from time to time to reflect changes in our practices, regulatory requirements, or applicable law. The "Effective Date" at the top of this page indicates when the policy was last revised. We encourage you to review this page periodically. Continued use of our services after any update constitutes acceptance of the revised policy.</p>
+        </div>
+
+        <hr class="divider">
+
+        <div class="contact-block">
+            <h3>Contact Our Privacy Officer</h3>
+            <p>If you have any questions about this Privacy Policy or how we handle your personal information, please contact us:</p>
+            <p style="margin-top:10px;">
+                <strong>5K Immigration Services</strong><br>
+                300–9850 King George Blvd, Surrey, BC V3T 0P9<br>
+                <a href="mailto:info@5kimmigration.ca">info@5kimmigration.ca</a><br>
+                <a href="tel:+17789863366">+1-778-986-3366</a>
+            </p>
+        </div>
+
+        <div class="copyright-notice">
+            <p>© 2026 5K Immigration Services. All rights reserved. This Privacy Policy and all content on this website are the intellectual property of 5K Immigration Services. Reproduction, distribution, or adaptation of any part of this policy or website content without written permission is prohibited.</p>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+    <div class="footer-content">
+        <div class="footer-brand">
+            <a href="index.html" style="display:flex;align-items:center;justify-content:flex-start;gap:12px;text-decoration:none;margin-bottom:20px;">
+                <img src="5K_Immigration_Logo_Transparent.png" alt="5K Immigration" style="width:44px;height:44px;object-fit:contain;">
+                <span style="font-weight:700;font-size:17px;color:#000;letter-spacing:-0.02em;">5K Immigration Services</span>
+            </a>
+            <p>A regulated immigration practice — handling work permits, Express Entry, family sponsorship, and PR applications with precision.</p>
+            <div style="margin-top:20px;display:flex;flex-direction:row;align-items:flex-start;gap:20px;">
+                <div style="display:flex;flex-direction:column;gap:10px;">
+                    <span style="font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:0.07em;color:#9f9b93;">Follow Us</span>
+                    <div style="display:flex;align-items:center;gap:10px;">
+                    <a href="https://www.linkedin.com/in/gurvindersingh-rcic/" target="_blank" aria-label="LinkedIn" style="background:#0A66C2;border-radius:6px;width:30px;height:30px;display:flex;align-items:center;justify-content:center;flex-shrink:0;text-decoration:none;transition:opacity 0.2s;" onmouseover="this.style.opacity='0.85'" onmouseout="this.style.opacity='1'">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="#fff"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+                    </a>
+                    <a href="https://www.instagram.com/5kimmigration" target="_blank" aria-label="Instagram" style="background:linear-gradient(45deg,#f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);border-radius:6px;width:30px;height:30px;display:flex;align-items:center;justify-content:center;flex-shrink:0;text-decoration:none;transition:opacity 0.2s;" onmouseover="this.style.opacity='0.85'" onmouseout="this.style.opacity='1'">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                    </a>
+                    <a href="https://tiktok.com/@5kimmigration" target="_blank" aria-label="TikTok" style="background:#010101;border-radius:6px;width:30px;height:30px;display:flex;align-items:center;justify-content:center;flex-shrink:0;text-decoration:none;transition:opacity 0.2s;" onmouseover="this.style.opacity='0.75'" onmouseout="this.style.opacity='1'">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="#fff"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.79 1.53V6.77a4.85 4.85 0 01-1.02-.08z"/></svg>
+                    </a>
+                    </div>
+                </div>
+                <img src="RCIC_CRIC_Logo.png" alt="Regulated Canadian Immigration Consultant" style="height:70px;width:auto;object-fit:contain;">
+            </div>
+        </div>
+        <div class="footer-links">
+            <h4>Services</h4>
+            <ul>
+                <li><a href="services.html#temp-resident">Temporary Resident</a></li>
+                <li><a href="services.html#permanent-resident">Permanent Resident</a></li>
+                <li><a href="services.html#citizenship">Citizenship</a></li>
+                <li><a href="services.html#specialized">Specialized Services</a></li>
+            </ul>
+        </div>
+        <div class="footer-links">
+            <h4>Company</h4>
+            <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="book.html">Book Consultation</a></li>
+            </ul>
+        </div>
+        <div class="footer-links">
+            <h4>Contact</h4>
+            <ul>
+                <li><a href="tel:+17789863366">+1-778-986-3366</a></li>
+                <li><a href="mailto:info@5kimmigration.ca">info@5kimmigration.ca</a></li>
+                <li><a href="https://maps.google.com/?q=300-9850+King+George+Blvd+Surrey+BC" target="_blank">300-9850 King George Blvd, Surrey, BC V3T 0P9</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom" style="justify-content: center;">
+        <div>&copy; 2026 5K Immigration Services. All rights reserved. &nbsp;|&nbsp; <a href="privacy.html">Privacy Policy</a></div>
+    </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,2418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="5K_Immigration_Logo_Transparent.png">
+    <link rel="apple-touch-icon" href="5K_Immigration_Logo_Transparent.png">
+    <title>Our Services — 5K Immigration Services</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://api.fontshare.com/v2/css?f[]=roobert@300,400,500,600,700&display=swap');
+
+        :root {
+            /* Clay Colors */
+            --clay-black: #000000;
+            --pure-white: #ffffff;
+            --warm-cream: #faf9f7;
+            
+            /* Primary Palette - Blue & Purple */
+            --primary-300: #a5c4ff;
+            --primary-500: #4a90ff;
+            --primary-700: #2563eb;
+            --primary-900: #1e40af;
+            --slushie-500: #3bd3fd;
+            --lemon-500: #fbbd41;
+            --ube-300: #c1b0ff;
+            --ube-500: #8b5cf6;
+            --ube-800: #43089f;
+            --pomegranate-400: #fc7981;
+            --coral-400: #ff8a65;
+            --blueberry-800: #01418d;
+            
+            /* Neutrals */
+            --warm-silver: #9f9b93;
+            --warm-charcoal: #55534e;
+            --oat-border: #dad4c8;
+            --oat-light: #eee9df;
+            
+            /* Spacing */
+            --space-2: 0.125rem;
+            --space-4: 0.25rem;
+            --space-8: 0.5rem;
+            --space-12: 0.75rem;
+            --space-16: 1rem;
+            --space-20: 1.25rem;
+            --space-24: 1.5rem;
+            --space-32: 2rem;
+            --space-40: 2.5rem;
+            --space-48: 3rem;
+            --space-64: 4rem;
+            --space-80: 5rem;
+            
+            /* Radius */
+            --radius-sm: 4px;
+            --radius-md: 8px;
+            --radius-lg: 12px;
+            --radius-xl: 24px;
+            --radius-2xl: 40px;
+            --radius-pill: 9999px;
+            
+            /* Typography */
+            --font-display: 'Roobert', system-ui, sans-serif;
+            --font-mono: 'Space Mono', monospace;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-display);
+            background-color: var(--warm-cream);
+            color: var(--clay-black);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* Typography Styles */
+        .display-hero {
+            font-size: clamp(48px, 8vw, 80px);
+            font-weight: 600;
+            line-height: 1.00;
+            letter-spacing: -0.04em;
+        }
+
+        .section-heading {
+            font-size: clamp(32px, 5vw, 44px);
+            font-weight: 600;
+            line-height: 1.10;
+            letter-spacing: -0.03em;
+        }
+
+        .card-heading {
+            font-size: 28px;
+            font-weight: 600;
+            line-height: 1.10;
+            letter-spacing: -0.02em;
+        }
+
+        .feature-title {
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 1.40;
+            letter-spacing: -0.02em;
+        }
+
+        .body-text {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 1.60;
+            letter-spacing: -0.02em;
+        }
+
+        .caption {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.50;
+        }
+
+        /* Header Top Bar */
+        /* ===== UPDATED HEADER (matches Home page) ===== */
+        .header-top {
+            position: relative;
+            z-index: 101;
+            background-color: #f5f5f7 !important;
+            padding: 6px var(--space-24);
+            border-bottom: 1px solid rgba(37,99,235,0.1);
+        }
+        .header-top-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 14px;
+        }
+        .header-contact-info {
+            display: flex;
+            align-items: center;
+            gap: var(--space-24);
+        }
+        .header-contact-link {
+            color: var(--clay-black);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 13px;
+            transition: color 0.2s ease;
+        }
+        .header-contact-link:hover { color: var(--primary-700, #2563eb); }
+        .social-media-links {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+        .social-icon-link {
+            transition: transform 0.2s ease, opacity 0.2s ease !important;
+        }
+        .social-icon-link:hover {
+            transform: scale(1.12) !important;
+            opacity: 0.85;
+        }
+        /* Header / Nav */
+        header {
+            position: sticky !important;
+            top: 0;
+            z-index: 100;
+            background-color: rgba(255,255,255,0.96) !important;
+            border-bottom: 1px solid var(--oat-border);
+            backdrop-filter: blur(12px);
+        }
+        header nav {
+            max-width: 1400px !important;
+            margin: 0 auto;
+            display: flex !important;
+            justify-content: space-between !important;
+            align-items: center !important;
+            padding: var(--space-16) var(--space-24) !important;
+        }
+        .logo {
+            display: flex;
+            flex: 1;
+            align-items: center;
+            gap: var(--space-12);
+            text-decoration: none;
+            color: var(--clay-black);
+        }
+        .logo-icon {
+            width: 52px;
+            height: 52px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .logo-text {
+            font-weight: 700;
+            font-size: 17px;
+            letter-spacing: -0.02em;
+            color: var(--clay-black);
+        }
+        header nav > ul {
+            display: flex;
+            list-style: none;
+            gap: var(--space-32);
+            align-items: center;
+            margin: 0;
+            padding: 0;
+        }
+        header nav > ul > li > a {
+            color: var(--clay-black);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 15px;
+            letter-spacing: -0.01em;
+            transition: color 0.2s ease;
+        }
+        header nav > ul > li > a:hover { color: #213885; }
+        header nav > ul > li > a::after { display: none; }
+        header nav > ul > li.active-li > a { color: #213885; font-weight: 600; }
+        .nav-actions {
+            display: flex;
+            flex: 1;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 20px;
+        }
+        .phone-button {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+            color: var(--clay-black);
+        }
+        .phone-icon {
+            width: 34px;
+            height: 34px;
+            background: linear-gradient(90deg, #213885, #5F3475);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+        .phone-number {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--clay-black);
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-8);
+            padding: var(--space-16) var(--space-32);
+            font-size: 16px;
+            font-weight: 500;
+            letter-spacing: -0.01em;
+            border-radius: var(--radius-lg);
+            text-decoration: none;
+            transition: all 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+            cursor: pointer;
+            border: none;
+            font-family: var(--font-display);
+            line-height: 1.5;
+        }
+        
+        .btn-primary {
+            background-color: var(--clay-black);
+            color: var(--pure-white);
+            position: relative;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px) rotate(-1deg);
+            box-shadow: 4px 4px 0 #5F3475;
+        }
+
+        .btn-book {
+            padding: 9px 16px !important;
+            font-size: 13px !important;
+            font-weight: 700 !important;
+            letter-spacing: 0.4px !important;
+        }
+        /* Dropdown */
+        .nav-dropdown { position: relative; }
+        .nav-dropdown-trigger {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            color: var(--clay-black) !important;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 15px;
+            cursor: pointer;
+            background: none;
+            border: none;
+            font-family: var(--font-display);
+            padding: 0;
+            transition: color 0.2s ease;
+        }
+        .nav-dropdown-trigger:hover { color: #213885 !important; }
+        .nav-dropdown-trigger.active { color: #213885 !important; font-weight: 600; }
+        .nav-dropdown-menu {
+            position: absolute;
+            top: calc(100% + 20px);
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--pure-white);
+            border: 1px solid var(--oat-border);
+            border-radius: var(--radius-lg);
+            box-shadow: 0 16px 48px rgba(0,0,0,0.12);
+            min-width: 800px;
+            padding: 24px;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.2s ease;
+            z-index: 300;
+            pointer-events: none;
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 1fr 1fr;
+            gap: 24px;
+        }
+        .nav-dropdown:hover .nav-dropdown-menu {
+            opacity: 1;
+            visibility: visible;
+            pointer-events: all;
+        }
+        .nav-dropdown-column {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            padding-right: 24px;
+        }
+        .nav-dropdown-column:not(:last-child) {
+            border-right: 1px solid var(--oat-border);
+        }
+        .nav-dropdown-category-title {
+            font-weight: 700;
+            font-size: 14px;
+            color: var(--clay-black);
+            margin-bottom: 8px;
+            text-transform: none;
+        }
+        .nav-dropdown-menu a {
+            display: block !important;
+            padding: 8px 0;
+            color: var(--warm-charcoal) !important;
+            font-size: 13px;
+            font-weight: 500;
+            text-decoration: none;
+            transition: color 0.15s ease;
+            white-space: normal;
+            border-radius: 0;
+        }
+        .nav-dropdown-menu a::after { display: none !important; }
+        .nav-dropdown-menu a:hover { background: none; color: #213885 !important; }
+        .nav-dropdown-menu a.active-item { background: none; color: #213885 !important; font-weight: 600; }
+        .nav-dropdown-divider { height: 1px; background: var(--oat-light); margin: 4px 0; }
+        @media (max-width: 1024px) {
+            header nav > ul { display: none !important; }
+            .phone-button .phone-number { display: none; }
+        }
+        @media (max-width: 768px) {
+            .header-contact-info { display: none; }
+            .nav-actions { gap: 12px; }
+        }
+
+        /* Page Hero */
+        .page-hero {
+            background: linear-gradient(135deg, #213885 0%, #5F3475 100%);
+            padding: var(--space-24) var(--space-24);
+            text-align: center;
+        }
+
+        .page-hero h1 {
+            margin-bottom: var(--space-8);
+            color: var(--pure-white);
+            font-size: clamp(32px, 5vw, 48px);
+            font-weight: 600;
+            line-height: 1.1;
+            letter-spacing: -0.03em;
+        }
+
+        .page-hero p {
+            font-size: 16px;
+            color: #ECDFD2;
+            max-width: 900px;
+            margin: 0 auto;
+            line-height: 1.4;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        /* Services Layout - Dynamic Panel */
+        .services-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: var(--space-48) var(--space-24) var(--space-48);
+            display: grid;
+            grid-template-columns: 320px 1fr;
+            gap: var(--space-48);
+        }
+
+        /* Sidebar Navigation */
+        .services-sidebar {
+            position: sticky;
+            top: 100px;
+            height: fit-content;
+            background: rgba(33, 56, 133, 0.04);
+            border-radius: var(--radius-lg);
+            padding: var(--space-24);
+            border: 1px solid var(--oat-border);
+        }
+
+        .sidebar-category {
+            margin-bottom: var(--space-20);
+        }
+
+        .sidebar-category:last-child {
+            margin-bottom: 0;
+        }
+
+        .sidebar-main-tab {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: var(--space-12) var(--space-16);
+            border-radius: var(--radius-md);
+            font-weight: 600;
+            font-size: 15px;
+            color: var(--clay-black);
+            background: none;
+            border: none;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            width: 100%;
+            text-align: left;
+        }
+
+        .sidebar-main-tab:hover {
+            background: var(--oat-light);
+        }
+
+        .sidebar-main-tab.active {
+            background: linear-gradient(135deg, rgba(33, 56, 133, 0.1), rgba(95, 52, 117, 0.1));
+            color: #213885;
+        }
+
+        .sidebar-toggle-arrow {
+            width: 20px;
+            height: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            color: var(--warm-charcoal);
+            transition: transform 0.2s ease;
+            flex-shrink: 0;
+        }
+
+        .sidebar-main-tab.active .sidebar-toggle-arrow {
+            transform: rotate(180deg);
+            color: #213885;
+        }
+
+        .sidebar-submenu {
+            margin-left: 0;
+            margin-top: var(--space-8);
+            display: none;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease;
+        }
+
+        .sidebar-submenu.active {
+            display: block;
+            max-height: 500px;
+        }
+
+        .sidebar-submenu a {
+            display: block;
+            padding: var(--space-8) var(--space-12);
+            font-size: 14px;
+            color: var(--warm-charcoal);
+            text-decoration: none;
+            border-radius: var(--radius-sm);
+            transition: all 0.15s ease;
+            cursor: pointer;
+            border: none;
+            background: none;
+            width: 100%;
+            text-align: left;
+        }
+
+        .sidebar-submenu a:hover {
+            background: var(--oat-light);
+            color: #213885;
+            padding-left: var(--space-16);
+        }
+
+        .sidebar-submenu a.active {
+            background: linear-gradient(135deg, rgba(33, 56, 133, 0.15), rgba(95, 52, 117, 0.15));
+            color: #213885;
+            font-weight: 600;
+        }
+
+        /* Main Content Panel */
+        .services-main {
+            min-height: 600px;
+        }
+
+        .service-detail-panel {
+            background: var(--pure-white);
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--oat-border);
+            padding: var(--space-40);
+            display: none;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .service-detail-panel.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(8px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* 7-Block Structure */
+        .detail-header {
+            margin-bottom: var(--space-32);
+            padding-bottom: var(--space-24);
+            border-bottom: 2px solid var(--oat-border);
+        }
+
+        .detail-title {
+            display: flex;
+            align-items: center;
+            gap: var(--space-16);
+            margin-bottom: var(--space-12);
+        }
+
+        .detail-icon {
+            width: 56px;
+            height: 56px;
+            border-radius: var(--radius-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+        }
+
+        .detail-title-text h1 {
+            font-size: 32px;
+            font-weight: 700;
+            color: var(--clay-black);
+            margin-bottom: var(--space-8);
+        }
+
+        .detail-tagline {
+            font-size: 16px;
+            color: var(--warm-charcoal);
+            line-height: 1.6;
+        }
+
+        /* Block 1: Description */
+        .detail-block {
+            margin-bottom: var(--space-20);
+        }
+
+        .detail-block h2 {
+            font-size: 17px;
+            font-weight: 700;
+            color: var(--clay-black);
+            margin-bottom: var(--space-12);
+            display: flex;
+            align-items: center;
+            gap: var(--space-12);
+        }
+
+        .block-checkmark {
+            font-size: 18px;
+            color: #213885;
+        }
+
+        /* Block 2: Who Is This For */
+        .who-checklist {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+        }
+
+        .checklist-item {
+            display: flex;
+            align-items: flex-start;
+            gap: var(--space-12);
+            padding: 6px 10px;
+            background: #f5f5f7;
+            border-radius: var(--radius-md);
+        }
+
+        .checklist-icon {
+            font-size: 16px;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .checklist-text {
+            font-size: 14px;
+            color: var(--clay-black);
+            line-height: 1.5;
+        }
+
+        /* Block 3: Key Facts */
+        .key-facts {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: var(--space-20);
+        }
+
+        .fact-box {
+            background: #f5f5f7;
+            border: 1px solid var(--oat-border);
+            border-radius: var(--radius-md);
+            padding: var(--space-20);
+            text-align: center;
+        }
+
+        .fact-label {
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: var(--warm-charcoal);
+            letter-spacing: 0.05em;
+            margin-bottom: var(--space-8);
+        }
+
+        .fact-value {
+            font-size: 18px;
+            font-weight: 700;
+            color: #213885;
+            line-height: 1.4;
+        }
+
+        /* Block 4: How We Support */
+        .support-list {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .support-item {
+            display: flex;
+            align-items: center;
+            gap: var(--space-12);
+            padding: 7px 12px;
+            background: var(--pure-white);
+            border: 1px solid var(--oat-border);
+            border-left: 3px solid #8b5cf6;
+            border-radius: var(--radius-md);
+            transition: all 0.2s ease;
+        }
+
+        .support-item:hover {
+            border-color: #8b5cf6;
+            box-shadow: 0 2px 8px rgba(139, 92, 246, 0.07);
+        }
+
+        .support-icon {
+            font-size: 14px;
+            color: #8b5cf6;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        .support-text-wrap {
+            flex: 1;
+        }
+
+        .support-title {
+            display: none;
+        }
+
+        .support-desc {
+            font-size: 13px;
+            color: var(--warm-charcoal);
+            line-height: 1.35;
+        }
+
+        /* Eligibility Requirements Box */
+        .eligibility-requirements {
+            background: linear-gradient(135deg, rgba(139, 92, 246, 0.08), rgba(224, 109, 226, 0.12));
+            border: 1.5px solid rgba(139, 92, 246, 0.35);
+            border-left: 4px solid var(--ube-500);
+            border-radius: var(--radius-lg);
+            padding: var(--space-24);
+            margin-bottom: var(--space-32);
+        }
+
+        .eligibility-requirements h3 {
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: #6d28d9;
+            margin-bottom: var(--space-16);
+        }
+
+        .eligibility-requirements ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .eligibility-requirements ul li {
+            display: flex;
+            align-items: flex-start;
+            gap: var(--space-12);
+            padding: var(--space-8) 0;
+            border-bottom: 1px solid rgba(139, 92, 246, 0.2);
+            color: var(--warm-charcoal);
+            font-size: 15px;
+            line-height: 1.5;
+        }
+
+        .eligibility-requirements ul li:last-child {
+            border-bottom: none;
+        }
+
+        .elig-dot {
+            width: 8px;
+            height: 8px;
+            background: var(--ube-500);
+            border-radius: 50%;
+            flex-shrink: 0;
+            margin-top: 7px;
+        }
+
+        /* Block 5: Documents Needed */
+        .documents-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 8px;
+        }
+
+        .document-item {
+            background: #f5f5f7;
+            border-radius: var(--radius-md);
+            padding: 9px 12px;
+            font-size: 13px;
+            color: var(--clay-black);
+            line-height: 1.45;
+        }
+
+        /* Block 8: Pricing */
+        .pricing-block {
+            background: linear-gradient(135deg, rgba(139, 92, 246, 0.08), rgba(224, 109, 226, 0.12));
+            border: 1.5px solid rgba(139, 92, 246, 0.35);
+            border-left: 4px solid var(--ube-500);
+            border-radius: var(--radius-lg);
+            padding: var(--space-24);
+        }
+
+        .pricing-amount {
+            font-size: 32px;
+            font-weight: 700;
+            color: #6d28d9;
+            margin-bottom: var(--space-8);
+        }
+
+        .pricing-note {
+            font-size: 13px;
+            color: var(--warm-charcoal);
+            line-height: 1.6;
+        }
+
+        /* Block 7: CTA */
+        .detail-cta {
+            display: flex;
+            gap: var(--space-16);
+            margin-top: var(--space-40);
+            padding-top: var(--space-40);
+            border-top: 1px solid var(--oat-border);
+        }
+
+        .detail-cta .btn {
+            flex: 1;
+            justify-content: center;
+        }
+
+        /* CTA Banner */
+        .cta-banner {
+            background: transparent;
+            padding: 48px 24px 0;
+            position: relative;
+            z-index: 10;
+            margin-bottom: -24px;
+        }
+
+        .cta-banner-inner {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: linear-gradient(135deg, #213885 0%, #5F3475 100%);
+            border-radius: 20px;
+            padding: 28px 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 24px;
+            flex-wrap: wrap;
+            box-shadow: 0 8px 32px rgba(33,56,133,0.30);
+        }
+
+        .cta-text h2 {
+            font-size: clamp(17px, 2.2vw, 24px);
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            font-weight: 800;
+            margin-bottom: 4px;
+        }
+
+        .cta-text p {
+            font-size: 14px;
+            font-weight: 700;
+            color: rgba(255,255,255,0.75);
+            letter-spacing: -0.02em;
+        }
+
+        .cta-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 13px 26px;
+            background: #fff;
+            color: #213885;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: 700;
+            font-size: 14px;
+            letter-spacing: -0.01em;
+            white-space: nowrap;
+            transition: all 0.2s;
+        }
+
+        .cta-btn:hover {
+            background: #f0f4ff;
+            color: #152866;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--pure-white);
+            color: var(--warm-charcoal);
+            padding: var(--space-48) var(--space-24) var(--space-24);
+            border-top: 1px solid var(--oat-border);
+        }
+
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 1fr 1fr;
+            gap: var(--space-48);
+            margin-bottom: var(--space-32);
+        }
+
+        .footer-brand h3 {
+            color: var(--clay-black);
+            margin-bottom: var(--space-16);
+        }
+
+        .footer-brand p {
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: var(--space-24);
+        }
+
+        .footer-links h4 {
+            color: var(--clay-black);
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: var(--space-16);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .footer-links ul {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: var(--space-12);
+        }
+
+        .footer-links a {
+            color: var(--warm-charcoal);
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.2s ease;
+        }
+
+        .footer-links a:hover {
+            color: #213885;
+        }
+
+        .footer-bottom {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding-top: 14px;
+            padding-bottom: 4px;
+            border-top: 1px solid var(--oat-border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 13px;
+        }
+
+        .footer-bottom a {
+            color: #213885;
+            text-decoration: none;
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .services-container {
+                grid-template-columns: 1fr;
+                gap: var(--space-32);
+            }
+
+            .services-sidebar {
+                position: relative;
+                top: 0;
+            }
+
+            .key-facts {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .documents-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            header nav > ul { display: none !important; }
+            .phone-button .phone-number { display: none; }
+        }
+
+        @media (max-width: 768px) {
+            .services-container {
+                padding: 0 var(--space-16) var(--space-64);
+            }
+
+            .services-sidebar {
+                padding: var(--space-16);
+            }
+
+            .service-detail-panel {
+                padding: var(--space-24);
+            }
+
+            .key-facts {
+                grid-template-columns: 1fr;
+            }
+
+            .who-checklist {
+                grid-template-columns: 1fr;
+            }
+
+            .detail-cta {
+                flex-direction: column;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+            }
+
+            .header-contact-info { display: none; }
+            .nav-actions { gap: 12px; }
+        }
+    </style>
+
+    <!-- ===== SEO & AI Search Optimization ===== -->
+    <meta name="description" content="Canadian immigration services by RCIC Gurvinder Singh (#R710529): Express Entry, PNP, work permits, study permits, family sponsorship, Super Visa, PR card renewal, citizenship, LMIA, and more. Serving Surrey, Langley, and Greater Vancouver, BC.">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <link rel="canonical" href="https://www.5kimmigration.ca/services.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Canadian Immigration Services — Work Permits, Express Entry, PR | 5K Immigration">
+    <meta property="og:description" content="Full-service Canadian immigration consulting by RCIC Gurvinder Singh (#R710529). Express Entry, PNP, family sponsorship, work permits, study permits, Super Visa, citizenship, and specialized services.">
+    <meta property="og:url" content="https://www.5kimmigration.ca/services.html">
+    <meta property="og:image" content="https://www.5kimmigration.ca/Hero_canada.png">
+    <meta property="og:site_name" content="5K Immigration Services">
+    <meta property="og:locale" content="en_CA">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Canadian Immigration Services — 5K Immigration Services">
+    <meta name="twitter:description" content="Work permits, Express Entry, family sponsorship, Super Visa, PR, citizenship, LMIA, and more — handled by licensed RCIC Gurvinder Singh in Surrey, BC.">
+    <meta name="twitter:image" content="https://www.5kimmigration.ca/Hero_canada.png">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "ItemList",
+          "@id": "https://www.5kimmigration.ca/services.html#services",
+          "name": "Canadian Immigration Services by 5K Immigration Services",
+          "description": "Full list of Canadian immigration services offered by Regulated Canadian Immigration Consultant Gurvinder Singh (CICC #R710529).",
+          "url": "https://www.5kimmigration.ca/services.html",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "item": {
+                "@type": "Service",
+                "name": "Visitor Visa (Temporary Resident Visa)",
+                "description": "A Visitor Visa (TRV) is required by most non-visa-exempt travellers entering Canada. Single or multiple-entry visas valid up to 10 years, with each stay generally limited to 6 months.",
+                "provider": {"@id": "https://www.5kimmigration.ca/#organization"},
+                "areaServed": ["Surrey, BC", "Langley, BC", "Greater Vancouver, BC", "Canada"],
+                "url": "https://www.5kimmigration.ca/services.html#temp-resident"
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "item": {
+                "@type": "Service",
+                "name": "Super Visa for Parents and Grandparents",
+                "description": "A multi-entry visa specifically for parents and grandparents of Canadian citizens or PRs, allowing stays of up to 5 years per entry. Requires private health insurance for at least 1 year.",
+                "provider": {"@id": "https://www.5kimmigration.ca/#organization"},
+                "areaServed": ["Surrey, BC", "Langley, BC", "Greater Vancouver, BC", "Canada"],
+                "url": "https://www.5kimmigration.ca/services.html#temp-resident"
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "item": {
+                "@type": "Service",
+                "name": "Study Permit",
+                "description": "Required to study at most Canadian post-secondary institutions. Must demonstrate adequate funds for tuition, living costs, and return travel.",
+                "provider": {"@id": "https://www.5kimmigration.ca/#organization"},
+                "areaServed": ["Surrey, BC", "Langley, BC", "Greater Vancouver, BC", "Canada"],
+                "url": "https://www.5kimmigration.ca/services.html#temp-resident"
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "item": {
+                "@type": "Service",
+                "name": "Work Permit (Employer-Specific)",
+                "description": "Ties you to a specific employer, location, and duration. Employer must determine if an LMIA is required or if the position is LMIA-exempt.",
+                "provider": {"@id": "https://www.5kimmigration.ca/#organization"},
+                "areaServed": ["Surrey, BC", "Langley, BC", "Greater Vancouver, BC", "Canada"],
+                "url": "https://www.5kimmigration.ca/services.html#temp-resident"
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "item": {
+                "@type": "Service",
+                "name": "Post-Graduation Work Permit (PGWP)",
+                "description": "Available to international students who graduated from a PGWP-eligible Canadian institution. Duration tied to the length of the program, up to 3 years.",
+                "provider": {"@id": "https://www.5kimmigration.ca/#organization"},
+                "areaServed": ["Surrey, BC", "Langley, BC", "Greater Vancouver, BC", "Canada"],
+                "url": "https://www.5kimmigration.ca/services.html#temp-resident"
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 6,
+              "item": {
+                "@type": "Service",
+                "name": "Express Entry — Federal Skilled Worker & Canadian Experience Class",
+                "description": "Canada's points-based system (CRS) for skilled worker permanent residence. IRCC holds regular draw rounds; top-ranking candidates receive Invitations to Apply (ITA).",
+                "provider": {"@id": "https://www.5kimmigration.ca/#organization"},
+                "areaServed": ["Surrey, BC", "Langley, BC", "Greater Vancouver, BC", "Canada"],
+                "url": "https://www.5kimmigration.ca/services.html#permanent-resident"
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 7,
+              "item": {
+                "@type": "Service",
+                "name": "Provincial Nominee Program (PNP)",
+                "description": "Through Express Entry stream (600 bonus CRS points) or paper-based application directly to IRCC. Each province has its own programs based on labour market needs.",
+                "provider": {"@id": "https://www.5kimmigration.ca/#organization"},
+                "areaServed": ["Surrey, BC", "Langley, BC", "Greater Vancouver, BC", "Canada"],
+                "url": "https://www.5kimmigration.ca/services.html#permanent-resident"
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 8,
+              "item": {
+                "@type": "Service",
+                "name": "Spousal & Common-Law Partner Sponsorship",
+                "description": "Canadian citizens or PRs can sponsor their spouse or common-law partner for permanent residence. Applications submitted together via IRCC PR Portal with a 3-year undertaking.",
+                "provider": {"@id": "https://www.5kimmigration.ca/#organization"},
+                "areaServed": ["Surrey, BC", "Langley, BC", "Greater Vancouver, BC", "Canada"],
+                "url": "https://www.5kimmigration.ca/services.html#permanent-resident"
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 9,
+              "item": {
+                "@type": "Service",
+                "name": "Canadian Citizenship Application",
+                "description": "Requires physical presence in Canada for at least 1,095 days (3 years) within the 5-year period before applying, language requirements (CLB 4+), and tax filing compliance.",
+                "provider": {"@id": "https://www.5kimmigration.ca/#organization"},
+                "areaServed": ["Surrey, BC", "Langley, BC", "Greater Vancouver, BC", "Canada"],
+                "url": "https://www.5kimmigration.ca/services.html#citizenship"
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 10,
+              "item": {
+                "@type": "Service",
+                "name": "Labour Market Impact Assessment (LMIA)",
+                "description": "A positive LMIA confirms no available Canadian worker can fill the position. Assists employers through the entire ESDC process, from job advertisement through to LMIA approval.",
+                "provider": {"@id": "https://www.5kimmigration.ca/#organization"},
+                "areaServed": ["Surrey, BC", "Langley, BC", "Greater Vancouver, BC", "Canada"],
+                "url": "https://www.5kimmigration.ca/services.html#specialized"
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 11,
+              "item": {
+                "@type": "Service",
+                "name": "PR Card Renewal",
+                "description": "PR cards are typically valid 5 years. To renew, must meet residency obligation: 730 days of physical presence in Canada within every 5-year period.",
+                "provider": {"@id": "https://www.5kimmigration.ca/#organization"},
+                "areaServed": ["Surrey, BC", "Langley, BC", "Greater Vancouver, BC", "Canada"],
+                "url": "https://www.5kimmigration.ca/services.html#specialized"
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 12,
+              "item": {
+                "@type": "Service",
+                "name": "Temporary Resident Permit (TRP)",
+                "description": "Issued at an officer's discretion to inadmissible individuals with a compelling reason to enter Canada (family emergency, business travel, employment). Valid up to 3 years.",
+                "provider": {"@id": "https://www.5kimmigration.ca/#organization"},
+                "areaServed": ["Surrey, BC", "Langley, BC", "Greater Vancouver, BC", "Canada"],
+                "url": "https://www.5kimmigration.ca/services.html#specialized"
+              }
+            }
+          ]
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.5kimmigration.ca/services.html#webpage",
+          "url": "https://www.5kimmigration.ca/services.html",
+          "name": "Our Services — 5K Immigration Services",
+          "description": "Canadian immigration services by RCIC Gurvinder Singh (#R710529): Express Entry, PNP, work permits, study permits, family sponsorship, Super Visa, PR card renewal, and citizenship.",
+          "isPartOf": {"@id": "https://www.5kimmigration.ca/#website"},
+          "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.5kimmigration.ca/"},
+              {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.5kimmigration.ca/services.html"}
+            ]
+          }
+        }
+      ]
+    }
+    </script>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BDCHQ7MG41"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-BDCHQ7MG41');
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="index.html" class="logo">
+                <div class="logo-icon">
+                    <img src="5K_Immigration_Logo_Transparent.png" alt="5K Immigration Services" style="width:52px;height:52px;object-fit:contain;">
+                </div>
+                <span class="logo-text">5K Immigration Services</span>
+            </a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li class="active-li"><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="book.html" style="position:relative;display:inline-flex;align-items:center;padding:6px 16px 6px 26px;background:linear-gradient(90deg,#213885,#5F3475);border-radius:50px;text-decoration:none;border:1px solid rgba(255,255,255,0.15);box-shadow:0 1px 4px rgba(33,56,133,0.18);transition:all 0.25s cubic-bezier(0.34,1.56,0.64,1);margin-left:14px;" onmouseover="this.style.boxShadow='0 3px 12px rgba(33,56,133,0.32)';this.style.transform='translateY(-1px)'" onmouseout="this.style.boxShadow='0 1px 4px rgba(33,56,133,0.18)';this.style.transform='none'"><img src="gurvinder-singh.jpg" style="position:absolute;left:-14px;top:50%;transform:translateY(-50%);z-index:2;width:34px;height:34px;border-radius:50%;object-fit:cover;object-position:center top;border:2px solid white;background:#c8dcff;filter:brightness(1.12);flex-shrink:0;"><span style="color:white;font-weight:700;font-size:15px;letter-spacing:0.2px;white-space:nowrap;">Talk to Gurvinder</span></a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Hero -->
+    <div class="page-hero">
+        <h1>Our Immigration Services</h1>
+        <p>Work permits, PR pathways, family sponsorship, citizenship — all handled by one licensed consultant.</p>
+    </div>
+
+    <!-- Disclaimer Banner -->
+    <div style="background: #f5f0e8; border-bottom: 1px solid #e0d8cc; padding: 10px 24px;">
+        <p style="max-width: 1200px; margin: 0 auto; font-size: 12px; color: #6b6560; line-height: 1.5; text-align: center;">
+            The information on this page is a general summary only and may not reflect the most current IRCC requirements, fees, or processing times. Always refer to the official <a href="https://www.canada.ca/en/immigration-refugees-citizenship.html" target="_blank" rel="noopener" style="color: #213885; text-decoration: underline;">IRCC website</a> for up-to-date information. This content does not constitute legal advice and 5K Immigration Services assumes no responsibility for decisions made based on this summary.
+        </p>
+    </div>
+
+    <!-- Services Container -->
+    <div class="services-container">
+        <!-- Sidebar Navigation -->
+        <aside class="services-sidebar">
+            <!-- Temporary Resident -->
+            <div class="sidebar-category">
+                <button class="sidebar-main-tab active" onclick="toggleSubmenu(this)" data-category="temp-resident">
+                    <span>Temporary Resident</span>
+                    <span class="sidebar-toggle-arrow">▼</span>
+                </button>
+                <div class="sidebar-submenu active" id="temp-resident-menu">
+                    <a onclick="loadService(this, 'study-permit', 'Temporary Resident')" data-service="study-permit">Study Permit</a>
+                    <a onclick="loadService(this, 'visitor-visa', 'Temporary Resident')" data-service="visitor-visa">Visitor Visa &amp; Visitor Record</a>
+                    <a onclick="loadService(this, 'super-visa', 'Temporary Resident')" data-service="super-visa">Super Visa</a>
+                    <a onclick="loadService(this, 'spousal-open-work', 'Temporary Resident')" data-service="spousal-open-work">Spousal Open Work Permit</a>
+                    <a onclick="loadService(this, 'post-graduate-work', 'Temporary Resident')" data-service="post-graduate-work">Post-Graduate Work Permit</a>
+                    <a onclick="loadService(this, 'closed-work-permit', 'Temporary Resident')" data-service="closed-work-permit">Employer-Specific Work Permit</a>
+                    <a onclick="loadService(this, 'bridging-work-permit', 'Temporary Resident')" data-service="bridging-work-permit">Bridging Open Work Permit</a>
+                    <a onclick="loadService(this, 'vulnerable-work-permit', 'Temporary Resident')" data-service="vulnerable-work-permit">Vulnerable Open Work Permit</a>
+                </div>
+            </div>
+
+            <!-- Permanent Resident -->
+            <div class="sidebar-category">
+                <button class="sidebar-main-tab" onclick="toggleSubmenu(this)" data-category="permanent-resident">
+                    <span>Permanent Resident</span>
+                    <span class="sidebar-toggle-arrow">▼</span>
+                </button>
+                <div class="sidebar-submenu" id="permanent-resident-menu">
+                    <a onclick="loadService(this, 'express-entry', 'Permanent Resident')" data-service="express-entry">Express Entry</a>
+                    <a onclick="loadService(this, 'pnp', 'Permanent Resident')" data-service="pnp">Provincial Nominee Program</a>
+                    <a onclick="loadService(this, 'spousal-sponsorship', 'Permanent Resident')" data-service="spousal-sponsorship">Spousal Sponsorship</a>
+                    <a onclick="loadService(this, 'dependent-child-sponsorship', 'Permanent Resident')" data-service="dependent-child-sponsorship">Dependent Child Sponsorship</a>
+                    <a onclick="loadService(this, 'parent-grandparent', 'Permanent Resident')" data-service="parent-grandparent">Parent and Grandparent</a>
+                    <a onclick="loadService(this, 'ee-application-review', 'Permanent Resident')" data-service="ee-application-review">EE Application Review Services</a>
+                </div>
+            </div>
+
+            <!-- Citizenship -->
+            <div class="sidebar-category">
+                <button class="sidebar-main-tab" onclick="toggleSubmenu(this)" data-category="citizenship">
+                    <span>Citizenship</span>
+                    <span class="sidebar-toggle-arrow">▼</span>
+                </button>
+                <div class="sidebar-submenu" id="citizenship-menu">
+                    <a onclick="loadService(this, 'citizenship-application', 'Citizenship')" data-service="citizenship-application">Citizenship Application</a>
+                </div>
+            </div>
+
+            <!-- Specialized Services -->
+            <div class="sidebar-category">
+                <button class="sidebar-main-tab" onclick="toggleSubmenu(this)" data-category="specialized">
+                    <span>Specialized Services</span>
+                    <span class="sidebar-toggle-arrow">▼</span>
+                </button>
+                <div class="sidebar-submenu" id="specialized-menu">
+                    <a onclick="loadService(this, 'lmia-application', 'Specialized Services')" data-service="lmia-application">LMIA Application</a>
+                    <a onclick="loadService(this, 'noc-code', 'Specialized Services')" data-service="noc-code">NOC Code Service</a>
+                    <a onclick="loadService(this, 'pr-card-renewal', 'Specialized Services')" data-service="pr-card-renewal">PR Card Renewal</a>
+                    <a onclick="loadService(this, 'prtd-application', 'Specialized Services')" data-service="prtd-application">PRTD Application</a>
+                    <a onclick="loadService(this, 'temporary-resident-permit', 'Specialized Services')" data-service="temporary-resident-permit">Temporary Resident Permit</a>
+                    <a onclick="loadService(this, 'gcms-notes-review', 'Specialized Services')" data-service="gcms-notes-review">GCMS Notes Review</a>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content Panel -->
+        <main class="services-main" id="servicesMain">
+            <!-- Dynamic content will be inserted here -->
+        </main>
+    </div>
+
+    <!-- CTA Banner — overlaps footer -->
+    <div style="background: transparent; padding: 48px 24px 0; position: relative; z-index: 10; margin-bottom: -24px;">
+        <div style="max-width: 900px; margin: 0 auto; background: linear-gradient(135deg, #213885 0%, #5F3475 100%); border-radius: 20px; padding: 28px 40px; display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap; box-shadow: 0 8px 32px rgba(33,56,133,0.30);">
+            <div>
+                <p style="font-size: clamp(13px, 1.4vw, 17px); color: #fff; text-transform: uppercase; letter-spacing: 0.08em; font-weight: 800; margin-bottom: 4px;">Unsure Which Program Fits Your Profile?</p>
+                <h2 style="font-size: 14px; font-weight: 700; color: rgba(255,255,255,0.75); letter-spacing: -0.02em; line-height: 1.2;">Book an Immigration Strategy Session</h2>
+            </div>
+            <a href="book.html" style="display: inline-flex; align-items: center; gap: 8px; padding: 13px 26px; background: #fff; color: #213885; text-decoration: none; border-radius: 10px; font-weight: 700; font-size: 14px; letter-spacing: -0.01em; white-space: nowrap; transition: all 0.2s;" onmouseover="this.style.background='#f0f4ff';this.style.color='#152866'" onmouseout="this.style.background='#fff';this.style.color='#213885'">Book a Consultation <span style="font-size:16px;">→</span></a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+    <div class="footer-content">
+        <div class="footer-brand">
+            <a href="index.html" style="display:flex;align-items:center;justify-content:flex-start;gap:12px;text-decoration:none;margin-bottom:20px;">
+                <img src="5K_Immigration_Logo_Transparent.png" alt="5K Immigration" style="width:44px;height:44px;object-fit:contain;">
+                <span style="font-weight:700;font-size:17px;color:#000;letter-spacing:-0.02em;">5K Immigration Services</span>
+            </a>
+            <p>A regulated immigration practice — handling work permits, Express Entry, family sponsorship, and PR applications with precision.</p>
+            <div style="margin-top:20px;display:flex;flex-direction:row;align-items:flex-start;gap:20px;">
+                <div style="display:flex;flex-direction:column;gap:10px;">
+                    <span style="font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:0.07em;color:#9f9b93;">Follow Us</span>
+                    <div style="display:flex;align-items:center;gap:10px;">
+                    <a href="https://www.linkedin.com/in/gurvindersingh-rcic/" target="_blank" aria-label="LinkedIn" style="background:#0A66C2;border-radius:6px;width:30px;height:30px;display:flex;align-items:center;justify-content:center;flex-shrink:0;text-decoration:none;transition:opacity 0.2s;" onmouseover="this.style.opacity='0.85'" onmouseout="this.style.opacity='1'">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="#fff"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+                    </a>
+                    <a href="https://www.instagram.com/5kimmigration" target="_blank" aria-label="Instagram" style="background:linear-gradient(45deg,#f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);border-radius:6px;width:30px;height:30px;display:flex;align-items:center;justify-content:center;flex-shrink:0;text-decoration:none;transition:opacity 0.2s;" onmouseover="this.style.opacity='0.85'" onmouseout="this.style.opacity='1'">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                    </a>
+                    <a href="https://tiktok.com/@5kimmigration" target="_blank" aria-label="TikTok" style="background:#010101;border-radius:6px;width:30px;height:30px;display:flex;align-items:center;justify-content:center;flex-shrink:0;text-decoration:none;transition:opacity 0.2s;" onmouseover="this.style.opacity='0.75'" onmouseout="this.style.opacity='1'">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="#fff"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.79 1.53V6.77a4.85 4.85 0 01-1.02-.08z"/></svg>
+                    </a>
+                    </div>
+                </div>
+                <img src="RCIC_CRIC_Logo.png" alt="Regulated Canadian Immigration Consultant" style="height:70px;width:auto;object-fit:contain;">
+            </div>
+        </div>
+        <div class="footer-links">
+            <h4>Services</h4>
+            <ul>
+                <li><a href="services.html#temp-resident">Temporary Resident</a></li>
+                <li><a href="services.html#permanent-resident">Permanent Resident</a></li>
+                <li><a href="services.html#citizenship">Citizenship</a></li>
+                <li><a href="services.html#specialized">Specialized Services</a></li>
+            </ul>
+        </div>
+        <div class="footer-links">
+            <h4>Company</h4>
+            <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="book.html">Book Consultation</a></li>
+            </ul>
+        </div>
+        <div class="footer-links">
+            <h4>Contact</h4>
+            <ul>
+                <li><a href="tel:+17789863366">+1-778-986-3366</a></li>
+                <li><a href="mailto:info@5kimmigration.ca">info@5kimmigration.ca</a></li>
+                <li><a href="https://maps.google.com/?q=300-9850+King+George+Blvd+Surrey+BC" target="_blank">300-9850 King George Blvd, Surrey, BC V3T 0P9</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom" style="justify-content: center;">
+        <div>&copy; 2026 5K Immigration Services. All rights reserved. &nbsp;|&nbsp; <a href="privacy.html">Privacy Policy</a></div>
+    </div>
+</footer>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js" defer></script><script>
+        // Service Data
+        const serviceData = {
+            'visitor-visa': {
+                title: 'Visitor Visa &amp; Visitor Record',
+                tagline: 'Whether you\'re entering Canada for the first time or extending your stay while already here, we handle both the Temporary Resident Visa (TRV) and the Visitor Record , building a complete application at every stage.',
+                icon: '✈️',
+                iconBg: 'linear-gradient(135deg, rgba(74, 144, 255, 0.15), rgba(74, 144, 255, 0.25))',
+                description: 'A Visitor Visa (TRV) is the official entry document required by most non-visa-exempt travellers entering Canada. A visa officer may issue a single or multiple-entry visa valid up to 10 years, though each stay is generally limited to 6 months. If you are already in Canada and your visitor status is expiring, a Visitor Record allows you to legally remain while you prepare to depart or transition to another immigration status.',
+                whoFor: [
+                    'Visiting family or friends in Canada',
+                    'Tourism, sightseeing, or personal travel',
+                    'Short-term business visits (meetings, conferences, site visits)',
+                    'Transit through a Canadian airport',
+                    'Visitors already in Canada who need to extend their stay',
+                    'Previously refused applicants seeking a new strategy'
+                ],
+                facts: [
+                    { label: 'TRV Processing', value: '2–8 weeks' },
+                    { label: 'Visitor Record Processing', value: '4–8 weeks' },
+                    { label: 'Stay Allowed', value: 'Up to 6 months per entry' }
+                ],
+                included: [
+                    'First-time visitor visa (TRV) applications',
+                    'Visitor Record applications for status extensions inside Canada',
+                    'Overcoming previous refusals',
+                    'Strong documentation packages (ties to home country, finances, purpose)',
+                    'Business visitor application support'
+                ],
+                documents: [
+                    'Valid passport (6+ months validity)',
+                    'Bank statements (last 3–6 months)',
+                    'Proof of ties to home country',
+                    'Travel itinerary or invitation letter',
+                    'Employment or enrollment letter',
+                    'Reason for extension letter (Visitor Record only)',
+                    'Medical exam results (if required)'
+                ],
+                pricing: {
+                    amount: 'From USD $900',
+                    note: 'TRV from USD $1,200 per applicant. Visitor Record from USD $900. Previous refusal add-on quoted separately.'
+                }
+            },
+            'super-visa': {
+                title: 'Super Visa',
+                tagline: 'The Super Visa allows parents and grandparents of Canadian citizens or permanent residents to visit Canada for up to 5 years at a time , without the hassle of renewing a regular visitor visa.',
+                icon: '👪',
+                iconBg: 'linear-gradient(135deg, rgba(139, 92, 246, 0.15), rgba(139, 92, 246, 0.25))',
+                description: 'A Super Visa is a multi-entry visa specifically for parents and grandparents of Canadians or PRs. The host (your child or grandchild) must meet a minimum income threshold and provide a signed invitation letter. Applicants must be outside Canada at the time of application and carry valid private health insurance for at least 1 year from the date of entry.',
+                whoFor: [
+                    'Parents or grandparents of Canadian citizens or PRs',
+                    'Host child/grandchild meets minimum necessary income',
+                    'Applicant is outside Canada when applying',
+                    'Willing to obtain approved private health insurance',
+                    'Visa-exempt nationals who want extended stays (5 years)'
+                ],
+                facts: [
+                    { label: 'Processing Time', value: '4–12 weeks' },
+                    { label: 'Stay Per Entry', value: 'Up to 5 years' },
+                    { label: 'Entry Type', value: 'Multiple entry' }
+                ],
+                included: [
+                    'Host eligibility & income assessment',
+                    'Invitation letter preparation',
+                    'Health insurance requirement guidance',
+                    'Relationship documentation review',
+                    'Full application package preparation and submission'
+                ],
+                documents: [
+                    'Letter of invitation from child or grandchild',
+                    'Proof of host\'s Canadian citizenship or PR status',
+                    'Proof of relationship to host',
+                    'Private health insurance (min. 1 year, Canadian or approved)',
+                    'Immigration medical exam results',
+                    'Host\'s proof of income (meeting minimum threshold)',
+                    'Applicant\'s valid passport'
+                ],
+                pricing: {
+                    amount: 'USD $1,500',
+                    note: 'Single applicant (includes sponsor assessment). Add $800 for each additional applicant.'
+                }
+            },
+            'study-permit': {
+                title: 'Study Permit',
+                tagline: 'A Study Permit lets you pursue your education at a Designated Learning Institution (DLI) in Canada. Whether you\'re applying for the first time or extending your status, we guide you through every step.',
+                icon: '🎓',
+                iconBg: 'linear-gradient(135deg, rgba(59, 211, 253, 0.15), rgba(59, 211, 253, 0.25))',
+                description: 'A Study Permit is required to study at most Canadian post-secondary institutions. Beyond your acceptance letter, you must demonstrate adequate funds for tuition, living costs, and return travel, and convince an officer of your intent to leave Canada when your permit expires.',
+                whoFor: [
+                    'Enrolled or admitted to a DLI (college or university)',
+                    'Able to prove sufficient funds for tuition and living expenses',
+                    'No criminal record (police certificate may be required)',
+                    'Medically admissible (medical exam may be required)',
+                    'Intending to leave Canada when studies are complete'
+                ],
+                facts: [
+                    { label: 'Processing Time', value: '4–12 weeks' },
+                    { label: 'Stay Allowed', value: 'Duration of program + 90 days' },
+                    { label: 'Work Rights', value: '24 hrs/week off-campus' }
+                ],
+                included: [
+                    'First-time study permits (college & university)',
+                    'Study permit extensions',
+                    'Program changes, conditions & compliance',
+                    'Applications from inside or outside Canada',
+                    'Refusals, reconsiderations & restoration of status'
+                ],
+                documents: [
+                    'Letter of Acceptance from DLI',
+                    'Provincial Attestation Letter',
+                    'Valid Passport',
+                    'English/French Language Test Results',
+                    'Proof of Funds',
+                    'Letter of Explanation',
+                    'Medical Exam (if required)',
+                    'Police Certificate (if required)'
+                ],
+                pricing: {
+                    amount: 'USD $1,100',
+                    note: 'Includes school acceptance verification. Pricing may vary if additional documentation needed.'
+                }
+            },
+            'spousal-open-work': {
+                title: 'Spousal Open Work Permit',
+                tagline: 'Spouses and common-law partners of eligible foreign workers or certain international students may qualify for an open work permit , letting them work for any employer in Canada.',
+                icon: '💍',
+                iconBg: 'linear-gradient(135deg, rgba(252, 121, 129, 0.15), rgba(252, 121, 129, 0.25))',
+                description: 'Eligibility depends on the principal applicant\'s situation. Spouses of workers in TEER 0, 1, or select TEER 2/3 occupations qualify, as do spouses of international students in master\'s or doctoral programs (16+ months), or participants in eligible study programs. The permit must meet general work permit requirements and remaining work authorization of at least 16 months.',
+                whoFor: [
+                    'Spouse/partner of a worker in TEER 0, 1 or eligible TEER 2/3 occupations',
+                    'Spouse/partner of a master\'s or doctoral student (16+ month program)',
+                    'Applicants in a genuine relationship with the principal applicant',
+                    'Those meeting general work permit eligibility requirements'
+                ],
+                facts: [
+                    { label: 'Processing Time', value: '2–4 weeks' },
+                    { label: 'Validity', value: 'Tied to principal applicant\'s permit' },
+                    { label: 'Work Rights', value: 'Open, any employer, any role' }
+                ],
+                included: [
+                    'Relationship verification and documentation review',
+                    'Principal applicant\'s work/study status confirmation',
+                    'TEER category and eligibility assessment',
+                    'Application preparation for inside or outside Canada',
+                    'Concurrent filing support (PGWP + SOWP)',
+                    'Status updates through to permit issuance'
+                ],
+                documents: [
+                    'Principal applicant\'s work or study permit copy',
+                    'Proof of principal applicant\'s TEER 0/1/2/3 occupation (if worker)',
+                    'Proof of enrollment in eligible study program (if student)',
+                    'Proof of 16+ months remaining authorized work/study',
+                    'Valid passport'
+                ],
+                pricing: {
+                    amount: 'USD $850',
+                    note: 'Single applicant. Add $400 for each additional applicant.'
+                }
+            },
+            'closed-work-permit': {
+                title: 'Employer-Specific Work Permit',
+                tagline: 'An Employer-Specific Work Permit authorizes you to work in Canada for a named employer under set conditions, until the permit expires.',
+                icon: '🏭',
+                iconBg: 'linear-gradient(135deg, rgba(74, 144, 255, 0.15), rgba(74, 144, 255, 0.25))',
+                description: 'This permit ties you to a specific employer, location, and duration as listed on the document. Before applying, your employer must determine whether a Labour Market Impact Assessment (LMIA) is required or if the position is LMIA-exempt, and provide the relevant documentation.',
+                whoFor: [
+                    'Foreign nationals with a valid job offer from a Canadian employer',
+                    'Workers whose employer is not on the non-compliant employers list',
+                    'Employer has obtained a positive LMIA (if required)',
+                    'LMIA-exempt workers under an international agreement or provision',
+                    'Those meeting general work permit eligibility criteria'
+                ],
+                facts: [
+                    { label: 'Processing Time', value: '4–8 weeks' },
+                    { label: 'Work Rights', value: 'Employer-specific only' },
+                    { label: 'LMIA Needed', value: 'Depends on the position' }
+                ],
+                included: [
+                    'Job offer and LMIA documentation review',
+                    'LMIA vs. LMIA-exempt pathway assessment',
+                    'Application preparation and submission',
+                    'Conditions and compliance guidance',
+                    'Status tracking through to permit issuance'
+                ],
+                documents: [
+                    'Valid job offer letter from employer',
+                    'LMIA approval letter and Annex A (if LMIA-based)',
+                    'Proof of LMIA-exempt basis (if applicable)',
+                    'Educational credentials and qualifications',
+                    'Valid passport'
+                ],
+                pricing: {
+                    amount: 'Contact us',
+                    note: 'Fees vary based on LMIA requirement and application complexity.'
+                }
+            },
+            'bridging-work-permit': {
+                title: 'Bridging Open Work Permit',
+                tagline: 'Already applied for permanent residence? A Bridging Open Work Permit (BOWP) lets you keep working in Canada while your PR application is being processed.',
+                icon: '🌉',
+                iconBg: 'linear-gradient(135deg, rgba(59, 211, 253, 0.15), rgba(59, 211, 253, 0.25))',
+                description: 'A BOWP is designed for principal applicants who have submitted a complete PR application and are waiting for a decision. You must reside in Canada (outside Quebec), hold valid status as a worker, and possess the Acknowledgement of Receipt (AOR) letter confirming your PR application passed the completeness check.',
+                whoFor: [
+                    'Living in Canada (outside Quebec) with valid temporary status',
+                    'Named principal applicant on a PR application',
+                    'Submitted a complete PR application that passed the completeness check',
+                    'Hold an AOR letter from IRCC',
+                    'Current work permit is about to expire or has recently expired'
+                ],
+                facts: [
+                    { label: 'Processing Time', value: '2–4 weeks' },
+                    { label: 'Work Rights', value: 'Open, any employer' },
+                    { label: 'Tied To', value: 'Active PR application' }
+                ],
+                included: [
+                    'PR application status and AOR verification',
+                    'Existing work permit expiry review',
+                    'BOWP application preparation and submission',
+                    'Guidance on maintaining status during processing',
+                    'Status tracking and follow-up'
+                ],
+                documents: [
+                    'Acknowledgement of Receipt (AOR) letter',
+                    'Current or most recent work permit',
+                    'PR application reference number',
+                    'Proof of residency in Canada',
+                    'Valid passport'
+                ],
+                pricing: {
+                    amount: 'Contact us',
+                    note: 'Pricing depends on overall PR application complexity and current status.'
+                }
+            },
+            'vulnerable-work-permit': {
+                title: 'Vulnerable Worker Open Work Permit',
+                tagline: 'If you\'re experiencing abuse or are at risk of abuse from your employer, you may be eligible for an Open Work Permit as a vulnerable worker, so you can leave your situation and find safer employment.',
+                icon: '🛡️',
+                iconBg: 'linear-gradient(135deg, rgba(252, 121, 129, 0.15), rgba(252, 121, 129, 0.25))',
+                description: 'This open work permit is available to foreign nationals in Canada who are being subjected to, or at risk of, abuse connected to their employment. Abuse can be physical, sexual, financial, psychological, or retaliatory in nature. You must currently hold a valid employer-specific work permit (or be awaiting a decision on an extension) and cannot apply at a port of entry.',
+                whoFor: [
+                    'In Canada with a valid employer-specific work permit',
+                    'Awaiting a decision on a work permit extension',
+                    'Experiencing or at risk of abuse related to your job',
+                    'Cannot apply at a port of entry (must apply from within Canada)',
+                    'Seeking to safely leave a harmful work environment'
+                ],
+                facts: [
+                    { label: 'Application Type', value: 'In-Canada only' },
+                    { label: 'Work Rights', value: 'Open, any employer' },
+                    { label: 'Basis', value: 'Abuse or risk of abuse' }
+                ],
+                included: [
+                    'Confidential eligibility and situation assessment',
+                    'Guidance on documenting abuse for the application',
+                    'Application preparation and submission',
+                    'Safety planning and next-steps support',
+                    'Status tracking and follow-up'
+                ],
+                documents: [
+                    'Current employer-specific work permit',
+                    'Evidence or description of abuse / risk of abuse',
+                    'Proof of current Canadian address',
+                    'Valid passport',
+                    'Any supporting documentation (records, communications)'
+                ],
+                pricing: {
+                    amount: 'Contact us',
+                    note: 'We handle these cases with urgency and care. Please reach out directly.'
+                }
+            },
+            'post-graduate-work': {
+                title: 'Post-Graduate Work Permit',
+                tagline: 'Graduated from a DLI? A Post-Graduate Work Permit (PGWP) lets you gain valuable Canadian work experience. It is an open work permit with no employer restrictions.',
+                icon: '📜',
+                iconBg: 'linear-gradient(135deg, rgba(251, 189, 65, 0.15), rgba(251, 189, 65, 0.25))',
+                description: 'The PGWP duration is tied to the length of your program. Master\'s graduates can receive up to 3 years even for programs under 2 years (minimum 8 months). For all other programs under 2 years, the PGWP matches the program length; programs of 2+ years receive a 3-year permit. Multiple completed programs may be combined if each is PGWP-eligible and at least 8 months long.',
+                whoFor: [
+                    'Graduates of eligible programs at Canadian DLIs',
+                    'Students whose program was at least 8 months long',
+                    'Those who have not previously held a PGWP',
+                    'International students transitioning to the workforce',
+                    'Future PR applicants building Canadian work experience'
+                ],
+                facts: [
+                    { label: 'Processing Time', value: '2–6 weeks' },
+                    { label: 'Validity', value: 'Up to 3 years' },
+                    { label: 'Work Type', value: 'Open permit, any employer' }
+                ],
+                included: [
+                    'Program and DLI eligibility verification',
+                    'PGWP length assessment based on your program(s)',
+                    'Combined program duration calculations (if applicable)',
+                    'Application preparation and filing',
+                    'Status tracking through to permit issuance'
+                ],
+                documents: [
+                    'Official graduation confirmation / diploma',
+                    'Valid study permit or previous stamps',
+                    'Academic transcripts',
+                    'Proof of program completion',
+                    'Valid passport'
+                ],
+                pricing: {
+                    amount: 'USD $950',
+                    note: 'Includes school verification. Additional applicants $450 each.'
+                }
+            },
+
+            /* ===== PERMANENT RESIDENT ===== */
+
+            'express-entry': {
+                title: 'Express Entry',
+                tagline: 'Canada\'s flagship online system for skilled worker permanent residence. It manages the Federal Skilled Worker Program, Federal Skilled Trades Program, and Canadian Experience Class.',
+                icon: '⭐',
+                iconBg: 'linear-gradient(135deg, rgba(33, 56, 133, 0.15), rgba(33, 56, 133, 0.25))',
+                description: 'Express Entry uses a points-based Comprehensive Ranking System (CRS) to rank candidates in a pool. IRCC holds regular draw rounds (general, program-specific, or category-based) and invites top-ranking candidates to apply for permanent residence. Candidates with a provincial nomination receive 600 bonus CRS points. As of March 2025, job offer points have been removed from CRS scoring.',
+                whoFor: [
+                    'Federal Skilled Workers (TEER 0–3, 1 year experience, score 67+)',
+                    'Federal Skilled Trades workers (TEER 2–3, trade certification)',
+                    'Canadian Experience Class (1 year skilled Canadian work experience)',
+                    'French-language proficient candidates (NCLC 7+ in all abilities)',
+                    'Occupation-based category candidates (healthcare, trades, STEM, education)'
+                ],
+                facts: [
+                    { label: 'Processing Time', value: '6 months (after ITA)' },
+                    { label: 'Application Fee', value: 'CAD $1,525/applicant' },
+                    { label: 'ITA Valid For', value: '60 days to apply' }
+                ],
+                included: [
+                    'CRS score calculation and profile optimization',
+                    'FSW, FST, and CEC eligibility assessment',
+                    'Express Entry profile creation and pool management',
+                    'Document preparation and review (ECA, language tests, NOC)',
+                    'Complete PR application after ITA received',
+                    'Category-based draw eligibility analysis'
+                ],
+                documents: [
+                    'Language test results (IELTS/CELPIP for English; TEF/TCF for French)',
+                    'Educational Credential Assessment (ECA) for foreign education',
+                    'Employment records / reference letters',
+                    'Valid passport',
+                    'Police certificates',
+                    'Medical exam results',
+                    'Provincial nomination certificate (if applicable)'
+                ],
+                pricing: {
+                    amount: 'Contact us',
+                    note: 'Fee depends on program and family size. IRCC application fee CAD $1,525/adult + $260/dependent child.'
+                }
+            },
+
+            'pnp': {
+                title: 'Provincial Nominee Program',
+                tagline: 'Each Canadian province and territory runs its own programs to nominate skilled workers, graduates, and entrepreneurs who fit their local job market.',
+                icon: '🍁',
+                iconBg: 'linear-gradient(135deg, rgba(59, 211, 253, 0.15), rgba(59, 211, 253, 0.25))',
+                description: 'There are two ways to apply. Through Express Entry: a provincial nomination gives you 600 extra CRS points, which almost guarantees an invitation to apply, and processing takes about 8 months. Through a paper-based application sent directly to IRCC: this takes about 19 months. Each province has its own programs and requirements based on what workers they need most.',
+                whoFor: [
+                    'Skilled workers with a job offer from a provincial employer',
+                    'International graduates from a Canadian institution in that province',
+                    'Entrepreneurs or investors targeting a specific province',
+                    'Workers in high-demand occupations within a province',
+                    'Candidates already living or working in a province'
+                ],
+                facts: [
+                    { label: 'EE-Linked Processing', value: '~8 months' },
+                    { label: 'Non-EE Processing', value: '~19 months' },
+                    { label: 'CRS Bonus (EE)', value: '+600 points' }
+                ],
+                included: [
+                    'Province and stream selection strategy',
+                    'Eligibility assessment for BC PNP, AB, SK, MB, ON, and Atlantic streams',
+                    'Expression of Interest (EOI) and profile preparation',
+                    'Full PR application package preparation (EE or paper-based)',
+                    'IRCC submission and status tracking'
+                ],
+                documents: [
+                    'Provincial nomination certificate',
+                    'Language test results',
+                    'Educational credentials (ECA if foreign)',
+                    'Employment records and job offer letter (if applicable)',
+                    'Valid passport',
+                    'Police certificates',
+                    'Medical exam results'
+                ],
+                pricing: {
+                    amount: 'Contact us',
+                    note: 'Fees vary by province and pathway. IRCC PR application fee CAD $1,525/adult.'
+                }
+            },
+
+            'spousal-sponsorship': {
+                title: 'Spousal Sponsorship',
+                tagline: 'Canadian citizens and permanent residents can sponsor their spouse, common-law partner, or conjugal partner for permanent residence, whether they live in Canada or abroad.',
+                icon: '❤️',
+                iconBg: 'linear-gradient(135deg, rgba(252, 121, 129, 0.15), rgba(252, 121, 129, 0.25))',
+                description: 'The sponsor must be a Canadian citizen or PR, at least 18 years old, not receiving social assistance (except for disability), and not under a removal order or previous sponsorship default. The relationship must be genuine. Applications are submitted together online via the IRCC PR Portal. This includes both the sponsorship and the permanent residence application. A 3-year undertaking (financial support) applies outside Quebec.',
+                whoFor: [
+                    'Canadian citizens and PRs sponsoring a legally married spouse',
+                    'Sponsors in a common-law relationship (12+ months cohabitation)',
+                    'Conjugal partners outside Canada (significant barriers to cohabitation)',
+                    'Inland applications (sponsored person in Canada with valid status)',
+                    'Outland applications (sponsored person outside Canada)'
+                ],
+                facts: [
+                    { label: 'Processing Time', value: '~12 months' },
+                    { label: 'Undertaking Period', value: '3 years (outside Quebec)' },
+                    { label: 'Income Requirement', value: 'Generally none (exceptions apply)' }
+                ],
+                included: [
+                    'Sponsor and applicant eligibility assessment',
+                    'Relationship genuineness documentation strategy',
+                    'Inland and outland application preparation',
+                    'Open Work Permit application (for inland applicants)',
+                    'IRCC PR Portal submission and tracking',
+                    'Refusal and re-application support'
+                ],
+                documents: [
+                    'Marriage certificate or Statutory Declaration of Common-Law Union (IMM 5409)',
+                    'Proof of relationship (photos, communications, joint accounts, travel records)',
+                    'Proof of sponsor\'s Canadian citizenship or PR status',
+                    'Valid passports for sponsor and applicant',
+                    'Police certificates (all countries lived in 6+ months since age 18)',
+                    'Medical exam results from IRCC panel physician',
+                    'IMM 1344 (Sponsorship Agreement) and IMM 5532 (Relationship Information)'
+                ],
+                pricing: {
+                    amount: 'Contact us',
+                    note: 'IRCC fees: $75 sponsorship + $490 processing + $515 Right of PR fee. Consultant fee quoted separately.'
+                }
+            },
+
+            'dependent-child-sponsorship': {
+                title: 'Dependent Child Sponsorship',
+                tagline: 'Sponsor your dependent child for Canadian permanent residence under the Family Class. Children under 22 who are unmarried and financially dependent on a parent qualify.',
+                icon: '👶',
+                iconBg: 'linear-gradient(135deg, rgba(251, 189, 65, 0.15), rgba(251, 189, 65, 0.25))',
+                description: 'A dependent child must be under 22 and not a spouse or common-law partner, or be 22 or older and financially dependent due to a physical or mental condition. The sponsor must be a Canadian citizen or PR, at least 18 years old, and not in a situation that disqualifies them from sponsoring (e.g., removal order, social assistance, prior sponsorship default). Both applications are submitted together via the IRCC PR Portal.',
+                whoFor: [
+                    'Canadian citizens or PRs with children under 22 (unmarried)',
+                    'Sponsoring a child 22+ who is financially dependent due to disability',
+                    'Adding a child to a spousal or other family class application',
+                    'Single parents seeking to reunite with children abroad'
+                ],
+                facts: [
+                    { label: 'Processing Time', value: '12–18 months' },
+                    { label: 'Child Age Limit', value: 'Under 22 (exceptions for disability)' },
+                    { label: 'Application Type', value: 'Online (IRCC PR Portal)' }
+                ],
+                included: [
+                    'Eligibility assessment for sponsor and child',
+                    'Relationship documentation review',
+                    'Full PR application package preparation',
+                    'Medical and police certificate coordination',
+                    'IRCC submission and status follow-up'
+                ],
+                documents: [
+                    'Child\'s birth certificate',
+                    'Proof of sponsor\'s citizenship or PR status',
+                    'Child\'s valid passport',
+                    'Adoption order (if applicable)',
+                    'Medical exam results',
+                    'Police certificates (if child is 18+)',
+                    'Proof of financial dependence (if child is 22+)'
+                ],
+                pricing: {
+                    amount: 'Contact us',
+                    note: 'IRCC fee: $260 per dependent child. Consultant fee quoted separately.'
+                }
+            },
+
+            'parent-grandparent': {
+                title: 'Parent & Grandparent Sponsorship',
+                tagline: 'Sponsor your parents or grandparents for permanent residence through Canada\'s Family Class, one of the most generous family reunification pathways in the world, with limited annual intake.',
+                icon: '👴',
+                iconBg: 'linear-gradient(135deg, rgba(139, 92, 246, 0.15), rgba(139, 92, 246, 0.25))',
+                description: 'The Parents and Grandparents Program (PGP) is intake-limited. For 2025, invitations were sent to 17,860 potential sponsors selected from the 2020 Interest to Sponsor pool, with a goal of 10,000 complete applications. The sponsor must meet Minimum Necessary Income (MNI) requirements for the 3 preceding tax years and sign a 20-year financial undertaking (10 years in Quebec). Not yet invited? The Super Visa remains an excellent long-stay alternative.',
+                whoFor: [
+                    'Canadian citizens or PRs who received a 2025 PGP invitation to apply',
+                    'Submitted an Interest to Sponsor form in 2020 (without a prior ITA)',
+                    'Meet the Minimum Necessary Income (MNI) for the 3 preceding tax years',
+                    'Not disqualified by prior sponsorship default, criminal history, or removal order'
+                ],
+                facts: [
+                    { label: 'Processing Time', value: '~24 months' },
+                    { label: 'Intake Cap (2025)', value: '10,000 applications' },
+                    { label: 'Undertaking', value: '20 years (10 in Quebec)' }
+                ],
+                included: [
+                    'Sponsor eligibility and income (MNI) review',
+                    'Application preparation and portal submission',
+                    'Co-signer income assessment (if applicable)',
+                    'Admissibility guidance (medical, police, relationships)',
+                    'Super Visa assessment if PGP invitation not received'
+                ],
+                documents: [
+                    'Invitation to Apply letter from IRCC',
+                    'Notices of Assessment (CRA) for 3 consecutive tax years',
+                    'Proof of Canadian citizenship or PR status',
+                    'Proof of relationship (birth/adoption certificates)',
+                    'Sponsored person\'s valid passport',
+                    'Medical exam results',
+                    'Police certificates',
+                    'IMM 5768 (Financial Evaluation) and IMM 5748 (Income Sources)'
+                ],
+                pricing: {
+                    amount: 'Contact us',
+                    note: 'IRCC fees vary by family size. Consultant fee quoted separately.'
+                }
+            },
+
+            'ee-application-review': {
+                title: 'Express Entry Application Review',
+                tagline: 'Already received your ITA but unsure if your documents are complete and accurate? Our review service catches errors before submission and helps protect your application.',
+                icon: '📋',
+                iconBg: 'linear-gradient(135deg, rgba(74, 144, 255, 0.15), rgba(74, 144, 255, 0.25))',
+                description: 'After receiving an Invitation to Apply (ITA), candidates have only 60 days to submit a complete, accurate PR application to IRCC. Errors, missing documents, or inconsistencies can lead to delays, requests for additional information, or refusal. Our review service provides a thorough assessment of your application before submission.',
+                whoFor: [
+                    'Express Entry candidates who received an ITA',
+                    'Those who want a second opinion before submitting',
+                    'Applicants unsure about NOC codes, work experience, or ECA reports',
+                    'DIY applicants seeking professional validation'
+                ],
+                facts: [
+                    { label: 'ITA Validity', value: '60 days to apply' },
+                    { label: 'Service Type', value: 'Review only (no submission)' },
+                    { label: 'Turnaround', value: 'Typically 3–5 business days' }
+                ],
+                included: [
+                    'Full document checklist review against IRCC requirements',
+                    'NOC code verification and work experience alignment',
+                    'Language test score validation',
+                    'ECA report review for foreign education'
+                ],
+                documents: [
+                    'Your complete application package (all forms and documents)',
+                    'ITA letter from IRCC',
+                    'Language test results',
+                    'ECA report',
+                    'Employment records and reference letters'
+                ],
+                pricing: {
+                    amount: 'Contact us',
+                    note: 'Flat-fee review service. Does not include submission. The applicant submits directly to IRCC.'
+                }
+            },
+
+            /* ===== CITIZENSHIP ===== */
+
+            'citizenship-application': {
+                title: 'Citizenship Application',
+                tagline: 'After meeting Canada\'s residency and language requirements, eligible permanent residents can apply to become Canadian citizens and gain the right to vote, hold a Canadian passport, and live without immigration restrictions.',
+                icon: '🏅',
+                iconBg: 'linear-gradient(135deg, rgba(33, 56, 133, 0.15), rgba(95, 52, 117, 0.25))',
+                description: 'To qualify, you must hold valid PR status, have been physically present in Canada for at least 1,095 days (3 years) within the 5-year period before applying, meet language requirements (CLB 4+ in English or French if ages 18–54), have filed taxes for at least 3 of the 5 preceding years, and not be under any prohibition. Time spent in Canada as a temporary resident counts as half a day, up to 365 days. A citizenship test is required for ages 18–54. Note: Bill C-3 (December 2025) expanded citizenship by descent beyond the first generation.',
+                whoFor: [
+                    'Permanent residents with at least 1,095 days of physical presence in 5 years',
+                    'Ages 18–54 who meet English or French language requirement (CLB 4+)',
+                    'Those who have filed Canadian taxes for 3 of the last 5 years',
+                    'Not under a removal order, criminal prohibition, or security concern',
+                    'Minors applying with or alongside a Canadian parent'
+                ],
+                facts: [
+                    { label: 'Processing Time', value: '12–24 months' },
+                    { label: 'Physical Presence', value: '1,095 days in 5 years' },
+                    { label: 'Application Fee', value: 'CAD $630 adults / $100 minors' }
+                ],
+                included: [
+                    'Physical presence calculator review and travel history analysis',
+                    'Language requirement assessment',
+                    'Citizenship test preparation guidance'
+                ],
+                documents: [
+                    'Proof of permanent resident status (PR card, COPR)',
+                    'Passports covering the 5-year eligibility period',
+                    'Physical Presence Calculator printout',
+                    'Proof of language ability (test results, Canadian diploma, or language program certificate)',
+                    'CRA Notices of Assessment for 3 tax years',
+                    'Two passport-sized photos meeting IRCC specs',
+                    'Police certificates (if applicable)'
+                ],
+                pricing: {
+                    amount: 'Contact us',
+                    note: 'IRCC fees: $630/adult + $119.75 Right of Citizenship fee. Minors: $100. Consultant fee quoted separately.'
+                }
+            },
+
+            /* ===== SPECIALIZED SERVICES ===== */
+
+            'lmia-application': {
+                title: 'LMIA Application',
+                tagline: 'An employer who needs to hire a foreign national typically must first obtain a positive Labour Market Impact Assessment (LMIA) from Employment and Social Development Canada (ESDC).',
+                icon: '🏢',
+                iconBg: 'linear-gradient(135deg, rgba(74, 144, 255, 0.15), rgba(74, 144, 255, 0.25))',
+                description: 'A positive LMIA confirms that no available Canadian worker can fill the position. The employer must demonstrate recruitment efforts, fair wages, and a workplace that meets provincial employment standards. We assist employers through the entire ESDC process, from job advertisement requirements through to the LMIA approval letter and Annex A that the foreign worker needs for their work permit.',
+                whoFor: [
+                    'Canadian employers seeking to hire a foreign national for a specific role',
+                    'Employers in high-wage or low-wage streams',
+                    'Agricultural and food processing employers',
+                    'Employers in Global Talent Stream (TTS A & B) occupations'
+                ],
+                facts: [
+                    { label: 'Processing Time', value: '1–5 months (stream dependent)' },
+                    { label: 'Employer LMIA Fee', value: 'CAD $1,000 per position' },
+                    { label: 'Validity', value: '6 months' }
+                ],
+                included: [
+                    'Employer eligibility and stream selection assessment',
+                    'Job advertisement strategy (NOC, duration, platforms)',
+                    'LMIA application form preparation and submission',
+                    'Wage and working conditions review',
+                    'Recruitment documentation review',
+                    'Follow-up with ESDC through to decision'
+                ],
+                documents: [
+                    'Business registration and CRA business number',
+                    'Proof of recruitment efforts (job ads, screening records)',
+                    'Offer of employment details',
+                    'Financial statements or proof of business operations',
+                    'Provincial workplace safety and employment compliance records'
+                ],
+                pricing: {
+                    amount: 'Contact us',
+                    note: 'ESDC fee: CAD $1,000/position. Consultant fee quoted based on position type and complexity.'
+                }
+            },
+
+            'noc-code': {
+                title: 'NOC Code Service',
+                tagline: 'The National Occupational Classification (NOC) code assigned to your job determines your Express Entry program eligibility, TEER category, and CRS points. Getting it right is critical.',
+                icon: '📊',
+                iconBg: 'linear-gradient(135deg, rgba(59, 211, 253, 0.15), rgba(59, 211, 253, 0.25))',
+                description: 'Under the 2021 NOC matrix, jobs are categorized into TEER levels (0–5) based on training, education, experience, and responsibilities. Express Entry covers TEER 0–3. An incorrect NOC can lead to an ineligible application, a refusal, or a misrepresentation finding. We review your job duties against the NOC lead statement and main duties to confirm the best-fit code.',
+                whoFor: [
+                    'Express Entry applicants unsure of their NOC code',
+                    'Workers whose duties span multiple NOC titles',
+                    'LMIA applicants needing accurate NOC for the position offered',
+                    'Employers and HR teams building job descriptions for immigration purposes'
+                ],
+                facts: [
+                    { label: 'NOC System', value: '2021 NOC (TEER 0–5)' },
+                    { label: 'EE Eligible', value: 'TEER 0, 1, 2, 3 only' },
+                    { label: 'Service Type', value: 'Assessment' }
+                ],
+                included: [
+                    'Review of job description and actual duties performed',
+                    'Mapping against NOC lead statement and main duties',
+                    'TEER category and Express Entry eligibility confirmation',
+                    'Guidance on how to present duties in immigration applications'
+                ],
+                documents: [
+                    'Detailed job description or current duties list',
+                    'Employment offer letter or contract',
+                    'Professional licenses or certifications (if applicable)',
+                    'Previous NOC codes used (if any)'
+                ],
+                pricing: {
+                    amount: 'Contact us',
+                    note: 'Flat-fee service. Turnaround: typically 2–3 business days.'
+                }
+            },
+
+            'pr-card-renewal': {
+                title: 'PR Card Renewal',
+                tagline: 'Your Permanent Resident Card is required to return to Canada on any commercial carrier. Don\'t let it expire while abroad. Apply for renewal well before the expiry date.',
+                icon: '🪪',
+                iconBg: 'linear-gradient(135deg, rgba(251, 189, 65, 0.15), rgba(251, 189, 65, 0.25))',
+                description: 'PR cards are typically valid for 5 years. To renew, you must be physically present in Canada and meet the residency obligation: 730 days (2 years) of physical presence in Canada in every 5-year period. Apply when your card is within 9 months of expiry. If you are outside Canada without a valid PR card, you must apply for a PRTD (Permanent Resident Travel Document) to return. An expired card does not mean you\'ve lost PR status, but IRCC will check your residency obligation when you apply.',
+                whoFor: [
+                    'PRs whose card is expiring within 9 months',
+                    'PRs whose card is already expired (apply from inside Canada)',
+                    'PRs whose card was lost, stolen, or damaged',
+                    'PRs who have legally changed their name'
+                ],
+                facts: [
+                    { label: 'Processing Time', value: '~33 days (as of Sept 2025)' },
+                    { label: 'Residency Requirement', value: '730 days in 5 years' },
+                    { label: 'Application Fee', value: 'CAD $50' }
+                ],
+                included: [
+                    'Residency obligation assessment (730-day calculation)',
+                    'PR card application preparation',
+                    'CBSA travel history report guidance',
+                    'Humanitarian and Compassionate (H&C) assessment if residency not met',
+                    'Application submission and tracking'
+                ],
+                documents: [
+                    'Current or most recent PR card (or explanation if lost/stolen)',
+                    'Valid passport',
+                    'Two passport-sized photos (IRCC specifications)',
+                    'Travel history documentation (entry/exit records, boarding passes)',
+                    'Proof of Canadian address'
+                ],
+                pricing: {
+                    amount: 'Contact us',
+                    note: 'IRCC fee: CAD $50. Consultant fee quoted separately. H&C cases are more complex and priced accordingly.'
+                }
+            },
+
+            'prtd-application': {
+                title: 'PRTD Application',
+                tagline: 'If you\'re outside Canada and your PR card has expired, been lost, or was never issued, you need a Permanent Resident Travel Document (PRTD) to board a commercial carrier back to Canada.',
+                icon: '🛬',
+                iconBg: 'linear-gradient(135deg, rgba(139, 92, 246, 0.15), rgba(139, 92, 246, 0.25))',
+                description: 'A PRTD is a single-entry travel document attached to your passport at a visa office or Visa Application Centre (VAC) outside Canada. To qualify, you must have met the residency obligation: 730 days of physical presence in Canada within the 5 years before applying. All PRTD applications are processed on a priority basis. Once you return, apply for a PR card renewal immediately.',
+                whoFor: [
+                    'PRs outside Canada whose PR card expired, was lost, stolen, or damaged',
+                    'PRs who meet the 730-day residency obligation',
+                    'PRs who changed their name and need documentation updated',
+                    'PRs in urgent need to return to Canada'
+                ],
+                facts: [
+                    { label: 'Validity', value: 'Single entry only' },
+                    { label: 'Processed By', value: 'Visa office / VAC outside Canada' },
+                    { label: 'Residency Required', value: '730 days in 5 years' }
+                ],
+                included: [
+                    'Residency obligation review and travel history analysis',
+                    'PRTD application preparation and document package',
+                    'Guidance on submitting via IRCC PR Portal or local VAC',
+                    'Urgent processing request preparation (if applicable)',
+                    'Post-return PR card renewal support'
+                ],
+                documents: [
+                    'Valid current passport',
+                    'Copies of all passports used in the last 5 years',
+                    'Proof of PR status (prior PR card, COPR, or landing record IMM 1000)',
+                    'Travel history documentation (entry/exit records)',
+                    'Two passport-sized photos',
+                    'IMM 5444 form',
+                    'Police certificate (if name changed)'
+                ],
+                pricing: {
+                    amount: 'Contact us',
+                    note: 'IRCC fee applies. Consultant fee quoted based on residency situation and urgency.'
+                }
+            },
+
+            'temporary-resident-permit': {
+                title: 'Temporary Resident Permit',
+                tagline: 'A Temporary Resident Permit (TRP) is a discretionary document that allows an otherwise inadmissible person to enter or remain in Canada when their need to be here outweighs the risk to Canadian society.',
+                icon: '📝',
+                iconBg: 'linear-gradient(135deg, rgba(252, 121, 129, 0.15), rgba(252, 121, 129, 0.25))',
+                description: 'TRPs are issued at an officer\'s discretion to people who are inadmissible to Canada (e.g., criminal history, medical grounds) but have a good reason to enter, such as family emergencies, business travel, or employment. A TRP can be valid for up to 3 years. TRP holders do not benefit from maintained status while a new TRP is being processed. If a TRP is valid for 6+ months, the holder may also apply for a work or study permit.',
+                whoFor: [
+                    'Persons inadmissible to Canada due to criminality (e.g., past DUI or conviction)',
+                    'Persons inadmissible for medical grounds with urgent need to enter',
+                    'Current TRP holders needing an extension or subsequent TRP',
+                    'Victims of human trafficking or family violence (fee-exempt)',
+                    'Foreign nationals who were in state care as children'
+                ],
+                facts: [
+                    { label: 'Maximum Validity', value: 'Up to 3 years' },
+                    { label: 'Entry Type', value: 'Single or multiple entry' },
+                    { label: 'Application Fee', value: 'CAD $246.25' }
+                ],
+                included: [
+                    'Inadmissibility assessment and TRP eligibility analysis',
+                    'Compelling need vs. risk narrative preparation',
+                    'Application preparation for inland, port of entry, or outside Canada',
+                    'Criminal rehabilitation pathway comparison',
+                    'Subsequent TRP applications and extensions'
+                ],
+                documents: [
+                    'Valid passport or travel document',
+                    'Detailed explanation of inadmissibility and compelling need',
+                    'Court records, rehabilitation evidence (for criminal inadmissibility)',
+                    'Supporting letters (employer, medical, family)',
+                    'Current TRP and work/study permit (if extending)'
+                ],
+                pricing: {
+                    amount: 'Contact us',
+                    note: 'IRCC fee: CAD $246.25. Fee-exempt for victims of human trafficking or family violence. Consultant fee varies by complexity.'
+                }
+            },
+
+            'gcms-notes-review': {
+                title: 'GCMS Notes Review',
+                tagline: 'GCMS (Global Case Management System) notes are internal IRCC officer notes on your immigration file. Reviewing them can reveal exactly why an application was refused or delayed.',
+                icon: '🔍',
+                iconBg: 'linear-gradient(135deg, rgba(74, 144, 255, 0.15), rgba(74, 144, 255, 0.25))',
+                description: 'GCMS notes are requested through an Access to Information and Privacy (ATIP) request. They include officer notes, system entries, and internal communications related to your immigration application. This information is invaluable for understanding refusals, preparing stronger reapplications, or addressing concerns before a decision is made.',
+                whoFor: [
+                    'Applicants whose application was refused without a clear explanation',
+                    'Applicants experiencing unexplained processing delays',
+                    'Those preparing a stronger reapplication or reconsideration',
+                    'Applicants who want to proactively understand their file status'
+                ],
+                facts: [
+                    { label: 'Request Type', value: 'ATIP (Access to Information)' },
+                    { label: 'ATIP Processing', value: '30–60 business days' },
+                    { label: 'Notes Language', value: 'English' }
+                ],
+                included: [
+                    'ATIP request preparation and submission on your behalf',
+                    'Review and plain-language explanation of notes received',
+                    'Identification of officer concerns or red flags',
+                    'Strategic recommendations for reapplication or response',
+                    'Follow-up support for next application steps'
+                ],
+                documents: [
+                    'Proof of identity (passport or PR card)',
+                    'Application reference number or UCI',
+                    'Copy of refusal letter (if applicable)',
+                    'Any prior ATIP response (if already received)'
+                ],
+                pricing: {
+                    amount: 'Contact us',
+                    note: 'Includes ATIP request and notes review/analysis. IRCC ATIP submission is free of charge.'
+                }
+            }
+
+        };
+
+        // Toggle Sidebar Submenu
+        function toggleSubmenu(element) {
+            const category = element.getAttribute('data-category');
+            const submenu = document.getElementById(category + '-menu');
+            const allTabs = document.querySelectorAll('.sidebar-main-tab');
+            const allSubmenus = document.querySelectorAll('.sidebar-submenu');
+
+            // Close all other submenus
+            allTabs.forEach(tab => {
+                if (tab !== element) {
+                    tab.classList.remove('active');
+                }
+            });
+
+            allSubmenus.forEach(menu => {
+                if (menu !== submenu) {
+                    menu.classList.remove('active');
+                }
+            });
+
+            // Toggle current
+            element.classList.toggle('active');
+            submenu.classList.toggle('active');
+        }
+
+        // Load Service Content
+        function loadService(element, serviceId, category) {
+            const service = serviceData[serviceId];
+            if (!service) return;
+
+            // Update active states
+            document.querySelectorAll('.sidebar-submenu a').forEach(link => {
+                link.classList.remove('active');
+            });
+            element.classList.add('active');
+
+            // Make sure parent submenu is open
+            const submenu = element.closest('.sidebar-submenu');
+            if (submenu && !submenu.classList.contains('active')) {
+                const parentTab = submenu.previousElementSibling;
+                parentTab.click();
+            }
+
+            // Build and render content
+            const content = `
+                <div class="service-detail-panel active">
+                    <!-- Block 1: Header -->
+                    <div class="detail-header">
+                        <div class="detail-title">
+                            <div class="detail-icon" style="background: ${service.iconBg};">${service.icon}</div>
+                            <div class="detail-title-text">
+                                <h1>${service.title}</h1>
+                                <p class="detail-tagline">${service.tagline}</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Block 2: Description -->
+                    <div class="detail-block">
+                        <p style="font-size: 16px; color: var(--warm-charcoal); line-height: 1.8;">${service.description}</p>
+                    </div>
+
+                    <!-- Block 3: Who Is This For -->
+                    <div class="detail-block">
+                        <div class="eligibility-requirements">
+                            <h3>WHO IS THIS FOR?</h3>
+                            <ul>
+                                ${service.whoFor.map(item => `
+                                    <li>
+                                        <div class="elig-dot"></div>
+                                        <span>${item}</span>
+                                    </li>
+                                `).join('')}
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Block 5: Key Facts -->
+                    <div class="detail-block">
+                        <h2><span class="block-checkmark">&#x2713;</span> KEY FACTS</h2>
+                        <div class="key-facts">
+                            ${service.facts.map(fact => `
+                                <div class="fact-box">
+                                    <div class="fact-label">${fact.label}</div>
+                                    <div class="fact-value">${fact.value}</div>
+                                </div>
+                            `).join('')}
+                        </div>
+                    </div>
+
+                    <!-- Block 6: How We Support Your Application -->
+                    <div class="detail-block">
+                        <h2><span class="block-checkmark">&#x2713;</span> HOW WE SUPPORT YOUR APPLICATION</h2>
+                        <div class="support-list">
+                            ${service.included.map((item, index) => {
+                                return `
+                                    <div class="support-item">
+                                        <span class="support-icon">&#x2022;</span>
+                                        <div class="support-text-wrap">
+                                            <div class="support-title">${item.split(':')[0] || 'Support Item'}</div>
+                                            <div class="support-desc">${item}</div>
+                                        </div>
+                                    </div>
+                                `;
+                            }).join('')}
+                        </div>
+                    </div>
+
+                    <!-- Block 7: Documents Needed -->
+                    <div class="detail-block">
+                        <h2><span class="block-checkmark">&#x2713;</span> DOCUMENTS YOU'LL NEED</h2>
+                        <div class="documents-grid">
+                            ${service.documents.map(doc => `
+                                <div class="document-item">${doc}</div>
+                            `).join('')}
+                        </div>
+                    </div>
+
+                </div>
+            `;
+
+            document.getElementById('servicesMain').innerHTML = content;
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Load service from URL hash or default to first
+        document.addEventListener('DOMContentLoaded', function() {
+            var hash = window.location.hash.replace('#','');
+            var sectionMap = {
+                'temp-resident': {category:'temp-resident', service:'study-permit'},
+                'permanent-resident': {category:'permanent-resident', service:'express-entry'},
+                'citizenship': {category:'citizenship', service:'citizenship-application'},
+                'corporate': {category:'specialized', service:'lmia-application'},
+                'specialized': {category:'specialized', service:'lmia-application'}
+            };
+            if(hash && sectionMap[hash]){
+                var info = sectionMap[hash];
+                // Open correct category
+                document.querySelectorAll('.sidebar-main-tab').forEach(function(tab){
+                    var cat = tab.getAttribute('data-category');
+                    var menu = document.getElementById(cat + '-menu');
+                    if(cat === info.category){
+                        tab.classList.add('active');
+                        if(menu) menu.classList.add('active');
+                    } else {
+                        tab.classList.remove('active');
+                        if(menu) menu.classList.remove('active');
+                    }
+                });
+                // Click the right service link
+                var target = document.querySelector('[data-service="'+info.service+'"]');
+                if(target) target.click();
+            } else {
+                var firstLink = document.querySelector('.sidebar-submenu.active a');
+                if (firstLink) firstLink.click();
+            }
+        });
+    </script>
+
+    <!-- Page Navigation Arrows -->
+    <div id="page-nav-arrows" style="position:fixed;right:20px;bottom:120px;z-index:9999;display:flex;flex-direction:column;gap:10px;">
+        <button onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Back to top" style="width:44px;height:44px;border-radius:50%;border:2px solid rgba(33,56,133,0.25);background:rgba(255,255,255,0.95);box-shadow:0 4px 16px rgba(0,0,0,0.12);cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all 0.2s;" onmouseover="this.style.background='linear-gradient(90deg,#213885,#5F3475)';this.style.borderColor='transparent';this.querySelector('svg').style.stroke='#fff'" onmouseout="this.style.background='rgba(255,255,255,0.95)';this.style.borderColor='rgba(33,56,133,0.25)';this.querySelector('svg').style.stroke='#213885'">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#213885" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+        </button>
+        <button onclick="window.scrollTo({top:document.body.scrollHeight,behavior:'smooth'})" title="Go to bottom" style="width:44px;height:44px;border-radius:50%;border:2px solid rgba(33,56,133,0.25);background:rgba(255,255,255,0.95);box-shadow:0 4px 16px rgba(0,0,0,0.12);cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all 0.2s;" onmouseover="this.style.background='linear-gradient(90deg,#213885,#5F3475)';this.style.borderColor='transparent';this.querySelector('svg').style.stroke='#fff'" onmouseout="this.style.background='rgba(255,255,255,0.95)';this.style.borderColor='rgba(33,56,133,0.25)';this.querySelector('svg').style.stroke='#213885'">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#213885" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+    </div>
+
+    <!-- Messaging Widget -->
+    <div id="msg-widget">
+        <button id="msg-btn" onclick="document.getElementById('msg-popup').style.display='flex'" title="Send us a message" aria-label="Open messaging form">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        </button>
+    </div>
+    <div id="msg-popup" style="display:none;position:fixed;inset:0;z-index:99999;align-items:flex-end;justify-content:flex-end;padding:0 20px 90px 0;">
+        <div style="background:#fff;border-radius:16px;box-shadow:0 8px 40px rgba(33,56,133,0.22);width:340px;overflow:hidden;animation:msgSlideUp 0.22s ease;">
+            <div style="background:linear-gradient(135deg,#213885,#5F3475);padding:18px 20px;display:flex;align-items:center;justify-content:space-between;">
+                <div>
+                    <div style="color:#fff;font-weight:700;font-size:15px;font-family:'Roobert',system-ui,sans-serif;">5K Immigration Services</div>
+                    <div style="color:rgba(255,255,255,0.75);font-size:12px;margin-top:2px;">We respond within one business day.</div>
+                </div>
+                <button onclick="document.getElementById('msg-popup').style.display='none'" style="background:rgba(255,255,255,0.15);border:none;border-radius:50%;width:30px;height:30px;cursor:pointer;display:flex;align-items:center;justify-content:center;color:#fff;font-size:18px;line-height:1;" title="Close">&times;</button>
+            </div>
+            <div style="padding:20px;">
+                <form action="https://formsubmit.co/info@5kimmigration.ca" method="POST" onsubmit="this.querySelector('button[type=submit]').textContent='Sending…'">
+                    <input type="hidden" name="_subject" value="Website Inquiry - 5K Immigration Services">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="">
+                    <div style="margin-bottom:12px;">
+                        <label style="display:block;font-size:12px;font-weight:600;color:#55534e;margin-bottom:4px;">Name <span style="color:#213885">*</span></label>
+                        <input type="text" name="name" required placeholder="Your full name" style="width:100%;padding:9px 12px;border:1px solid #dad4c8;border-radius:8px;font-size:14px;font-family:inherit;outline:none;transition:border-color 0.2s;" onfocus="this.style.borderColor='#213885'" onblur="this.style.borderColor='#dad4c8'">
+                    </div>
+                    <div style="margin-bottom:12px;">
+                        <label style="display:block;font-size:12px;font-weight:600;color:#55534e;margin-bottom:4px;">Email <span style="color:#213885">*</span></label>
+                        <input type="email" name="email" required placeholder="your@email.com" style="width:100%;padding:9px 12px;border:1px solid #dad4c8;border-radius:8px;font-size:14px;font-family:inherit;outline:none;transition:border-color 0.2s;" onfocus="this.style.borderColor='#213885'" onblur="this.style.borderColor='#dad4c8'">
+                    </div>
+                    <div style="margin-bottom:12px;">
+                        <label style="display:block;font-size:12px;font-weight:600;color:#55534e;margin-bottom:4px;">Phone</label>
+                        <input type="tel" name="phone" placeholder="+1 (000) 000-0000" style="width:100%;padding:9px 12px;border:1px solid #dad4c8;border-radius:8px;font-size:14px;font-family:inherit;outline:none;transition:border-color 0.2s;" onfocus="this.style.borderColor='#213885'" onblur="this.style.borderColor='#dad4c8'">
+                    </div>
+                    <div style="margin-bottom:16px;">
+                        <label style="display:block;font-size:12px;font-weight:600;color:#55534e;margin-bottom:4px;">How can we help? <span style="color:#213885">*</span></label>
+                        <textarea name="message" required placeholder="Tell us about your situation…" rows="3" style="width:100%;padding:9px 12px;border:1px solid #dad4c8;border-radius:8px;font-size:14px;font-family:inherit;outline:none;resize:vertical;transition:border-color 0.2s;" onfocus="this.style.borderColor='#213885'" onblur="this.style.borderColor='#dad4c8'"></textarea>
+                    </div>
+                    <button type="submit" style="width:100%;padding:11px;background:linear-gradient(135deg,#213885,#5F3475);color:#fff;border:none;border-radius:8px;font-size:14px;font-weight:700;font-family:inherit;cursor:pointer;letter-spacing:0.3px;transition:opacity 0.2s;">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <style>
+        #msg-btn{position:fixed;right:20px;bottom:28px;z-index:9998;width:52px;height:52px;border-radius:50%;background:linear-gradient(135deg,#213885,#5F3475);border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 16px rgba(33,56,133,0.35);transition:transform 0.2s,box-shadow 0.2s;}
+        #msg-btn:hover{transform:scale(1.08);box-shadow:0 6px 24px rgba(33,56,133,0.45);}
+        @keyframes msgSlideUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+    </style>
+</body>
+</html>

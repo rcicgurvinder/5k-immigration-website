@@ -1,0 +1,2530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="5K_Immigration_Logo_Transparent.png">
+    <link rel="apple-touch-icon" href="5K_Immigration_Logo_Transparent.png">
+    <title>5K Immigration Services — Licensed RCIC in Surrey, BC | Canadian Immigration Consultant</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://api.fontshare.com/v2/css?f[]=roobert@300,400,500,600,700&display=swap');
+
+        :root {
+            /* Clay Colors */
+            --clay-black: #000000;
+            --pure-white: #ffffff;
+            --warm-cream: #faf9f7;
+            
+            /* Primary Palette - Blue & Purple */
+            --primary-300: #a5c4ff;
+            --primary-500: #4a90ff;
+            --primary-700: #2563eb;
+            --primary-900: #1e40af;
+            --slushie-500: #3bd3fd;
+            --lemon-500: #fbbd41;
+            --ube-300: #c1b0ff;
+            --ube-500: #8b5cf6;
+            --ube-800: #43089f;
+            --pomegranate-400: #fc7981;
+            --coral-400: #ff8a65;
+            --blueberry-800: #01418d;
+            
+            /* Neutrals */
+            --warm-silver: #9f9b93;
+            --warm-charcoal: #55534e;
+            --oat-border: #dad4c8;
+            --oat-light: #eee9df;
+            
+            /* Spacing */
+            --space-2: 0.125rem;
+            --space-4: 0.25rem;
+            --space-8: 0.5rem;
+            --space-12: 0.75rem;
+            --space-16: 1rem;
+            --space-20: 1.25rem;
+            --space-24: 1.5rem;
+            --space-32: 2rem;
+            --space-40: 2.5rem;
+            --space-48: 3rem;
+            --space-64: 4rem;
+            --space-80: 5rem;
+            
+            /* Radius */
+            --radius-sm: 4px;
+            --radius-md: 8px;
+            --radius-lg: 12px;
+            --radius-xl: 24px;
+            --radius-2xl: 40px;
+            --radius-pill: 9999px;
+            
+            /* Typography */
+            --font-display: 'Roobert', system-ui, sans-serif;
+            --font-mono: 'Space Mono', monospace;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-display);
+            background-color: var(--warm-cream);
+            color: var(--clay-black);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* Typography Styles */
+        .display-hero {
+            font-size: clamp(36px, 6vw, 64px);
+            font-weight: 600;
+            line-height: 1.00;
+            letter-spacing: -0.04em;
+        }
+
+        .display-secondary {
+            font-size: clamp(40px, 6vw, 60px);
+            font-weight: 600;
+            line-height: 1.00;
+            letter-spacing: -0.04em;
+        }
+
+        .section-heading {
+            font-size: clamp(32px, 5vw, 44px);
+            font-weight: 600;
+            line-height: 1.10;
+            letter-spacing: -0.03em;
+        }
+
+        .card-heading {
+            font-size: 32px;
+            font-weight: 600;
+            line-height: 1.10;
+            letter-spacing: -0.02em;
+        }
+
+        .feature-title {
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 1.40;
+            letter-spacing: -0.02em;
+        }
+
+        .body-text {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 1.60;
+            letter-spacing: -0.02em;
+        }
+
+        .caption {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.50;
+        }
+
+        .label {
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.09em;
+        }
+
+        /* ===== UPDATED HEADER (matches Home page) ===== */
+        .header-top {
+            position: relative;
+            z-index: 101;
+            background-color: #f5f5f7 !important;
+            padding: 6px var(--space-24);
+            border-bottom: 1px solid rgba(37,99,235,0.1);
+        }
+        .header-top-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 14px;
+        }
+        .header-contact-info {
+            display: flex;
+            align-items: center;
+            gap: var(--space-24);
+        }
+        .header-contact-link {
+            color: var(--clay-black);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 13px;
+            transition: color 0.2s ease;
+        }
+        .header-contact-link:hover { color: var(--primary-700, #2563eb); }
+        .social-media-links {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+        .social-icon-link {
+            transition: transform 0.2s ease, opacity 0.2s ease !important;
+        }
+        .social-icon-link:hover {
+            transform: scale(1.12) !important;
+            opacity: 0.85;
+        }
+        /* Header / Nav */
+        header {
+            position: sticky !important;
+            top: 0;
+            z-index: 100;
+            background-color: rgba(255,255,255,0.96) !important;
+            border-bottom: 1px solid var(--oat-border);
+            backdrop-filter: blur(12px);
+        }
+        header nav {
+            max-width: 1400px !important;
+            margin: 0 auto;
+            display: flex !important;
+            justify-content: space-between !important;
+            align-items: center !important;
+            padding: var(--space-16) var(--space-24) !important;
+        }
+        .logo {
+            display: flex;
+            flex: 1;
+            align-items: center;
+            gap: var(--space-12);
+            text-decoration: none;
+            color: var(--clay-black);
+        }
+        .logo-icon {
+            width: 52px;
+            height: 52px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .logo-text {
+            font-weight: 700;
+            font-size: 17px;
+            letter-spacing: -0.02em;
+            color: var(--clay-black);
+        }
+        header nav > ul {
+            display: flex;
+            list-style: none;
+            gap: var(--space-32);
+            align-items: center;
+            margin: 0;
+            padding: 0;
+        }
+        header nav > ul > li > a {
+            color: var(--clay-black);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 15px;
+            letter-spacing: -0.01em;
+            transition: color 0.2s ease;
+        }
+        header nav > ul > li > a:hover { color: #213885; }
+        header nav > ul > li > a::after { display: none; }
+        header nav > ul > li.active-li > a { color: #213885; font-weight: 600; }
+        .nav-actions {
+            display: flex;
+            flex: 1;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 20px;
+        }
+        .phone-button {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+            color: var(--clay-black);
+        }
+        .phone-icon {
+            width: 34px;
+            height: 34px;
+            background: linear-gradient(90deg, #213885, #5F3475);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+        .phone-number {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--clay-black);
+        }
+        .btn-book {
+            padding: 9px 16px !important;
+            font-size: 13px !important;
+            font-weight: 700 !important;
+            letter-spacing: 0.4px !important;
+        }
+        /* Dropdown */
+        .nav-dropdown { position: relative; }
+        .nav-dropdown-trigger {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            color: var(--clay-black) !important;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 15px;
+            cursor: pointer;
+            background: none;
+            border: none;
+            font-family: var(--font-display);
+            padding: 0;
+            transition: color 0.2s ease;
+        }
+        .nav-dropdown-trigger:hover { color: #213885 !important; }
+        .nav-dropdown-trigger.active { color: #213885 !important; font-weight: 600; }
+        .nav-dropdown-menu {
+            position: absolute;
+            top: calc(100% + 20px);
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--pure-white);
+            border: 1px solid var(--oat-border);
+            border-radius: var(--radius-lg);
+            box-shadow: 0 16px 48px rgba(0,0,0,0.12);
+            min-width: 800px;
+            padding: 24px;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.2s ease;
+            z-index: 300;
+            pointer-events: none;
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 1fr 1fr;
+            gap: 24px;
+        }
+        .nav-dropdown:hover .nav-dropdown-menu {
+            opacity: 1;
+            visibility: visible;
+            pointer-events: all;
+        }
+        .nav-dropdown-column {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            padding-right: 24px;
+        }
+        .nav-dropdown-column:not(:last-child) {
+            border-right: 1px solid var(--oat-border);
+        }
+        .nav-dropdown-category-title {
+            font-weight: 700;
+            font-size: 14px;
+            color: var(--clay-black);
+            margin-bottom: 8px;
+            text-transform: none;
+        }
+        .nav-dropdown-menu a {
+            display: block !important;
+            padding: 8px 0;
+            color: var(--warm-charcoal) !important;
+            font-size: 13px;
+            font-weight: 500;
+            text-decoration: none;
+            transition: color 0.15s ease;
+            white-space: normal;
+            border-radius: 0;
+        }
+        .nav-dropdown-menu a::after { display: none !important; }
+        .nav-dropdown-menu a:hover { background: none; color: #213885 !important; }
+        .nav-dropdown-menu a.active-item { background: none; color: #213885 !important; font-weight: 600; }
+        .nav-dropdown-divider { height: 1px; background: var(--oat-light); margin: 4px 0; }
+        @media (max-width: 1024px) {
+            header nav > ul { display: none !important; }
+            .phone-button .phone-number { display: none; }
+        }
+        @media (max-width: 768px) {
+            .header-contact-info { display: none; }
+            .nav-actions { gap: 12px; }
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-8);
+            padding: var(--space-16) var(--space-32);
+            font-size: 16px;
+            font-weight: 500;
+            letter-spacing: -0.01em;
+            border-radius: var(--radius-lg);
+            text-decoration: none;
+            transition: all 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+            cursor: pointer;
+            border: none;
+            font-family: var(--font-display);
+            line-height: 1.5;
+        }
+
+        .btn-primary {
+            background-color: var(--clay-black);
+            color: var(--pure-white);
+            position: relative;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px) rotate(-1deg);
+            box-shadow: 4px 4px 0 #5F3475;
+        }
+
+        .btn-white {
+            background-color: var(--pure-white);
+            color: var(--clay-black);
+            border: 1px solid var(--oat-border);
+        }
+
+        .btn-white:hover {
+            transform: translateY(-2px) rotate(1deg);
+            box-shadow: 4px 4px 0 var(--slushie-500);
+        }
+
+        .btn-ghost {
+            background-color: transparent;
+            color: var(--clay-black);
+            border: 1px solid var(--oat-border);
+        }
+
+        .btn-ghost:hover {
+            background-color: var(--pure-white);
+            border-color: var(--clay-black);
+        }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-8);
+            padding: var(--space-8) var(--space-16);
+            background-color: var(--ube-300);
+            color: #893172;
+            border-radius: var(--radius-pill);
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.09em;
+        }
+
+        /* Hero Section */
+        .hero {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: var(--space-48) var(--space-24) var(--space-32);
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-32);
+        }
+
+        .hero-top {
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            gap: var(--space-64);
+            align-items: center;
+        }
+
+        .hero-content {
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        .hero-badge {
+            margin-bottom: var(--space-24);
+            animation: fadeIn 0.6s ease-out;
+        }
+
+        .hero-title {
+            margin-bottom: var(--space-24);
+            animation: fadeInUp 0.8s ease-out 0.1s backwards;
+        }
+
+        .hero-description {
+            color: var(--warm-charcoal);
+            margin-bottom: var(--space-40);
+            max-width: 560px;
+            animation: fadeInUp 0.8s ease-out 0.2s backwards;
+        }
+
+        .hero-cta {
+            display: flex;
+            gap: var(--space-16);
+            flex-wrap: wrap;
+            animation: fadeInUp 0.8s ease-out 0.3s backwards;
+        }
+        .hero-cta .btn {
+            padding: 10px 22px;
+            font-size: 15px;
+        }
+
+        .hero-visual {
+            background: var(--pure-white);
+            border-radius: var(--radius-2xl);
+            border: 1px solid var(--oat-border);
+            padding: var(--space-32) var(--space-40);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-visual::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 60%;
+            height: 200%;
+            background: radial-gradient(circle, var(--ube-300) 0%, transparent 70%);
+            opacity: 0.1;
+            animation: rotate 20s linear infinite;
+        }
+
+        .hero-stats {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: var(--space-16);
+            position: relative;
+            z-index: 1;
+        }
+
+        .stat-card {
+            background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(59, 211, 253, 0.1));
+            border-radius: var(--radius-lg);
+            padding: var(--space-24);
+            border: 1px solid var(--oat-light);
+        }
+
+        .stat-number {
+            font-size: 36px;
+            font-weight: 600;
+            line-height: 1;
+            margin-bottom: var(--space-8);
+            background: linear-gradient(90deg, #213885, #5F3475);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .stat-label {
+            color: var(--warm-charcoal);
+            font-size: 14px;
+        }
+
+        /* Services Section */
+        .services {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 var(--space-24);
+        }
+
+        .services-header {
+            text-align: center;
+            margin-bottom: var(--space-32);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: var(--space-24);
+        }
+
+        .service-card {
+            background: var(--pure-white);
+            border-radius: var(--radius-xl);
+            border: 1px solid var(--oat-border);
+            padding: var(--space-32);
+            transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, #213885, #5F3475);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.4s ease;
+        }
+
+        .service-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .service-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+            border-color: #213885;
+        }
+
+        .service-icon {
+            width: 44px;
+            height: 44px;
+            border-radius: var(--radius-lg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            margin-bottom: var(--space-16);
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover .service-icon {
+            transform: scale(1.1) rotate(5deg);
+        }
+
+        .service-card:nth-child(1) .service-icon {
+            background: linear-gradient(135deg, rgba(74, 144, 255, 0.2), rgba(74, 144, 255, 0.4));
+        }
+
+        .service-card:nth-child(2) .service-icon {
+            background: linear-gradient(135deg, rgba(252, 121, 129, 0.2), rgba(252, 121, 129, 0.4));
+        }
+
+        .service-card:nth-child(3) .service-icon {
+            background: linear-gradient(135deg, rgba(139, 92, 246, 0.2), rgba(139, 92, 246, 0.4));
+        }
+
+        .service-card:nth-child(4) .service-icon {
+            background: linear-gradient(135deg, rgba(251, 189, 65, 0.2), rgba(251, 189, 65, 0.4));
+        }
+
+        .service-card:nth-child(5) .service-icon {
+            background: linear-gradient(135deg, rgba(59, 211, 253, 0.2), rgba(59, 211, 253, 0.4));
+        }
+
+        .service-card:nth-child(6) .service-icon {
+            background: linear-gradient(135deg, rgba(193, 176, 255, 0.2), rgba(193, 176, 255, 0.4));
+        }
+
+        .service-title {
+            margin-bottom: var(--space-12);
+        }
+
+        .service-description {
+            color: var(--warm-charcoal);
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        /* Colored Section */
+        .colored-section {
+            background: linear-gradient(90deg, #213885, #5F3475);
+            color: var(--pure-white);
+            padding: var(--space-48) var(--space-24);
+            margin: var(--space-48) 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .colored-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -10%;
+            width: 120%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(193, 176, 255, 0.15) 0%, transparent 70%);
+            animation: rotate 30s linear infinite;
+        }
+
+        .colored-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+            display: grid;
+            grid-template-columns: 1fr 1.7fr;
+            gap: var(--space-48);
+            align-items: center;
+        }
+
+        .colored-text h2 {
+            margin-bottom: var(--space-24);
+            color: var(--pure-white);
+        }
+
+        .colored-text p {
+            color: #ECDFD2;
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: var(--space-32);
+        }
+
+        .trust-badges {
+            display: flex;
+            gap: var(--space-24);
+            flex-wrap: wrap;
+        }
+
+        .trust-badge {
+            display: flex;
+            align-items: center;
+            gap: var(--space-12);
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(8px);
+            padding: var(--space-16) var(--space-24);
+            border-radius: var(--radius-lg);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .trust-icon {
+            width: 40px;
+            height: 40px;
+            background: #ECDFD2;
+            border-radius: var(--radius-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--blueberry-800);
+            font-size: 20px;
+        }
+
+        /* About Section */
+        .about {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 var(--space-24);
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: var(--space-40);
+            align-items: center;
+        }
+
+        .about-image {
+            position: relative;
+        }
+
+        .image-wrapper {
+            border-radius: var(--radius-2xl);
+            overflow: hidden;
+            border: 1px solid var(--oat-border);
+            position: relative;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
+        }
+
+        .image-wrapper img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .credential-badge {
+            position: absolute;
+            bottom: var(--space-24);
+            left: var(--space-24);
+            background: var(--pure-white);
+            padding: var(--space-16) var(--space-24);
+            border-radius: var(--radius-lg);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+            display: flex;
+            align-items: center;
+            gap: var(--space-12);
+        }
+
+        .credential-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, #213885, #ECDFD2);
+            border-radius: var(--radius-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 700;
+        }
+
+        .credential-text {
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--warm-charcoal);
+        }
+
+        .credential-number {
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--clay-black);
+        }
+
+        .about-content h3 {
+            margin-bottom: var(--space-16);
+            color: #213885;
+        }
+
+        .about-content h2 {
+            margin-bottom: var(--space-24);
+        }
+
+        .about-content p {
+            color: var(--warm-charcoal);
+            margin-bottom: var(--space-20);
+        }
+
+        .about-highlights {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: var(--space-16);
+            margin-top: var(--space-32);
+        }
+
+        .highlight-item {
+            display: flex;
+            align-items: center;
+            gap: var(--space-12);
+            padding: var(--space-16);
+            background: var(--pure-white);
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--oat-border);
+        }
+
+        .highlight-icon {
+            font-size: 18px;
+        }
+
+        .highlight-text {
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 var(--space-24);
+        }
+
+        .cta-card {
+            background: var(--pure-white);
+            border-radius: var(--radius-2xl);
+            border: 2px dashed var(--oat-border);
+            padding: var(--space-64);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(139, 92, 246, 0.05), rgba(59, 211, 253, 0.05));
+            pointer-events: none;
+        }
+
+        .cta-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .cta-title {
+            margin-bottom: var(--space-16);
+        }
+
+        .cta-description {
+            color: var(--warm-charcoal);
+            max-width: 600px;
+            margin: 0 auto var(--space-32);
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: var(--space-16);
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        /* Footer */
+                footer {
+            background: var(--pure-white);
+            color: var(--warm-charcoal);
+            padding: var(--space-48) var(--space-24) var(--space-24);
+            border-top: 1px solid var(--oat-border);
+        }
+
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 1fr 1fr;
+            gap: var(--space-48);
+            margin-bottom: var(--space-32);
+        }
+
+        .footer-brand h3 {
+            color: var(--clay-black);
+            margin-bottom: var(--space-16);
+        }
+
+        .footer-brand p {
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: var(--space-24);
+        }
+
+        .footer-links h4 {
+            color: var(--clay-black);
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: var(--space-16);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .footer-links ul {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: var(--space-12);
+        }
+
+        .footer-links a {
+            color: var(--warm-charcoal);
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.2s ease;
+        }
+
+        .footer-links a:hover {
+            color: #213885;
+        }
+
+                .footer-bottom {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding-top: 14px;
+            padding-bottom: 4px;
+            border-top: 1px solid var(--oat-border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 13px;
+        }
+
+        .footer-bottom a {
+            color: #213885;
+            text-decoration: none;
+        }
+
+        /* ===== SECTION DIFFERENTIATION ===== */
+
+        /* Hero — cinematic video background */
+        .hero-section-wrap {
+            background: #0a1628;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero-video-bg {
+            position: relative;
+            z-index: 0;
+            height: 520px;        /* compact hero height */
+            overflow: hidden;
+        }
+        .hero-photo-img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            object-fit: cover;
+            object-position: center 40%;
+        }
+        @media (max-width: 768px) {
+            .hero-video-bg { height: 420px; }
+        }
+        .hero-video-overlay {
+            position: absolute;
+            inset: 0;
+            /* Left: dark navy for text readability; blends to brand blue mid-frame */
+            background: linear-gradient(
+                105deg,
+                rgba(10, 22, 40, 0.82) 0%,
+                rgba(33, 56, 133, 0.48) 50%,
+                rgba(10, 22, 40, 0.40) 100%
+            );
+        }
+        .hero-section-wrap .hero {
+            position: absolute;          /* overlay on the full image */
+            top: 0; left: 0; right: 0; bottom: 0;
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-top: var(--space-48);
+            padding-bottom: var(--space-48);
+        }
+        .hero-section-wrap .hero-top {
+            grid-template-columns: 1fr;
+            max-width: 820px;
+        }
+        .hero-section-wrap .hero-content h1 {
+            color: var(--pure-white);
+            margin-bottom: var(--space-24);
+        }
+        .hero-section-wrap .hero-description {
+            color: rgba(255, 255, 255, 0.82);
+        }
+        .hero-section-wrap .badge {
+            background: rgba(255,255,255,0.15);
+            color: rgba(255,255,255,0.92);
+            border: 1px solid rgba(255,255,255,0.28);
+        }
+        .hero-section-wrap .btn-primary {
+            background: var(--pure-white);
+            color: var(--clay-black);
+        }
+        .hero-section-wrap .btn-primary:hover {
+            box-shadow: 4px 4px 0 rgba(255,255,255,0.28);
+        }
+        .hero-section-wrap .btn-white {
+            background: transparent;
+            color: var(--pure-white);
+            border-color: rgba(255,255,255,0.38);
+        }
+        .hero-section-wrap .btn-white:hover {
+            background: rgba(255,255,255,0.10);
+            box-shadow: 4px 4px 0 rgba(59,211,253,0.32);
+        }
+        /* Stats bar below hero */
+        .hero-stats-section {
+            background: var(--warm-cream);
+            border-bottom: 1px solid var(--oat-border);
+            padding: var(--space-32) var(--space-24);
+        }
+        .hero-stats-inner {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: var(--space-16);
+        }
+        @media (max-width: 768px) {
+            .hero-stats-inner {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .hero-section-wrap {
+                min-height: 80vh;
+            }
+        }
+
+        /* About — pure white, left-side blue edge accent */
+        .about-section-wrap {
+            background: var(--pure-white);
+            border-top: 4px solid transparent;
+            border-image: linear-gradient(90deg, #213885, #5F3475) 1;
+            position: relative;
+        }
+        .about-section-wrap .about {
+            padding-top: var(--space-40);
+            padding-bottom: var(--space-40);
+        }
+        .about-section-wrap::after {
+            content: '';
+            position: absolute;
+            bottom: 0; left: 0; right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--oat-border), transparent);
+        }
+
+        /* Services — light blue-tinted, with subtle dot grid pattern */
+        .services-section-wrap {
+            background: #eef3ff;
+            padding: var(--space-48) 0;
+            position: relative;
+        }
+        .services-section-wrap::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image: radial-gradient(circle, rgba(37, 99, 235, 0.08) 1px, transparent 1px);
+            background-size: 28px 28px;
+            pointer-events: none;
+        }
+
+        /* How We Work — off-white with diagonal stripe texture */
+        .how-we-work {
+            background: #f8f7f4;
+            position: relative;
+        }
+        .how-we-work::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image: repeating-linear-gradient(
+                -45deg,
+                rgba(37, 99, 235, 0.025) 0px,
+                rgba(37, 99, 235, 0.025) 1px,
+                transparent 1px,
+                transparent 14px
+            );
+            pointer-events: none;
+        }
+        .how-we-work-inner {
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Testimonials — deep navy background, light text */
+        .testimonials {
+            background: #f5f7fb;
+            position: relative;
+            overflow: hidden;
+        }
+        .testimonials::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #213885, #5F3475);
+        }
+        .testimonials-inner {
+            position: relative;
+            z-index: 1;
+        }
+        .testimonials-title {
+            color: var(--clay-black) !important;
+        }
+        .testimonials-title span {
+            color: #213885 !important;
+        }
+        .testimonials-sub {
+            color: var(--warm-charcoal) !important;
+        }
+        .testimonial-card {
+            background: var(--pure-white) !important;
+            border: 1px solid var(--oat-border) !important;
+            backdrop-filter: none;
+        }
+        .testimonial-card:hover {
+            background: var(--pure-white) !important;
+            box-shadow: 0 12px 40px rgba(37, 99, 235, 0.08) !important;
+            transform: translateY(-4px);
+        }
+        .testimonial-text {
+            color: var(--warm-charcoal) !important;
+        }
+        .testimonial-author-name {
+            color: var(--clay-black) !important;
+        }
+        .testimonial-author-type {
+            color: var(--warm-silver) !important;
+        }
+        .testimonial-stars span {
+            color: #f59e0b !important;
+        }
+        .testimonial-quote-icon {
+            color: var(--oat-border) !important;
+            font-size: 48px !important;
+        }
+
+        /* CTA — matches screenshot: warm cream bg, soft gradient card, dark text */
+        .cta-section-wrap {
+            background: var(--warm-cream);
+            padding: var(--space-40) var(--space-24);
+        }
+        .cta-card {
+            background: linear-gradient(135deg, #eef2ff 0%, #f0f8ff 60%, #f5f0ff 100%) !important;
+            border: 2px dashed #c7d2fe !important;
+            border-radius: var(--radius-2xl) !important;
+        }
+        .cta-card::before {
+            display: none !important;
+        }
+        .cta-title {
+            color: var(--clay-black) !important;
+        }
+        .cta-description {
+            color: var(--warm-charcoal) !important;
+        }
+        .cta-section-wrap .btn-primary {
+            background-color: var(--clay-black) !important;
+            color: var(--pure-white) !important;
+            border-radius: var(--radius-lg) !important;
+        }
+        .cta-section-wrap .btn-ghost {
+            border-color: var(--oat-border) !important;
+            color: var(--clay-black) !important;
+            background: transparent !important;
+        }
+        .cta-section-wrap .btn-ghost:hover {
+            background: var(--pure-white) !important;
+            border-color: var(--clay-black) !important;
+        }
+        .how-we-work {
+            background: var(--warm-cream);
+            padding: var(--space-48) var(--space-24);
+        }
+
+        .how-we-work-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .how-we-work-header {
+            text-align: center;
+            margin-bottom: var(--space-32);
+        }
+
+        .how-we-work-eyebrow {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: var(--space-16);
+            margin-bottom: var(--space-24);
+        }
+
+        .how-we-work-line {
+            display: block;
+            width: 40px;
+            height: 2px;
+            background: var(--warm-charcoal);
+            opacity: 0.4;
+        }
+
+        .how-we-work-title {
+            color: var(--clay-black);
+            margin-bottom: var(--space-16);
+        }
+
+        .how-we-work-italic {
+            font-style: italic;
+            font-weight: 600;
+            color: #213885;
+        }
+
+        .how-we-work-sub {
+            color: var(--warm-charcoal);
+            font-size: 17px;
+        }
+
+        /* Horizontal Steps */
+        .horiz-steps-wrap {
+            position: relative;
+        }
+
+        /* Connecting line behind the nodes */
+        .horiz-steps-wrap::before {
+            content: '';
+            position: absolute;
+            top: 36px;
+            left: calc(12.5% + 4px);
+            right: calc(12.5% + 4px);
+            height: 2px;
+            background: linear-gradient(90deg, #213885, #5F3475);
+            opacity: 0.25;
+            z-index: 0;
+        }
+
+        .horiz-steps-row {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: var(--space-24);
+            position: relative;
+            z-index: 1;
+        }
+
+        .horiz-step {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .horiz-step-node {
+            width: 72px;
+            height: 72px;
+            border-radius: 50%;
+            background: linear-gradient(90deg, #213885, #5F3475);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 700;
+            font-size: 22px;
+            flex-shrink: 0;
+            box-shadow: 0 4px 20px rgba(37, 99, 235, 0.25);
+            margin-bottom: var(--space-24);
+            position: relative;
+        }
+
+        .horiz-step-node::after {
+            content: '';
+            position: absolute;
+            inset: -5px;
+            border-radius: 50%;
+            border: 2px solid rgba(37, 99, 235, 0.15);
+        }
+
+        .horiz-step-box {
+            background: var(--pure-white);
+            border: 1px solid var(--oat-border);
+            border-radius: var(--radius-xl);
+            padding: var(--space-24) var(--space-20);
+            flex: 1;
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+            transition: box-shadow 0.3s ease, transform 0.3s ease;
+        }
+
+        .horiz-step-box:hover {
+            box-shadow: 0 12px 32px rgba(37, 99, 235, 0.08);
+            transform: translateY(-3px);
+        }
+
+        .horiz-step-box::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #213885, #5F3475);
+        }
+
+        .horiz-step-label {
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: #213885;
+            margin-bottom: var(--space-8);
+        }
+
+        .horiz-step-title {
+            font-size: 17px;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            color: var(--clay-black);
+            margin-bottom: var(--space-12);
+            line-height: 1.3;
+        }
+
+        .horiz-step-desc {
+            font-size: 13.5px;
+            color: var(--warm-charcoal);
+            line-height: 1.65;
+        }
+
+        @media (max-width: 900px) {
+            .horiz-steps-row {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .horiz-steps-wrap::before { display: none; }
+        }
+
+        @media (max-width: 540px) {
+            .horiz-steps-row {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Testimonials Section */
+        .testimonials {
+            background: #f2f4f8;
+            padding: var(--space-48) var(--space-24);
+        }
+
+        .testimonials-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .testimonials-header {
+            text-align: center;
+            margin-bottom: var(--space-32);
+        }
+
+        .testimonials-title {
+            font-size: clamp(32px, 5vw, 48px);
+            font-weight: 700;
+            letter-spacing: -0.03em;
+            color: var(--clay-black);
+            margin-bottom: var(--space-16);
+        }
+
+        .testimonials-title span {
+            color: #213885;
+        }
+
+        .testimonials-sub {
+            color: var(--warm-charcoal);
+            font-size: 16px;
+        }
+
+        .testimonials-grid {
+            display: flex;
+            gap: var(--space-24);
+            overflow: hidden;
+            position: relative;
+        }
+
+        .testimonials-grid::before,
+        .testimonials-grid::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            width: 100px;
+            height: 100%;
+            z-index: 2;
+            pointer-events: none;
+        }
+
+        .testimonials-grid::before {
+            left: 0;
+            background: linear-gradient(to right, #f2f4f8, transparent);
+        }
+
+        .testimonials-grid::after {
+            right: 0;
+            background: linear-gradient(to left, #f2f4f8, transparent);
+        }
+
+        .testimonials-scroll {
+            display: flex;
+            gap: var(--space-24);
+            animation: scroll-testimonials 30s linear infinite;
+        }
+
+        .testimonials-scroll:hover {
+            animation-play-state: paused;
+        }
+
+        @keyframes scroll-testimonials {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(calc(-100% - var(--space-24)));
+            }
+        }
+
+        /* Google Style Testimonials */
+        .google-testimonials-wrapper {
+            overflow: hidden;
+            position: relative;
+        }
+
+        .google-testimonials-scroll {
+            display: flex;
+            gap: 20px;
+            animation: scroll-testimonials 40s linear infinite;
+        }
+
+        .google-testimonials-scroll:hover {
+            animation-play-state: paused;
+        }
+
+        .google-testimonial-card {
+            background: white;
+            border: 1px solid #e0e0e0;
+            border-radius: 12px;
+            padding: 20px;
+            min-width: 350px;
+            max-width: 350px;
+            flex-shrink: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+            transition: all 0.3s;
+        }
+
+        .google-testimonial-card:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+            transform: translateY(-2px);
+        }
+
+        .google-header {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .google-stars {
+            color: #fbbc04;
+            font-size: 16px;
+            letter-spacing: 2px;
+        }
+
+        .google-review-text {
+            color: #3c4043;
+            font-size: 14px;
+            line-height: 1.6;
+            flex: 1;
+        }
+
+        .google-footer {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .google-avatar {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        .google-author {
+            flex: 1;
+        }
+
+        .google-name {
+            font-size: 14px;
+            font-weight: 500;
+            color: #3c4043;
+        }
+
+        .google-date {
+            font-size: 12px;
+            color: #5f6368;
+        }
+
+        .testimonial-card {
+            background: var(--pure-white);
+            border-radius: var(--radius-xl);
+            border: 1px solid var(--oat-border);
+            padding: var(--space-32);
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-20);
+            transition: box-shadow 0.3s ease, transform 0.3s ease;
+            position: relative;
+            min-width: 400px;
+            flex-shrink: 0;
+        }
+
+        .testimonial-card:hover {
+            box-shadow: 0 12px 40px rgba(37, 99, 235, 0.08);
+            transform: translateY(-3px);
+        }
+
+        .testimonial-card-top {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .testimonial-stars {
+            display: flex;
+            gap: 3px;
+        }
+
+        .testimonial-stars span {
+            color: var(--primary-500);
+            font-size: 20px;
+        }
+
+        .testimonial-quote-icon {
+            font-size: 36px;
+            color: var(--oat-border);
+            line-height: 1;
+            font-family: Georgia, serif;
+            font-weight: 700;
+        }
+
+        .testimonial-text {
+            font-size: 15px;
+            color: var(--warm-charcoal);
+            line-height: 1.7;
+            flex: 1;
+        }
+
+        .testimonial-author-name {
+            font-size: 15px;
+            font-weight: 700;
+            color: var(--clay-black);
+            margin-bottom: 2px;
+        }
+
+        .testimonial-author-type {
+            font-size: 13px;
+            color: var(--warm-silver);
+        }
+
+        @media (max-width: 900px) {
+            .testimonial-card {
+                min-width: 320px;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInRight {
+            from {
+                opacity: 0;
+                transform: translateX(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .hero-top,
+            .colored-content,
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: var(--space-40);
+            }
+
+            .hero-stats {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .footer-content {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            nav {
+                display: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                padding: var(--space-48) var(--space-24);
+            }
+
+            .services,
+            .about,
+            .cta-section {
+                margin: var(--space-48) auto;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-stats {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .about-highlights {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: var(--space-32);
+            }
+
+                    .footer-bottom {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding-top: 14px;
+            padding-bottom: 4px;
+            border-top: 1px solid var(--oat-border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 13px;
+        }
+        }
+    
+        .nav-actions {
+            display: flex;
+            flex: 1;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .phone-button {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+            color: var(--clay-black);
+        }
+
+        .phone-icon {
+            width: 34px;
+            height: 34px;
+            background: linear-gradient(90deg, #213885, #5F3475);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .phone-number {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--clay-black);
+        }
+
+        .btn-book {
+            padding: 14px 28px;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+
+        @media (max-width: 768px) {
+            .nav-actions {
+                flex-direction: column;
+                gap: 12px;
+            }
+        }
+    
+
+        /* Dropdown Nav */
+        .nav-dropdown{position:relative;display:flex;align-items:center;}
+
+
+</style>
+
+    <!-- ===== SEO & AI Search Optimization ===== -->
+    <meta name="description" content="5K Immigration Services — Gurvinder Singh (RCIC #R710529) provides licensed Canadian immigration consulting in Surrey, Langley, and Greater Vancouver, BC. Work permits, Express Entry, family sponsorship, Super Visa, PR, and citizenship. Straight answers, no shortcuts.">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <link rel="canonical" href="https://www.5kimmigration.ca/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="5K Immigration Services — Licensed RCIC in Surrey, BC">
+    <meta property="og:description" content="Gurvinder Singh (RCIC #R710529) — regulated Canadian immigration consultant in Surrey, BC. Work permits, Express Entry, PR, Super Visa, family sponsorship. Straight answers, no shortcuts.">
+    <meta property="og:url" content="https://www.5kimmigration.ca/">
+    <meta property="og:image" content="https://www.5kimmigration.ca/Hero_canada.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="5K Immigration Services">
+    <meta property="og:locale" content="en_CA">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="5K Immigration Services — Licensed RCIC in Surrey, BC">
+    <meta name="twitter:description" content="Gurvinder Singh (RCIC #R710529) — regulated Canadian immigration consultant in Surrey, BC. Work permits, Express Entry, PR, Super Visa, family sponsorship.">
+    <meta name="twitter:image" content="https://www.5kimmigration.ca/Hero_canada.png">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "LegalService",
+          "@id": "https://www.5kimmigration.ca/#organization",
+          "name": "5K Immigration Services",
+          "alternateName": "5K Immigration",
+          "url": "https://www.5kimmigration.ca/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.5kimmigration.ca/5K_Immigration_Logo_Transparent.png",
+            "width": 200,
+            "height": 200
+          },
+          "image": "https://www.5kimmigration.ca/Hero_canada.png",
+          "description": "Regulated Canadian immigration consulting — work permits, Express Entry, family sponsorship, permanent residence, Super Visa, and citizenship applications handled by licensed RCIC Gurvinder Singh (CICC #R710529) based in Surrey, BC.",
+          "telephone": "+17789863366",
+          "email": "info@5kimmigration.ca",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "300-9850 King George Blvd",
+            "addressLocality": "Surrey",
+            "addressRegion": "BC",
+            "postalCode": "V3T 0P9",
+            "addressCountry": "CA"
+          },
+          "areaServed": [
+            {"@type": "City", "name": "Surrey"},
+            {"@type": "City", "name": "Langley"},
+            {"@type": "City", "name": "Delta"},
+            {"@type": "City", "name": "Burnaby"},
+            {"@type": "City", "name": "Richmond"},
+            {"@type": "City", "name": "White Rock"},
+            {"@type": "City", "name": "Vancouver"},
+            {"@type": "City", "name": "Abbotsford"},
+            {"@type": "State", "name": "British Columbia"},
+            {"@type": "Country", "name": "Canada"}
+          ],
+          "geo": {"@type": "GeoCoordinates", "latitude": "49.1758", "longitude": "-122.8490"},
+          "knowsAbout": [
+            "Canadian immigration law",
+            "Express Entry",
+            "Provincial Nominee Program",
+            "Family Sponsorship",
+            "Work Permits",
+            "Study Permits",
+            "Canadian Citizenship",
+            "Permanent Residence",
+            "Super Visa",
+            "LMIA"
+          ],
+          "sameAs": [
+            "https://www.linkedin.com/in/gurvindersingh-rcic/",
+            "https://www.instagram.com/5kimmigration",
+            "https://tiktok.com/@5kimmigration"
+          ],
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5",
+            "bestRating": "5",
+            "worstRating": "1",
+            "ratingCount": "400"
+          },
+          "employee": {
+            "@type": "Person",
+            "@id": "https://www.5kimmigration.ca/#gurvinder-singh",
+            "name": "Gurvinder Singh",
+            "jobTitle": "Regulated Canadian Immigration Consultant (RCIC)",
+            "identifier": "CICC License #R710529",
+            "url": "https://www.5kimmigration.ca/about.html",
+            "image": "https://www.5kimmigration.ca/gurvinder-singh.jpg",
+            "worksFor": {"@id": "https://www.5kimmigration.ca/#organization"},
+            "sameAs": "https://www.linkedin.com/in/gurvindersingh-rcic/"
+          },
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Canadian Immigration Services",
+            "itemListElement": [
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Express Entry — Federal Skilled Worker, Canadian Experience Class", "url": "https://www.5kimmigration.ca/services.html#permanent-resident"}},
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Provincial Nominee Program (PNP)", "url": "https://www.5kimmigration.ca/services.html#permanent-resident"}},
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Family Sponsorship — Spousal, Children, Parents & Grandparents", "url": "https://www.5kimmigration.ca/services.html#permanent-resident"}},
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Work Permits — Employer-Specific & Open Work Permit", "url": "https://www.5kimmigration.ca/services.html#temp-resident"}},
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Study Permits", "url": "https://www.5kimmigration.ca/services.html#temp-resident"}},
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Visitor Visa & Super Visa", "url": "https://www.5kimmigration.ca/services.html#temp-resident"}},
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Canadian Citizenship Application", "url": "https://www.5kimmigration.ca/services.html#citizenship"}},
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "PR Card Renewal & Permanent Resident Travel Document (PRTD)", "url": "https://www.5kimmigration.ca/services.html#specialized"}}
+            ]
+          }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://www.5kimmigration.ca/#website",
+          "url": "https://www.5kimmigration.ca/",
+          "name": "5K Immigration Services",
+          "publisher": {"@id": "https://www.5kimmigration.ca/#organization"},
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": {"@type": "EntryPoint", "urlTemplate": "https://www.5kimmigration.ca/services.html"},
+            "query-input": "required name=search_term_string"
+          }
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.5kimmigration.ca/#webpage",
+          "url": "https://www.5kimmigration.ca/",
+          "name": "5K Immigration Services — Licensed RCIC in Surrey, BC | Canadian Immigration Consultant",
+          "description": "Gurvinder Singh (RCIC #R710529) provides licensed Canadian immigration consulting in Surrey, BC. Work permits, Express Entry, family sponsorship, Super Visa, PR, and citizenship.",
+          "isPartOf": {"@id": "https://www.5kimmigration.ca/#website"},
+          "about": {"@id": "https://www.5kimmigration.ca/#organization"},
+          "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.5kimmigration.ca/"}
+            ]
+          }
+        }
+      ]
+    }
+    </script>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BDCHQ7MG41"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-BDCHQ7MG41');
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="index.html" class="logo">
+                <div class="logo-icon">
+                    <img src="5K_Immigration_Logo_Transparent.png" alt="5K Immigration Services" style="width:52px;height:52px;object-fit:contain;">
+                </div>
+                <span class="logo-text">5K Immigration Services</span>
+            </a>
+            <ul>
+                <li class="active-li"><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="book.html" style="position:relative;display:inline-flex;align-items:center;padding:6px 16px 6px 26px;background:linear-gradient(90deg,#213885,#5F3475);border-radius:50px;text-decoration:none;border:1px solid rgba(255,255,255,0.15);box-shadow:0 1px 4px rgba(33,56,133,0.18);transition:all 0.25s cubic-bezier(0.34,1.56,0.64,1);margin-left:14px;" onmouseover="this.style.boxShadow='0 3px 12px rgba(33,56,133,0.32)';this.style.transform='translateY(-1px)'" onmouseout="this.style.boxShadow='0 1px 4px rgba(33,56,133,0.18)';this.style.transform='none'"><img src="gurvinder-singh.jpg" style="position:absolute;left:-14px;top:50%;transform:translateY(-50%);z-index:2;width:34px;height:34px;border-radius:50%;object-fit:cover;object-position:center top;border:2px solid white;background:#c8dcff;filter:brightness(1.12);flex-shrink:0;"><span style="color:white;font-weight:700;font-size:15px;letter-spacing:0.2px;white-space:nowrap;">Talk to Gurvinder</span></a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="hero-section-wrap">
+        <!-- Static Hero Background -->
+        <div class="hero-video-bg">
+            <img src="Hero_canada.png" alt="Canadian skyline — 5K Immigration Services, Surrey BC" class="hero-photo-img">
+            <div class="hero-video-overlay"></div>
+        </div>
+    <section class="hero">
+        <div class="hero-top">
+        <div class="hero-content">
+            <h1 class="display-hero">Your Canadian Immigration Journey Starts Here</h1>
+            <p class="body-text hero-description">
+                I'm a software engineer turned Regulated Immigration Consultant. That background means your application gets built the way good code gets built — no loose ends, no assumptions, no rework.
+            </p>
+            <div class="hero-cta">
+                <a href="book.html" class="btn btn-primary">Book a Strategy Session</a>
+                <a href="services.html" class="btn btn-white">Explore Services</a>
+            </div>
+        </div>
+        </div>
+    </section>
+    </div><!-- /hero-section-wrap -->
+
+    <!-- Stats Bar -->
+    <div class="hero-stats-section">
+        <div class="hero-stats-inner" style="grid-template-columns:repeat(5,1fr);">
+            <div class="stat-card">
+                <div class="stat-number" data-target="400" data-suffix="+">0+</div>
+                <div class="stat-label">Successful Applications</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" data-target="98" data-suffix="%">0%</div>
+                <div class="stat-label">Client Satisfaction Rate</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" data-target="5" data-suffix="+">0+</div>
+                <div class="stat-label">Years Experience</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" data-target="100" data-suffix="%">0%</div>
+                <div class="stat-label">Transparency</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" data-target="5" data-suffix="★">0★</div>
+                <div class="stat-label">Google Rating</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    (function(){
+        function animateCounters(){
+            document.querySelectorAll('.stat-number[data-target]').forEach(function(el){
+                var target = parseInt(el.getAttribute('data-target'),10);
+                var suffix = el.getAttribute('data-suffix') || '';
+                var duration = 1800;
+                var start = null;
+                function step(ts){
+                    if(!start) start = ts;
+                    var progress = Math.min((ts - start)/duration, 1);
+                    var ease = 1 - Math.pow(1 - progress, 3);
+                    el.textContent = Math.floor(ease * target) + suffix;
+                    if(progress < 1) requestAnimationFrame(step);
+                    else el.textContent = target + suffix;
+                }
+                requestAnimationFrame(step);
+            });
+        }
+        var observed = false;
+        var section = document.querySelector('.hero-stats-section');
+        if('IntersectionObserver' in window && section){
+            var obs = new IntersectionObserver(function(entries){
+                if(entries[0].isIntersecting && !observed){
+                    observed = true;
+                    animateCounters();
+                }
+            },{threshold:0.3});
+            obs.observe(section);
+        } else {
+            animateCounters();
+        }
+        window.addEventListener('load', function(){
+            if(!observed){ observed=true; animateCounters(); }
+        });
+    })();
+    </script>
+
+    
+    <!-- About Section -->
+    <div class="about-section-wrap">
+    <section class="about" id="about">
+        <div class="about-grid">
+            <div class="about-image">
+                <div class="image-wrapper">
+                    <img src="gurvinder-singh.jpg" alt="Gurvinder Singh, RCIC - 5K Immigration Services" style="width:100%;height:auto;display:block;object-fit:cover;">
+                    <div class="credential-badge">
+                        <div class="credential-icon">🎓</div>
+                        <div>
+                            <div class="credential-text">Licensed RCIC</div>
+                            <div class="credential-number">#R710529</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-content">
+                <h3 class="feature-title">Meet Your Consultant</h3>
+                <h2 class="section-heading">Gurvinder Singh</h2>
+                <p class="body-text">
+                    Hi! I'm Gurvinder Singh — a Regulated Canadian Immigration Consultant and the founder of <span style="white-space:nowrap;">5K Immigration Services</span>. Before this, I worked in software engineering. That's not a side note — it's how I approach every file. I build applications the way I used to build systems: documented, tested, and ready to hold up under scrutiny.
+                </p>
+                <p class="body-text">
+                    I work with individuals and families coming to Canada to study, work, or stay permanently. If you've had a refusal, I'll tell you exactly why it happened and whether there's a path forward. If you're starting fresh, we'll map out the right stream and set clear expectations before any application begins.
+                </p>
+                <div class="about-highlights">
+                    <div class="highlight-item">
+                        <div class="highlight-icon">🎯</div>
+                        <div class="highlight-text">Strategic Planning</div>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-icon">📋</div>
+                        <div class="highlight-text">Meticulous Documentation</div>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-icon">💬</div>
+                        <div class="highlight-text">Clear Communication</div>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-icon">✅</div>
+                        <div class="highlight-text">Result-Oriented</div>
+                    </div>
+                </div>
+                <div style="margin-top:var(--space-32);">
+                    <a href="about.html" class="btn btn-primary" style="background:linear-gradient(90deg,#213885,#5F3475);color:#fff;border:none;">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div><!-- /about-section-wrap -->
+
+<!-- Services Section -->
+    <div class="services-section-wrap">
+    <section class="services" id="services-preview">
+        <div class="services-header">
+            <h3 class="feature-title" style="color: #213885; margin-bottom: var(--space-16);">Our Services</h3>
+            <h2 class="section-heading">What We Handle</h2>
+            <p class="body-text" style="color: var(--warm-charcoal); max-width: 700px; margin: var(--space-20) auto 0;">
+                Work permits, Express Entry, family sponsorship, and citizenship — assessed and filed by a regulated consultant who manages your case from first call to final decision.
+            </p>
+        </div>
+        <div class="services-grid" style="grid-template-columns:repeat(auto-fit,minmax(260px,1fr));">
+            <a href="services.html#temp-resident" class="service-card" style="text-decoration:none;color:inherit;">
+                <div class="service-icon">✈️</div>
+                <h3 class="feature-title service-title">Temporary Resident Pathways</h3>
+                <p class="service-description">
+                    Visitor visas, study permits, work permits, and extensions — assessed for your exact situation.
+                </p>
+                <div style="margin-top:var(--space-20);font-size:13px;font-weight:600;color:#213885;">Explore →</div>
+            </a>
+            <a href="services.html#permanent-resident" class="service-card" style="text-decoration:none;color:inherit;">
+                <div class="service-icon">🎯</div>
+                <h3 class="feature-title service-title">Permanent Resident Pathways</h3>
+                <p class="service-description">
+                    Express Entry, PNP streams, family sponsorship — find the fastest path that fits your profile.
+                </p>
+                <div style="margin-top:var(--space-20);font-size:13px;font-weight:600;color:#213885;">Explore →</div>
+            </a>
+            <a href="services.html#corporate" class="service-card" style="text-decoration:none;color:inherit;">
+                <div class="service-icon">💼</div>
+                <h3 class="feature-title service-title">Corporate Immigration</h3>
+                <p class="service-description">
+                    LMIA applications and employer-tied work permits, handled without the back-and-forth.
+                </p>
+                <div style="margin-top:var(--space-20);font-size:13px;font-weight:600;color:#213885;">Explore →</div>
+            </a>
+            <a href="services.html#citizenship" class="service-card" style="text-decoration:none;color:inherit;">
+                <div class="service-icon">🍁</div>
+                <h3 class="feature-title service-title">Citizenship</h3>
+                <p class="service-description">
+                    Residency calculation, application prep, and representation if IRCC has questions.
+                </p>
+                <div style="margin-top:var(--space-20);font-size:13px;font-weight:600;color:#213885;">Explore →</div>
+            </a>
+        </div>
+    </section>
+    </div><!-- /services-section-wrap -->
+
+    <!-- 4-Step Process Section -->
+    <section class="how-we-work">
+        <div class="how-we-work-inner">
+            <div class="how-we-work-header">
+                <div class="how-we-work-eyebrow">
+                    <span class="how-we-work-line"></span>
+                    <span class="label">HOW WE WORK</span>
+                    <span class="how-we-work-line"></span>
+                </div>
+                <h2 class="section-heading how-we-work-title">How This Works — <em class="how-we-work-italic">4 Steps</em></h2>
+                <p class="body-text how-we-work-sub">No surprises. You'll know your eligibility, your timeline, and your costs before signing anything.</p>
+            </div>
+
+            <div class="horiz-steps-wrap">
+                <div class="horiz-steps-row">
+
+                    <div class="horiz-step">
+                        <div class="horiz-step-node">1</div>
+                        <div class="horiz-step-box">
+                            <div class="horiz-step-label">Step 01</div>
+                            <h3 class="horiz-step-title">Strategic Consultation</h3>
+                            <p class="horiz-step-desc">We evaluate your profile with 100% transparency — covering your eligibility, realistic timelines, and exact costs before you commit.</p>
+                        </div>
+                    </div>
+
+                    <div class="horiz-step">
+                        <div class="horiz-step-node">2</div>
+                        <div class="horiz-step-box">
+                            <div class="horiz-step-label">Step 02</div>
+                            <h3 class="horiz-step-title">Pathway Selection</h3>
+                            <p class="horiz-step-desc">We identify the right program — Express Entry, PNP, sponsorship, or another stream — tailored to your specific profile and goals.</p>
+                        </div>
+                    </div>
+
+                    <div class="horiz-step">
+                        <div class="horiz-step-node">3</div>
+                        <div class="horiz-step-box">
+                            <div class="horiz-step-label">Step 03</div>
+                            <h3 class="horiz-step-title">Document & Application Prep</h3>
+                            <p class="horiz-step-desc">Meticulous preparation of every document, form, and letter — built for a "one-and-done" submission with no room for errors.</p>
+                        </div>
+                    </div>
+
+                    <div class="horiz-step">
+                        <div class="horiz-step-node">4</div>
+                        <div class="horiz-step-box">
+                            <div class="horiz-step-label">Step 04</div>
+                            <h3 class="horiz-step-title">Submission & Representation</h3>
+                            <p class="horiz-step-desc">We handle all IRCC communication and final filing on your behalf — you get direct RCIC representation from start to finish.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="testimonials-inner">
+            <div class="testimonials-header">
+                <h2 class="testimonials-title">What Our <span>Clients</span> Say</h2>
+                <p class="testimonials-sub">Real stories from people who trusted us with their immigration journey</p>
+            </div>
+            <div class="google-testimonials-wrapper">
+                <div class="google-testimonials-scroll">
+
+                    <!-- Testimonial 1: Kamalpreet Singh -->
+                    <div class="google-testimonial-card">
+                        <div class="google-header">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40'%3E%3Ccircle cx='20' cy='20' r='20' fill='%23ff7043'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='18' fill='white' font-weight='bold'%3EK%3C/text%3E%3C/svg%3E" alt="Kamalpreet Singh" style="width: 24px; height: 24px;">
+                            <div class="google-stars">★★★★★</div>
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 48 48'%3E%3Cpath fill='%234285F4' d='M45.12 24.5c0-1.56-.14-3.06-.4-4.5H24v8.51h11.84c-.51 2.75-2.06 5.08-4.39 6.64v5.52h7.11c4.16-3.83 6.56-9.47 6.56-16.17z'/%3E%3Cpath fill='%2334A853' d='M24 46c5.94 0 10.92-1.97 14.56-5.33l-7.11-5.52c-1.97 1.32-4.49 2.1-7.45 2.1-5.73 0-10.58-3.87-12.31-9.07H4.34v5.7C7.96 41.07 15.4 46 24 46z'/%3E%3Cpath fill='%23FBBC05' d='M11.69 28.18C11.25 26.86 11 25.45 11 24s.25-2.86.69-4.18v-5.7H4.34C2.85 17.09 2 20.45 2 24c0 3.55.85 6.91 2.34 9.88l7.35-5.7z'/%3E%3Cpath fill='%23EA4335' d='M24 10.75c3.23 0 6.13 1.11 8.41 3.29l6.31-6.31C34.91 4.18 29.93 2 24 2 15.4 2 7.96 6.93 4.34 14.12l7.35 5.7c1.73-5.2 6.58-9.07 12.31-9.07z'/%3E%3C/svg%3E" alt="Google" style="width: 16px; height: 16px; margin-left: auto;">
+                        </div>
+                        <p class="google-review-text">"I'm really thankful to Gurvinder Singh from 5K Immigration Services for all his help and guidance. While others suggested an expensive MBA, Gurvinder recommended a post-grad certificate in HR that matched my experience—at one-third of the cost. I got a job within a year, applied for Manitoba PNP, and received my Permanent Residency. The whole process took just 2.5 years! Highly recommend."</p>
+                        <div class="google-footer">
+                            <div class="google-avatar" style="background: #ff7043;">K</div>
+                            <div class="google-author">
+                                <div class="google-name">Kamalpreet Singh</div>
+                                <div class="google-date">5 reviews · 9 months ago</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2: sakshi tripathi -->
+                    <div class="google-testimonial-card">
+                        <div class="google-header">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40'%3E%3Ccircle cx='20' cy='20' r='20' fill='%2326a69a'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='18' fill='white' font-weight='bold'%3ES%3C/text%3E%3C/svg%3E" alt="sakshi tripathi" style="width: 24px; height: 24px;">
+                            <div class="google-stars">★★★★★</div>
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 48 48'%3E%3Cpath fill='%234285F4' d='M45.12 24.5c0-1.56-.14-3.06-.4-4.5H24v8.51h11.84c-.51 2.75-2.06 5.08-4.39 6.64v5.52h7.11c4.16-3.83 6.56-9.47 6.56-16.17z'/%3E%3Cpath fill='%2334A853' d='M24 46c5.94 0 10.92-1.97 14.56-5.33l-7.11-5.52c-1.97 1.32-4.49 2.1-7.45 2.1-5.73 0-10.58-3.87-12.31-9.07H4.34v5.7C7.96 41.07 15.4 46 24 46z'/%3E%3Cpath fill='%23FBBC05' d='M11.69 28.18C11.25 26.86 11 25.45 11 24s.25-2.86.69-4.18v-5.7H4.34C2.85 17.09 2 20.45 2 24c0 3.55.85 6.91 2.34 9.88l7.35-5.7z'/%3E%3Cpath fill='%23EA4335' d='M24 10.75c3.23 0 6.13 1.11 8.41 3.29l6.31-6.31C34.91 4.18 29.93 2 24 2 15.4 2 7.96 6.93 4.34 14.12l7.35 5.7c1.73-5.2 6.58-9.07 12.31-9.07z'/%3E%3C/svg%3E" alt="Google" style="width: 16px; height: 16px; margin-left: auto;">
+                        </div>
+                        <p class="google-review-text">"We had a very positive experience with 5kimmigration. Gurvinder was thorough and detailed and made sure he is well connected with us to complete the super visa application for my in-laws. His attention to detail and speedy process ensured we get the application approved on time with no delay. I would recommend 5kimmigration services to anyone applying for visa/PR etc."</p>
+                        <div class="google-footer">
+                            <div class="google-avatar" style="background: #26a69a;">S</div>
+                            <div class="google-author">
+                                <div class="google-name">sakshi tripathi</div>
+                                <div class="google-date">7 reviews · a year ago</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3: rakesh sai -->
+                    <div class="google-testimonial-card">
+                        <div class="google-header">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40'%3E%3Ccircle cx='20' cy='20' r='20' fill='%235c6bc0'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='18' fill='white' font-weight='bold'%3ER%3C/text%3E%3C/svg%3E" alt="rakesh sai" style="width: 24px; height: 24px;">
+                            <div class="google-stars">★★★★★</div>
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 48 48'%3E%3Cpath fill='%234285F4' d='M45.12 24.5c0-1.56-.14-3.06-.4-4.5H24v8.51h11.84c-.51 2.75-2.06 5.08-4.39 6.64v5.52h7.11c4.16-3.83 6.56-9.47 6.56-16.17z'/%3E%3Cpath fill='%2334A853' d='M24 46c5.94 0 10.92-1.97 14.56-5.33l-7.11-5.52c-1.97 1.32-4.49 2.1-7.45 2.1-5.73 0-10.58-3.87-12.31-9.07H4.34v5.7C7.96 41.07 15.4 46 24 46z'/%3E%3Cpath fill='%23FBBC05' d='M11.69 28.18C11.25 26.86 11 25.45 11 24s.25-2.86.69-4.18v-5.7H4.34C2.85 17.09 2 20.45 2 24c0 3.55.85 6.91 2.34 9.88l7.35-5.7z'/%3E%3Cpath fill='%23EA4335' d='M24 10.75c3.23 0 6.13 1.11 8.41 3.29l6.31-6.31C34.91 4.18 29.93 2 24 2 15.4 2 7.96 6.93 4.34 14.12l7.35 5.7c1.73-5.2 6.58-9.07 12.31-9.07z'/%3E%3C/svg%3E" alt="Google" style="width: 16px; height: 16px; margin-left: auto;">
+                        </div>
+                        <p class="google-review-text">"Thanks to Gurvinder who helped me in every step of my PR application process and made it successful in the first attempt!! His commitment towards the work was fabulous. Gurvinder is very friendly and his support was tremendous in each and every step. I Would Say Yes to 5K immigration services if you are filing PR for the first time!!!"</p>
+                        <div class="google-footer">
+                            <div class="google-avatar" style="background: #5c6bc0;">R</div>
+                            <div class="google-author">
+                                <div class="google-name">rakesh sai</div>
+                                <div class="google-date">6 reviews · 8 months ago</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 4: Varun Khurana -->
+                    <div class="google-testimonial-card">
+                        <div class="google-header">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40'%3E%3Ccircle cx='20' cy='20' r='20' fill='%237e57c2'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='18' fill='white' font-weight='bold'%3EV%3C/text%3E%3C/svg%3E" alt="Varun Khurana" style="width: 24px; height: 24px;">
+                            <div class="google-stars">★★★★★</div>
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 48 48'%3E%3Cpath fill='%234285F4' d='M45.12 24.5c0-1.56-.14-3.06-.4-4.5H24v8.51h11.84c-.51 2.75-2.06 5.08-4.39 6.64v5.52h7.11c4.16-3.83 6.56-9.47 6.56-16.17z'/%3E%3Cpath fill='%2334A853' d='M24 46c5.94 0 10.92-1.97 14.56-5.33l-7.11-5.52c-1.97 1.32-4.49 2.1-7.45 2.1-5.73 0-10.58-3.87-12.31-9.07H4.34v5.7C7.96 41.07 15.4 46 24 46z'/%3E%3Cpath fill='%23FBBC05' d='M11.69 28.18C11.25 26.86 11 25.45 11 24s.25-2.86.69-4.18v-5.7H4.34C2.85 17.09 2 20.45 2 24c0 3.55.85 6.91 2.34 9.88l7.35-5.7z'/%3E%3Cpath fill='%23EA4335' d='M24 10.75c3.23 0 6.13 1.11 8.41 3.29l6.31-6.31C34.91 4.18 29.93 2 24 2 15.4 2 7.96 6.93 4.34 14.12l7.35 5.7c1.73-5.2 6.58-9.07 12.31-9.07z'/%3E%3C/svg%3E" alt="Google" style="width: 16px; height: 16px; margin-left: auto;">
+                        </div>
+                        <p class="google-review-text">"Gurvinder was amazing and helped me secure a Supervisa for my parents after their application was rejected once. He was thorough and explained the process in detail and was always available for any questions we had. I am so happy we finally got approved and thanks to Gurvinder for all the help!"</p>
+                        <div class="google-footer">
+                            <div class="google-avatar" style="background: #7e57c2;">V</div>
+                            <div class="google-author">
+                                <div class="google-name">Varun Khurana</div>
+                                <div class="google-date">Local Guide · 44 reviews · 2 months ago</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 5: Srinu Gudla -->
+                    <div class="google-testimonial-card">
+                        <div class="google-header">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40'%3E%3Ccircle cx='20' cy='20' r='20' fill='%2343a047'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='18' fill='white' font-weight='bold'%3ES%3C/text%3E%3C/svg%3E" alt="Srinu Gudla" style="width: 24px; height: 24px;">
+                            <div class="google-stars">★★★★★</div>
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 48 48'%3E%3Cpath fill='%234285F4' d='M45.12 24.5c0-1.56-.14-3.06-.4-4.5H24v8.51h11.84c-.51 2.75-2.06 5.08-4.39 6.64v5.52h7.11c4.16-3.83 6.56-9.47 6.56-16.17z'/%3E%3Cpath fill='%2334A853' d='M24 46c5.94 0 10.92-1.97 14.56-5.33l-7.11-5.52c-1.97 1.32-4.49 2.1-7.45 2.1-5.73 0-10.58-3.87-12.31-9.07H4.34v5.7C7.96 41.07 15.4 46 24 46z'/%3E%3Cpath fill='%23FBBC05' d='M11.69 28.18C11.25 26.86 11 25.45 11 24s.25-2.86.69-4.18v-5.7H4.34C2.85 17.09 2 20.45 2 24c0 3.55.85 6.91 2.34 9.88l7.35-5.7z'/%3E%3Cpath fill='%23EA4335' d='M24 10.75c3.23 0 6.13 1.11 8.41 3.29l6.31-6.31C34.91 4.18 29.93 2 24 2 15.4 2 7.96 6.93 4.34 14.12l7.35 5.7c1.73-5.2 6.58-9.07 12.31-9.07z'/%3E%3C/svg%3E" alt="Google" style="width: 16px; height: 16px; margin-left: auto;">
+                        </div>
+                        <p class="google-review-text">"I just got the passport requests for my family's visa applications — my spouse (SOWP), my first child (study permit), and my second child (visitor visa). After waiting more than 3 years and 3 IRCC refusals, Gurvinder went through our whole case, organized the documents properly, and wrote a very strong support letter. Everything worked out! Truly professional, honest, and patient."</p>
+                        <div class="google-footer">
+                            <div class="google-avatar" style="background: #43a047;">S</div>
+                            <div class="google-author">
+                                <div class="google-name">Srinu Gudla</div>
+                                <div class="google-date">1 review · 5 months ago</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 6: Adabala Shyam Kiran -->
+                    <div class="google-testimonial-card">
+                        <div class="google-header">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40'%3E%3Ccircle cx='20' cy='20' r='20' fill='%23ef5350'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='18' fill='white' font-weight='bold'%3EA%3C/text%3E%3C/svg%3E" alt="Adabala Shyam Kiran" style="width: 24px; height: 24px;">
+                            <div class="google-stars">★★★★★</div>
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 48 48'%3E%3Cpath fill='%234285F4' d='M45.12 24.5c0-1.56-.14-3.06-.4-4.5H24v8.51h11.84c-.51 2.75-2.06 5.08-4.39 6.64v5.52h7.11c4.16-3.83 6.56-9.47 6.56-16.17z'/%3E%3Cpath fill='%2334A853' d='M24 46c5.94 0 10.92-1.97 14.56-5.33l-7.11-5.52c-1.97 1.32-4.49 2.1-7.45 2.1-5.73 0-10.58-3.87-12.31-9.07H4.34v5.7C7.96 41.07 15.4 46 24 46z'/%3E%3Cpath fill='%23FBBC05' d='M11.69 28.18C11.25 26.86 11 25.45 11 24s.25-2.86.69-4.18v-5.7H4.34C2.85 17.09 2 20.45 2 24c0 3.55.85 6.91 2.34 9.88l7.35-5.7z'/%3E%3Cpath fill='%23EA4335' d='M24 10.75c3.23 0 6.13 1.11 8.41 3.29l6.31-6.31C34.91 4.18 29.93 2 24 2 15.4 2 7.96 6.93 4.34 14.12l7.35 5.7c1.73-5.2 6.58-9.07 12.31-9.07z'/%3E%3C/svg%3E" alt="Google" style="width: 16px; height: 16px; margin-left: auto;">
+                        </div>
+                        <p class="google-review-text">"A friend recommended 5K Immigration, and it turned out to be one of my best decisions. Gurvinder advised me throughout my Work Permit and PR process under the Atlantic Immigration Program. He answered all my questions even at odd hours, guided me whenever I felt stressed, and made sure I didn't make any mistakes. Thanks to his guidance, I finally received my PR. Truly grateful."</p>
+                        <div class="google-footer">
+                            <div class="google-avatar" style="background: #ef5350;">A</div>
+                            <div class="google-author">
+                                <div class="google-name">Adabala Shyam Kiran</div>
+                                <div class="google-date">6 reviews · 5 months ago</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Duplicates for seamless infinite scroll -->
+                    <div class="google-testimonial-card">
+                        <div class="google-header">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40'%3E%3Ccircle cx='20' cy='20' r='20' fill='%23ff7043'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='18' fill='white' font-weight='bold'%3EK%3C/text%3E%3C/svg%3E" alt="Kamalpreet Singh" style="width: 24px; height: 24px;">
+                            <div class="google-stars">★★★★★</div>
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 48 48'%3E%3Cpath fill='%234285F4' d='M45.12 24.5c0-1.56-.14-3.06-.4-4.5H24v8.51h11.84c-.51 2.75-2.06 5.08-4.39 6.64v5.52h7.11c4.16-3.83 6.56-9.47 6.56-16.17z'/%3E%3Cpath fill='%2334A853' d='M24 46c5.94 0 10.92-1.97 14.56-5.33l-7.11-5.52c-1.97 1.32-4.49 2.1-7.45 2.1-5.73 0-10.58-3.87-12.31-9.07H4.34v5.7C7.96 41.07 15.4 46 24 46z'/%3E%3Cpath fill='%23FBBC05' d='M11.69 28.18C11.25 26.86 11 25.45 11 24s.25-2.86.69-4.18v-5.7H4.34C2.85 17.09 2 20.45 2 24c0 3.55.85 6.91 2.34 9.88l7.35-5.7z'/%3E%3Cpath fill='%23EA4335' d='M24 10.75c3.23 0 6.13 1.11 8.41 3.29l6.31-6.31C34.91 4.18 29.93 2 24 2 15.4 2 7.96 6.93 4.34 14.12l7.35 5.7c1.73-5.2 6.58-9.07 12.31-9.07z'/%3E%3C/svg%3E" alt="Google" style="width: 16px; height: 16px; margin-left: auto;">
+                        </div>
+                        <p class="google-review-text">"I'm really thankful to Gurvinder Singh from 5K Immigration Services for all his help and guidance. While others suggested an expensive MBA, Gurvinder recommended a post-grad certificate in HR that matched my experience—at one-third of the cost. I got a job within a year, applied for Manitoba PNP, and received my Permanent Residency. The whole process took just 2.5 years! Highly recommend."</p>
+                        <div class="google-footer">
+                            <div class="google-avatar" style="background: #ff7043;">K</div>
+                            <div class="google-author">
+                                <div class="google-name">Kamalpreet Singh</div>
+                                <div class="google-date">5 reviews · 9 months ago</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="google-testimonial-card">
+                        <div class="google-header">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40'%3E%3Ccircle cx='20' cy='20' r='20' fill='%2326a69a'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='18' fill='white' font-weight='bold'%3ES%3C/text%3E%3C/svg%3E" alt="sakshi tripathi" style="width: 24px; height: 24px;">
+                            <div class="google-stars">★★★★★</div>
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 48 48'%3E%3Cpath fill='%234285F4' d='M45.12 24.5c0-1.56-.14-3.06-.4-4.5H24v8.51h11.84c-.51 2.75-2.06 5.08-4.39 6.64v5.52h7.11c4.16-3.83 6.56-9.47 6.56-16.17z'/%3E%3Cpath fill='%2334A853' d='M24 46c5.94 0 10.92-1.97 14.56-5.33l-7.11-5.52c-1.97 1.32-4.49 2.1-7.45 2.1-5.73 0-10.58-3.87-12.31-9.07H4.34v5.7C7.96 41.07 15.4 46 24 46z'/%3E%3Cpath fill='%23FBBC05' d='M11.69 28.18C11.25 26.86 11 25.45 11 24s.25-2.86.69-4.18v-5.7H4.34C2.85 17.09 2 20.45 2 24c0 3.55.85 6.91 2.34 9.88l7.35-5.7z'/%3E%3Cpath fill='%23EA4335' d='M24 10.75c3.23 0 6.13 1.11 8.41 3.29l6.31-6.31C34.91 4.18 29.93 2 24 2 15.4 2 7.96 6.93 4.34 14.12l7.35 5.7c1.73-5.2 6.58-9.07 12.31-9.07z'/%3E%3C/svg%3E" alt="Google" style="width: 16px; height: 16px; margin-left: auto;">
+                        </div>
+                        <p class="google-review-text">"We had a very positive experience with 5kimmigration. Gurvinder was thorough and detailed and made sure he is well connected with us to complete the super visa application for my in-laws. His attention to detail and speedy process ensured we get the application approved on time with no delay. I would recommend 5kimmigration services to anyone applying for visa/PR etc."</p>
+                        <div class="google-footer">
+                            <div class="google-avatar" style="background: #26a69a;">S</div>
+                            <div class="google-author">
+                                <div class="google-name">sakshi tripathi</div>
+                                <div class="google-date">7 reviews · a year ago</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="google-testimonial-card">
+                        <div class="google-header">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40'%3E%3Ccircle cx='20' cy='20' r='20' fill='%235c6bc0'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='18' fill='white' font-weight='bold'%3ER%3C/text%3E%3C/svg%3E" alt="rakesh sai" style="width: 24px; height: 24px;">
+                            <div class="google-stars">★★★★★</div>
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 48 48'%3E%3Cpath fill='%234285F4' d='M45.12 24.5c0-1.56-.14-3.06-.4-4.5H24v8.51h11.84c-.51 2.75-2.06 5.08-4.39 6.64v5.52h7.11c4.16-3.83 6.56-9.47 6.56-16.17z'/%3E%3Cpath fill='%2334A853' d='M24 46c5.94 0 10.92-1.97 14.56-5.33l-7.11-5.52c-1.97 1.32-4.49 2.1-7.45 2.1-5.73 0-10.58-3.87-12.31-9.07H4.34v5.7C7.96 41.07 15.4 46 24 46z'/%3E%3Cpath fill='%23FBBC05' d='M11.69 28.18C11.25 26.86 11 25.45 11 24s.25-2.86.69-4.18v-5.7H4.34C2.85 17.09 2 20.45 2 24c0 3.55.85 6.91 2.34 9.88l7.35-5.7z'/%3E%3Cpath fill='%23EA4335' d='M24 10.75c3.23 0 6.13 1.11 8.41 3.29l6.31-6.31C34.91 4.18 29.93 2 24 2 15.4 2 7.96 6.93 4.34 14.12l7.35 5.7c1.73-5.2 6.58-9.07 12.31-9.07z'/%3E%3C/svg%3E" alt="Google" style="width: 16px; height: 16px; margin-left: auto;">
+                        </div>
+                        <p class="google-review-text">"Thanks to Gurvinder who helped me in every step of my PR application process and made it successful in the first attempt!! His commitment towards the work was fabulous. Gurvinder is very friendly and his support was tremendous in each and every step. I Would Say Yes to 5K immigration services if you are filing PR for the first time!!!"</p>
+                        <div class="google-footer">
+                            <div class="google-avatar" style="background: #5c6bc0;">R</div>
+                            <div class="google-author">
+                                <div class="google-name">rakesh sai</div>
+                                <div class="google-date">6 reviews · 8 months ago</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Colored Trust Section -->
+    <section class="colored-section">
+        <div class="colored-content">
+            <div class="colored-text">
+                <h2 class="section-heading">Licensed. Regulated. Trusted.</h2>
+                <p>
+                    As an RCIC (R710529), I'm regulated by the College of Immigration and Citizenship Consultants. That means there's a professional body holding me accountable — and you have recourse if something goes wrong. I take that seriously.
+                </p>
+                <div class="trust-badges">
+                    <div class="trust-badge">
+                        <div class="trust-icon">🛡️</div>
+                        <div>
+                            <div class="caption" style="color: #ECDFD2;">RCIC Licensed</div>
+                            <div class="feature-title" style="color: var(--pure-white);">#R710529</div>
+                        </div>
+                    </div>
+                    <div class="trust-badge">
+                        <div class="trust-icon">✓</div>
+                        <div>
+                            <div class="caption" style="color: #ECDFD2;">Verified</div>
+                            <div class="feature-title" style="color: var(--pure-white);">CICC Register</div>
+                        </div>
+                    </div>
+                </div>
+                <div style="margin-top: var(--space-32);">
+                    <a href="https://register.college-ic.ca/Public-Register-EN/RCIC_Search.aspx" class="btn btn-white" target="_blank">
+                        Verify Credentials →
+                    </a>
+                </div>
+            </div>
+            <div>
+                <div style="background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(8px); border-radius: var(--radius-2xl); padding: var(--space-40); border: 1px solid rgba(255, 255, 255, 0.2);">
+                    <h3 class="card-heading" style="color: var(--pure-white); margin-bottom: var(--space-24);">Why Choose 5K Immigration?</h3>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-20);">
+                        <div style="display: flex; gap: var(--space-16); align-items: start;">
+                            <div style="font-size: 18px;">🎯</div>
+                            <div>
+                                <div class="feature-title" style="color: var(--pure-white);">Precision Applications</div>
+                                <div class="caption" style="color: #ECDFD2;">Zero errors, one-and-done submissions</div>
+                            </div>
+                        </div>
+                        <div style="display: flex; gap: var(--space-16); align-items: start;">
+                            <div style="font-size: 18px;">📊</div>
+                            <div>
+                                <div class="feature-title" style="color: var(--pure-white);">Data-Driven Strategy</div>
+                                <div class="caption" style="color: #ECDFD2;">Technical background ensures a precise, analytical approach</div>
+                            </div>
+                        </div>
+                        <div style="display: flex; gap: var(--space-16); align-items: start;">
+                            <div style="font-size: 18px;">🛡️</div>
+                            <div>
+                                <div class="feature-title" style="color: var(--pure-white);">RCIC Licensed & Regulated</div>
+                                <div class="caption" style="color: #ECDFD2;">CICC-verified consultant</div>
+                            </div>
+                        </div>
+                        <div style="display: flex; gap: var(--space-16); align-items: start;">
+                            <div style="font-size: 18px;">⚡</div>
+                            <div>
+                                <div class="feature-title" style="color: var(--pure-white);">Streamlined Process</div>
+                                <div class="caption" style="color: #ECDFD2;">Efficient systems and clear communication at every step</div>
+                            </div>
+                        </div>
+                        <div style="display: flex; gap: var(--space-16); align-items: start;">
+                            <div style="font-size: 18px;">💬</div>
+                            <div>
+                                <div class="feature-title" style="color: var(--pure-white);">Transparent Guidance</div>
+                                <div class="caption" style="color: #ECDFD2;">No surprises — full clarity before you commit</div>
+                            </div>
+                        </div>
+                        <div style="display: flex; gap: var(--space-16); align-items: start;">
+                            <div style="font-size: 18px;">🤝</div>
+                            <div>
+                                <div class="feature-title" style="color: var(--pure-white);">Personalized Support</div>
+                                <div class="caption" style="color: #ECDFD2;">You get one consultant, not a rotating team — same person from first call to final approval</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Banner — overlaps footer -->
+    <div style="background: transparent; padding: 48px 24px 0; position: relative; z-index: 10; margin-bottom: -24px;">
+        <div style="max-width: 900px; margin: 0 auto; background: linear-gradient(135deg, #213885 0%, #5F3475 100%); border-radius: 20px; padding: 28px 40px; display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap; box-shadow: 0 8px 32px rgba(33,56,133,0.30);">
+            <div>
+                <p style="font-size: clamp(13px, 1.4vw, 17px); color: #fff; text-transform: uppercase; letter-spacing: 0.08em; font-weight: 800; margin-bottom: 4px;">Get Clarity on Your Immigration Options.</p>
+                <h2 style="font-size: 14px; font-weight: 700; color: rgba(255,255,255,0.75); letter-spacing: -0.02em; line-height: 1.2;">Check Your Eligibility Today</h2>
+            </div>
+            <a href="book.html" style="display: inline-flex; align-items: center; gap: 8px; padding: 13px 26px; background: #fff; color: #213885; text-decoration: none; border-radius: 10px; font-weight: 700; font-size: 14px; letter-spacing: -0.01em; white-space: nowrap; transition: all 0.2s;" onmouseover="this.style.background='#f0f4ff';this.style.color='#152866'" onmouseout="this.style.background='#fff';this.style.color='#213885'">Book Consultation <span style="font-size:16px;">→</span></a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+    <div class="footer-content">
+        <div class="footer-brand">
+            <a href="index.html" style="display:flex;align-items:center;justify-content:flex-start;gap:12px;text-decoration:none;margin-bottom:20px;">
+                <img src="5K_Immigration_Logo_Transparent.png" alt="5K Immigration" style="width:44px;height:44px;object-fit:contain;">
+                <span style="font-weight:700;font-size:17px;color:#000;letter-spacing:-0.02em;">5K Immigration Services</span>
+            </a>
+            <p>A regulated immigration practice — handling work permits, Express Entry, family sponsorship, and PR applications with precision.</p>
+            <div style="margin-top:20px;display:flex;flex-direction:row;align-items:flex-start;gap:20px;">
+                <div style="display:flex;flex-direction:column;gap:10px;">
+                    <span style="font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:0.07em;color:#9f9b93;">Follow Us</span>
+                    <div style="display:flex;align-items:center;gap:10px;">
+                    <a href="https://www.linkedin.com/in/gurvindersingh-rcic/" target="_blank" aria-label="LinkedIn" style="background:#0A66C2;border-radius:6px;width:30px;height:30px;display:flex;align-items:center;justify-content:center;flex-shrink:0;text-decoration:none;transition:opacity 0.2s;" onmouseover="this.style.opacity='0.85'" onmouseout="this.style.opacity='1'">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="#fff"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+                    </a>
+                    <a href="https://www.instagram.com/5kimmigration" target="_blank" aria-label="Instagram" style="background:linear-gradient(45deg,#f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);border-radius:6px;width:30px;height:30px;display:flex;align-items:center;justify-content:center;flex-shrink:0;text-decoration:none;transition:opacity 0.2s;" onmouseover="this.style.opacity='0.85'" onmouseout="this.style.opacity='1'">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                    </a>
+                    <a href="https://tiktok.com/@5kimmigration" target="_blank" aria-label="TikTok" style="background:#010101;border-radius:6px;width:30px;height:30px;display:flex;align-items:center;justify-content:center;flex-shrink:0;text-decoration:none;transition:opacity 0.2s;" onmouseover="this.style.opacity='0.75'" onmouseout="this.style.opacity='1'">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="#fff"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.79 1.53V6.77a4.85 4.85 0 01-1.02-.08z"/></svg>
+                    </a>
+                    </div>
+                </div>
+                <img src="RCIC_CRIC_Logo.png" alt="Regulated Canadian Immigration Consultant" style="height:70px;width:auto;object-fit:contain;">
+            </div>
+        </div>
+        <div class="footer-links">
+            <h4>Services</h4>
+            <ul>
+                <li><a href="services.html#temp-resident">Temporary Resident</a></li>
+                <li><a href="services.html#permanent-resident">Permanent Resident</a></li>
+                <li><a href="services.html#citizenship">Citizenship</a></li>
+                <li><a href="services.html#specialized">Specialized Services</a></li>
+            </ul>
+        </div>
+        <div class="footer-links">
+            <h4>Company</h4>
+            <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="book.html">Book Consultation</a></li>
+            </ul>
+        </div>
+        <div class="footer-links">
+            <h4>Contact</h4>
+            <ul>
+                <li><a href="tel:+17789863366">+1-778-986-3366</a></li>
+                <li><a href="mailto:info@5kimmigration.ca">info@5kimmigration.ca</a></li>
+                <li><a href="https://maps.google.com/?q=300-9850+King+George+Blvd+Surrey+BC" target="_blank">300-9850 King George Blvd, Surrey, BC V3T 0P9</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom" style="justify-content: center;">
+        <div>&copy; 2026 5K Immigration Services. All rights reserved. &nbsp;|&nbsp; <a href="privacy.html">Privacy Policy</a></div>
+    </div>
+</footer>
+
+    <!-- Page Navigation Arrows -->
+    <div id="page-nav-arrows" style="position:fixed;right:20px;bottom:120px;z-index:9999;display:flex;flex-direction:column;gap:10px;">
+        <button onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Back to top" style="width:44px;height:44px;border-radius:50%;border:2px solid rgba(33,56,133,0.25);background:rgba(255,255,255,0.95);box-shadow:0 4px 16px rgba(0,0,0,0.12);cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all 0.2s;" onmouseover="this.style.background='linear-gradient(90deg,#213885,#5F3475)';this.style.borderColor='transparent';this.querySelector('svg').style.stroke='#fff'" onmouseout="this.style.background='rgba(255,255,255,0.95)';this.style.borderColor='rgba(33,56,133,0.25)';this.querySelector('svg').style.stroke='#213885'">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#213885" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+        </button>
+        <button onclick="window.scrollTo({top:document.body.scrollHeight,behavior:'smooth'})" title="Go to bottom" style="width:44px;height:44px;border-radius:50%;border:2px solid rgba(33,56,133,0.25);background:rgba(255,255,255,0.95);box-shadow:0 4px 16px rgba(0,0,0,0.12);cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all 0.2s;" onmouseover="this.style.background='linear-gradient(90deg,#213885,#5F3475)';this.style.borderColor='transparent';this.querySelector('svg').style.stroke='#fff'" onmouseout="this.style.background='rgba(255,255,255,0.95)';this.style.borderColor='rgba(33,56,133,0.25)';this.querySelector('svg').style.stroke='#213885'">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#213885" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+    </div>
+
+    <!-- Messaging Widget -->
+    <div id="msg-widget">
+        <button id="msg-btn" onclick="document.getElementById('msg-popup').style.display='flex'" title="Send us a message" aria-label="Open messaging form">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        </button>
+    </div>
+    <div id="msg-popup" style="display:none;position:fixed;inset:0;z-index:99999;align-items:flex-end;justify-content:flex-end;padding:0 20px 90px 0;">
+        <div style="background:#fff;border-radius:16px;box-shadow:0 8px 40px rgba(33,56,133,0.22);width:340px;overflow:hidden;animation:msgSlideUp 0.22s ease;">
+            <div style="background:linear-gradient(135deg,#213885,#5F3475);padding:18px 20px;display:flex;align-items:center;justify-content:space-between;">
+                <div>
+                    <div style="color:#fff;font-weight:700;font-size:15px;font-family:'Roobert',system-ui,sans-serif;">5K Immigration Services</div>
+                    <div style="color:rgba(255,255,255,0.75);font-size:12px;margin-top:2px;">We respond within one business day.</div>
+                </div>
+                <button onclick="document.getElementById('msg-popup').style.display='none'" style="background:rgba(255,255,255,0.15);border:none;border-radius:50%;width:30px;height:30px;cursor:pointer;display:flex;align-items:center;justify-content:center;color:#fff;font-size:18px;line-height:1;" title="Close">&times;</button>
+            </div>
+            <div style="padding:20px;">
+                <form action="https://formsubmit.co/info@5kimmigration.ca" method="POST" onsubmit="this.querySelector('button[type=submit]').textContent='Sending…'">
+                    <input type="hidden" name="_subject" value="Website Inquiry - 5K Immigration Services">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="">
+                    <div style="margin-bottom:12px;">
+                        <label style="display:block;font-size:12px;font-weight:600;color:#55534e;margin-bottom:4px;">Name <span style="color:#213885">*</span></label>
+                        <input type="text" name="name" required placeholder="Your full name" style="width:100%;padding:9px 12px;border:1px solid #dad4c8;border-radius:8px;font-size:14px;font-family:inherit;outline:none;transition:border-color 0.2s;" onfocus="this.style.borderColor='#213885'" onblur="this.style.borderColor='#dad4c8'">
+                    </div>
+                    <div style="margin-bottom:12px;">
+                        <label style="display:block;font-size:12px;font-weight:600;color:#55534e;margin-bottom:4px;">Email <span style="color:#213885">*</span></label>
+                        <input type="email" name="email" required placeholder="your@email.com" style="width:100%;padding:9px 12px;border:1px solid #dad4c8;border-radius:8px;font-size:14px;font-family:inherit;outline:none;transition:border-color 0.2s;" onfocus="this.style.borderColor='#213885'" onblur="this.style.borderColor='#dad4c8'">
+                    </div>
+                    <div style="margin-bottom:12px;">
+                        <label style="display:block;font-size:12px;font-weight:600;color:#55534e;margin-bottom:4px;">Phone</label>
+                        <input type="tel" name="phone" placeholder="+1 (000) 000-0000" style="width:100%;padding:9px 12px;border:1px solid #dad4c8;border-radius:8px;font-size:14px;font-family:inherit;outline:none;transition:border-color 0.2s;" onfocus="this.style.borderColor='#213885'" onblur="this.style.borderColor='#dad4c8'">
+                    </div>
+                    <div style="margin-bottom:16px;">
+                        <label style="display:block;font-size:12px;font-weight:600;color:#55534e;margin-bottom:4px;">How can we help? <span style="color:#213885">*</span></label>
+                        <textarea name="message" required placeholder="Tell us about your situation…" rows="3" style="width:100%;padding:9px 12px;border:1px solid #dad4c8;border-radius:8px;font-size:14px;font-family:inherit;outline:none;resize:vertical;transition:border-color 0.2s;" onfocus="this.style.borderColor='#213885'" onblur="this.style.borderColor='#dad4c8'"></textarea>
+                    </div>
+                    <button type="submit" style="width:100%;padding:11px;background:linear-gradient(135deg,#213885,#5F3475);color:#fff;border:none;border-radius:8px;font-size:14px;font-weight:700;font-family:inherit;cursor:pointer;letter-spacing:0.3px;transition:opacity 0.2s;">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <style>
+        #msg-btn{position:fixed;right:20px;bottom:28px;z-index:9998;width:52px;height:52px;border-radius:50%;background:linear-gradient(135deg,#213885,#5F3475);border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 16px rgba(33,56,133,0.35);transition:transform 0.2s,box-shadow 0.2s;}
+        #msg-btn:hover{transform:scale(1.08);box-shadow:0 6px 24px rgba(33,56,133,0.45);}
+        @keyframes msgSlideUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+    </style>
+</body>
+</html>

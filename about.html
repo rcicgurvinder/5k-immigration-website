@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="5K_Immigration_Logo_Transparent.png">
-    <link rel="apple-touch-icon" href="5K_Immigration_Logo_Transparent.png">
+    <link rel="icon" type="image/png" href="5K_Immigration_Logo_Transparent.png?v=2">
+    <link rel="apple-touch-icon" href="5K_Immigration_Logo_Transparent.png?v=2">
     <title>About Gurvinder Singh, RCIC #R710529 — 5K Immigration Services</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -126,14 +126,20 @@
             grid-template-columns: repeat(5, 1fr);
             gap: 10px;
         }
+        .five-tiles-grid h3 {
+            font-size: clamp(14px, 3.5vw, 20px);
+        }
         @media (max-width: 640px) {
             .five-tiles-grid {
                 grid-template-columns: repeat(3, 1fr);
             }
         }
-        @media (max-width: 360px) {
+        @media (max-width: 480px) {
             .five-tiles-grid {
                 grid-template-columns: repeat(2, 1fr);
+            }
+            .five-tiles-grid > div:last-child {
+                grid-column: 1 / -1;
             }
         }
 
@@ -1693,7 +1699,7 @@
     <!-- Why I Became Section - Compact -->
     <section style="max-width: 1200px; margin: 0 auto; padding: 20px 24px;">
         <div style="max-width: 1000px; margin: 0 auto;">
-            <div style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 48px; align-items: start;">
+            <div class="why-became-grid" style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 48px; align-items: start;">
             <div>
                 <h2 class="section-heading" style="margin-bottom: 20px;">Why I Became an Immigration Consultant</h2>
                 <p style="margin-bottom: 16px; color: var(--warm-charcoal); line-height: 1.6; font-size: 16px; text-align: justify;">
@@ -1703,7 +1709,7 @@
                     Before becoming an RCIC, I built my career in software engineering. That background built a useful habit: I break complex systems into steps, track the dependencies, and find the path that doesn't cut corners. Canadian immigration law is that kind of system.
                 </p>
             </div>
-            <div style="background: white; padding: 28px; border-radius: var(--radius-2xl); border: 2px solid #213885; text-align: center; box-shadow: 0 8px 24px rgba(37, 99, 235, 0.15);">
+            <div class="why-became-photo" style="background: white; padding: 28px; border-radius: var(--radius-2xl); border: 2px solid #213885; text-align: center; box-shadow: 0 8px 24px rgba(37, 99, 235, 0.15);">
                 <div style="width: 150px; height: 150px; border-radius: 50%; overflow: hidden; margin: 0 auto 16px; border: 4px solid #213885; box-shadow: 0 8px 20px rgba(37, 99, 235, 0.3);">
                     <img src="gurvinder-singh.jpg" alt="Gurvinder Singh" style="width: 100%; height: 100%; object-fit: cover; object-position: center top;">
                 </div>
@@ -1893,7 +1899,7 @@
                 <div class="faq-item">
                     <div class="faq-question" onclick="toggleFAQ(this)">
                         <span>What is an RCIC and why does it matter?</span>
-                        <span class="faq-icon">×</span>
+                        <span class="faq-icon">+</span>
                     </div>
                     <div class="faq-answer">
                         <p>An RCIC (Regulated Canadian Immigration Consultant) is a licensed professional authorized by the College of Immigration and Citizenship Consultants to represent clients in Canadian immigration matters. Working with an RCIC means you have a licensed professional handling your file — not an unlicensed ghost consultant operating without oversight.</p>
@@ -1904,7 +1910,7 @@
                 <div class="faq-item">
                     <div class="faq-question" onclick="toggleFAQ(this)">
                         <span>How long does the immigration process take?</span>
-                        <span class="faq-icon">×</span>
+                        <span class="faq-icon">+</span>
                     </div>
                     <div class="faq-answer">
                         <p>Processing times vary widely depending on the program, your country of origin, and IRCC processing volumes. During your consultation, I'll provide realistic timelines based on current processing standards for your specific situation.</p>
@@ -1915,7 +1921,7 @@
                 <div class="faq-item">
                     <div class="faq-question" onclick="toggleFAQ(this)">
                         <span>Do you guarantee my application will be approved?</span>
-                        <span class="faq-icon">×</span>
+                        <span class="faq-icon">+</span>
                     </div>
                     <div class="faq-answer">
                         <p>No honest consultant can guarantee approval. The final decision is always made by IRCC. What I can promise is that your application will be carefully prepared, fully documented, and put together in the best way possible to give you a strong chance of success.</p>
@@ -1926,7 +1932,7 @@
                 <div class="faq-item">
                     <div class="faq-question" onclick="toggleFAQ(this)">
                         <span>What happens during the initial consultation?</span>
-                        <span class="faq-icon">×</span>
+                        <span class="faq-icon">+</span>
                     </div>
                     <div class="faq-answer">
                         <p>During our consultation, I'll review your background, assess your eligibility for different programs, explain your options clearly, and outline a recommended strategy. You'll leave with a clear understanding of your next steps and realistic expectations.</p>
@@ -1937,7 +1943,7 @@
                 <div class="faq-item">
                     <div class="faq-question" onclick="toggleFAQ(this)">
                         <span>How are your fees structured?</span>
-                        <span class="faq-icon">×</span>
+                        <span class="faq-icon">+</span>
                     </div>
                     <div class="faq-answer">
                         <p>Fees are transparent and outlined in a detailed service agreement before any work begins. There are no hidden charges. You'll know exactly what you're paying for and what services are included at each stage of your case.</p>
@@ -1978,14 +1984,17 @@
 
         .faq-icon {
             color: #893172;
-            font-size: 28px;
-            font-weight: 300;
-            transition: transform 0.3s;
+            font-size: 24px;
+            font-weight: 400;
             line-height: 1;
+            flex-shrink: 0;
+            width: 24px;
+            text-align: center;
+            transition: color 0.2s;
         }
 
         .faq-item.active .faq-icon {
-            transform: rotate(45deg);
+            color: #213885;
         }
 
         .faq-answer {
@@ -2289,15 +2298,15 @@
         function toggleFAQ(element) {
             const faqItem = element.closest('.faq-item');
             const wasActive = faqItem.classList.contains('active');
-            
-            // Close all FAQ items
+
             document.querySelectorAll('.faq-item').forEach(item => {
                 item.classList.remove('active');
+                item.querySelector('.faq-icon').textContent = '+';
             });
-            
-            // Open clicked item if it wasn't active
+
             if (!wasActive) {
                 faqItem.classList.add('active');
+                faqItem.querySelector('.faq-icon').textContent = '−';
             }
         }
     </script>
@@ -2426,6 +2435,14 @@
         #msg-btn{position:fixed;right:20px;bottom:28px;z-index:9998;width:52px;height:52px;border-radius:50%;background:linear-gradient(135deg,#213885,#5F3475);border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 16px rgba(33,56,133,0.35);transition:transform 0.2s,box-shadow 0.2s;}
         #msg-btn:hover{transform:scale(1.08);box-shadow:0 6px 24px rgba(33,56,133,0.45);}
         @keyframes msgSlideUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+        .reveal{opacity:0;transform:translateY(20px);transition:opacity 0.5s ease,transform 0.5s ease;}
+        .reveal.revealed{opacity:1;transform:none;}
+        .five-tiles-grid > div{transition:transform 0.2s ease,box-shadow 0.2s ease;}
+        .five-tiles-grid > div:hover{transform:translateY(-3px);box-shadow:0 8px 24px rgba(0,0,0,0.10);}
+        @media (max-width: 768px) {
+            .why-became-grid{grid-template-columns:1fr !important;gap:24px !important;}
+            .why-became-photo{order:-1;max-width:300px;margin:0 auto;width:100%;}
+        }
     </style>
     <script>
     function toggleMobileNav(){var o=document.getElementById('mobile-nav-overlay'),b=document.getElementById('hamburger-btn'),open=o.classList.toggle('is-open');b.classList.toggle('is-open');document.body.style.overflow=open?'hidden':'';}
@@ -2441,6 +2458,13 @@
         .catch(function(){btn.textContent='Send Message';btn.disabled=false;alert('Something went wrong. Please email info@5kimmigration.ca');});
         return false;
     }
+    </script>
+    <script>
+    (function(){
+        if(!('IntersectionObserver' in window))return;
+        var io=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){x.target.classList.add('revealed');io.unobserve(x.target);}});},{threshold:0.08,rootMargin:'0px 0px -20px 0px'});
+        document.querySelectorAll('section').forEach(function(el){el.classList.add('reveal');io.observe(el);});
+    })();
     </script>
 </body>
 </html>

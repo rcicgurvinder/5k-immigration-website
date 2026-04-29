@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="5K_Immigration_Logo_Transparent.png">
-    <link rel="apple-touch-icon" href="5K_Immigration_Logo_Transparent.png">
+    <link rel="icon" type="image/png" href="5K_Immigration_Logo_Transparent.png?v=2">
+    <link rel="apple-touch-icon" href="5K_Immigration_Logo_Transparent.png?v=2">
     <title>Contact 5K Immigration Services — Surrey, BC | info@5kimmigration.ca</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -2085,6 +2085,8 @@
         #msg-btn{position:fixed;right:20px;bottom:28px;z-index:9998;width:52px;height:52px;border-radius:50%;background:linear-gradient(135deg,#213885,#5F3475);border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 16px rgba(33,56,133,0.35);transition:transform 0.2s,box-shadow 0.2s;}
         #msg-btn:hover{transform:scale(1.08);box-shadow:0 6px 24px rgba(33,56,133,0.45);}
         @keyframes msgSlideUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+        .reveal{opacity:0;transform:translateY(20px);transition:opacity 0.5s ease,transform 0.5s ease;}
+        .reveal.revealed{opacity:1;transform:none;}
     </style>
     <script>
     function toggleMobileNav(){var o=document.getElementById('mobile-nav-overlay'),b=document.getElementById('hamburger-btn'),open=o.classList.toggle('is-open');b.classList.toggle('is-open');document.body.style.overflow=open?'hidden':'';}
@@ -2123,6 +2125,13 @@
                 alert('Something went wrong. Please email info@5kimmigration.ca');
             });
         });
+    })();
+    </script>
+    <script>
+    (function(){
+        if(!('IntersectionObserver' in window))return;
+        var io=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){x.target.classList.add('revealed');io.unobserve(x.target);}});},{threshold:0.08,rootMargin:'0px 0px -20px 0px'});
+        document.querySelectorAll('section').forEach(function(el){el.classList.add('reveal');io.observe(el);});
     })();
     </script>
 </body>

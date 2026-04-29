@@ -2369,7 +2369,7 @@
                 <button onclick="document.getElementById('msg-popup').style.display='none'" style="background:rgba(255,255,255,0.15);border:none;border-radius:50%;width:30px;height:30px;cursor:pointer;display:flex;align-items:center;justify-content:center;color:#fff;font-size:18px;line-height:1;" title="Close">&times;</button>
             </div>
             <div style="padding:20px;">
-                <form action="https://formsubmit.co/info@5kimmigration.ca" method="POST" onsubmit="this.querySelector('button[type=submit]').textContent='Sending…'">
+                <form action="https://formsubmit.co/ac4ce316db525b6f4ded09d4db3eb385" method="POST" onsubmit="return handleMsgSubmit(event,this)">
                     <input type="hidden" name="_subject" value="Website Inquiry - 5K Immigration Services">
                     <input type="hidden" name="_captcha" value="false">
                     <input type="hidden" name="_next" value="">
@@ -2402,6 +2402,17 @@
     <script>
     function toggleMobileNav(){var o=document.getElementById('mobile-nav-overlay'),b=document.getElementById('hamburger-btn'),open=o.classList.toggle('is-open');b.classList.toggle('is-open');document.body.style.overflow=open?'hidden':'';}
     function closeMobileNav(){document.getElementById('mobile-nav-overlay').classList.remove('is-open');document.getElementById('hamburger-btn').classList.remove('is-open');document.body.style.overflow='';}
+    function handleMsgSubmit(e,form){
+        e.preventDefault();
+        var btn=form.querySelector('button[type=submit]');
+        btn.textContent='Sending…';btn.disabled=true;
+        var data={};new FormData(form).forEach(function(v,k){if(!k.startsWith('_'))data[k]=v;});
+        fetch('https://formsubmit.co/ajax/ac4ce316db525b6f4ded09d4db3eb385',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(data)})
+        .then(function(r){return r.json();})
+        .then(function(){form.parentNode.innerHTML='<div style="padding:32px 20px;text-align:center;"><div style="font-size:40px;margin-bottom:12px;">✅</div><p style="font-weight:700;font-size:16px;color:#000;font-family:\'Roobert\',system-ui,sans-serif;margin-bottom:8px;">Message Sent!</p><p style="color:#55534e;font-size:14px;line-height:1.6;font-family:\'Roobert\',system-ui,sans-serif;">Thank you for reaching out. We\'ll get back to you within <strong>one business day</strong>.</p><p style="color:#9f9b93;font-size:12px;margin-top:12px;">— Gurvinder Singh, RCIC</p></div>';})
+        .catch(function(){btn.textContent='Send Message';btn.disabled=false;alert('Something went wrong. Please email info@5kimmigration.ca');});
+        return false;
+    }
     </script>
 </body>
 </html>
